@@ -1,7 +1,7 @@
 
 function DashboardThree() {
   return (
-      <div className="bg-white h-[600px] rounded-2xl shadow-lg w-full  max-w-[326px] p-6 border border-gray-200 mt-4 ml-60 mr-10">
+      <div className="bg-white h-[586px] rounded-2xl shadow-lg w-full  max-w-[470px] p-6 border border-gray-200 mt-4 mr-10">
         {/* Profile Section */}
         <div className="flex flex-col items-center mb-6">
           <div className="w-20 h-20 mb-3 rounded-full bg-blue-50">

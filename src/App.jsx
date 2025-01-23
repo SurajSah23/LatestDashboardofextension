@@ -14,7 +14,7 @@ function App() {
           path="/dashboard"
           element={
             <div>
-              <div className="flex flex-row gap-4 border-red-800 border-3">
+              <div className="flex flex-row gap-2 border-red-800 border-3">
                 <DashboardOne />
                 <DashboardTwo />
                 <DashboardThree />

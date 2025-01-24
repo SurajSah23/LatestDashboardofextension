@@ -3,7 +3,7 @@ function DashboardThree() {
   return (
       <div className="bg-white h-[586px] rounded-2xl shadow-lg w-full max-w-[370px] p-6 border border-gray-200 mt-4 mr-10 ml-16">
         {/* Profile Section */}
-        <div className="flex flex-col items-center mb-6">
+        <div className="flex flex-col items-center mb-6 border-b-2">
           <div className="w-20 h-20 mb-3 rounded-full bg-blue-50">
             <img
               src="https://i.ibb.co/X80DpC0/Avatar-8.png"
@@ -16,29 +16,29 @@ function DashboardThree() {
         </div>
 
         {/* Stats List */}
-        <div className="space-y-4">
+        <div className="space-y-12">
           {/* Current Plan */}
-          <div className="flex items-center">
+          <div className="flex items-center rounded-lg border bg-blue-100 h-[50px]">
             <div className="flex items-center justify-center w-10 h-10 mr-3 rounded-xl bg-blue-50">
               <img
-                src="https://i.ibb.co/55DYS9Q/Featured-icon-1.png" // Placeholder for Monitor Icon
+                src="https://i.ibb.co/55DYS9Q/Featured-icon-1.png"
                 alt="Monitor"
                 className="w-5 h-5 text-blue-600"
               />
             </div>
             <div className="flex-1">
-              <div className="flex items-center justify-between">
+              <div className="flex items-center rounded-lg border bg-blue-100 h-[50px]">
                 <span className="text-gray-700">Current Plan</span>
-                <span className="text-sm text-blue-500">Free Plan</span>
+                <span className="text-sm text-blue-500 mr-3 ml-23">Free Plan</span>
               </div>
             </div>
           </div>
 
           {/* Credit */}
-          <div className="flex items-center">
+          <div className="flex items-center bg-pink-100 rounded-xl h-[50px]">
             <div className="flex items-center justify-center w-10 h-10 mr-3 rounded-xl bg-pink-50">
               <img
-                src="https://i.ibb.co/QbD7jVY/Featured-icon-2.png" // Placeholder for Credit Card Icon
+                src="https://i.ibb.co/QbD7jVY/Featured-icon-2.png"
                 alt="Credit Card"
                 className="w-5 h-5 text-pink-600"
               />
@@ -49,16 +49,16 @@ function DashboardThree() {
                 <span className="text-sm text-gray-600">3/50</span>
               </div>
               <div className="w-full bg-gray-100 rounded-full h-1.5">
-                <div className="bg-pink-500 h-1.5 rounded-full w-[6%]"></div>
+                <div className="bg-pink-500 h-1.5 rounded-full w-[75%]"></div>
               </div>
             </div>
           </div>
 
           {/* Verification */}
-          <div className="flex items-center">
-            <div className="flex items-center justify-center w-10 h-10 mr-3 rounded-xl bg-indigo-50">
+          <div className="flex items-center h-[50px] bg-blue-100 rounded-xl">
+            <div className="flex items-center justify-center w-10 h-10 mr-3 rounded-xl bg-blue-100">
               <img
-                src="https://i.ibb.co/55DYS9Q/Featured-icon-1.png" // Placeholder for Shopping Cart Icon
+                src="https://i.ibb.co/55DYS9Q/Featured-icon-1.png"
                 alt="Shopping Cart"
                 className="w-5 h-5 text-indigo-600"
               />
@@ -69,13 +69,13 @@ function DashboardThree() {
                 <span className="text-sm text-gray-600">2/100</span>
               </div>
               <div className="w-full bg-gray-100 rounded-full h-1.5">
-                <div className="bg-indigo-500 h-1.5 rounded-full w-[2%]"></div>
+                <div className="bg-indigo-500 h-1.5 rounded-full w-[70%]"></div>
               </div>
             </div>
           </div>
 
           {/* Next Renewal */}
-          <div className="flex items-center">
+          <div className="flex items-center bg-blue-100 rounded-xl h-[50px]">
             <div className="flex items-center justify-center w-10 h-10 mr-3 rounded-xl bg-green-50">
               <img
                 src="https://i.ibb.co/SPqCs7x/Featured-icon-4.png" 

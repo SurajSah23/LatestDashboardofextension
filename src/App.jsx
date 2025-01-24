@@ -4,6 +4,7 @@ import DashboardOne from "./dashboard/DashboardOne";
 import DashboardTwo from "./dashboard/DashboardTwo";
 import DashboardThree from "./dashboard/DashboardThree";
 import DashboardFour from "./dashboard/DashboardFour";
+import DashboardFive from "./dashboard/DashboardFive";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
               </div>
               <div>
                   <DashboardFour />
+                  <DashboardFive />
                 </div>
             </div>
           }

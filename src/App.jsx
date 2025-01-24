@@ -18,11 +18,15 @@ function App() {
               <div className="flex flex-row gap-2 border-red-800 border-3">
                 <DashboardOne />
                 <DashboardTwo />
+                <div>
                 <DashboardThree />
+                </div>
               </div>
-              <div>
-                  <DashboardFour />
-                  <DashboardFive />
+              <div className="">
+                <DashboardFive/>
+                </div>
+                <div >
+                <DashboardFour />
                 </div>
             </div>
           }

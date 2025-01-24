@@ -71,7 +71,7 @@ function DashboardFour() {
   };
 
   return (
-    <div className=" relative bottom-44 shadow-xl border border-gray-200  w-[1040px] rounded-lg ml-5">
+    <div className=" relative bottom-44 shadow-xl border border-gray-200  w-[1020px] rounded-lg ml-5">
       <div className="max-w-5xl mx-auto bg-white rounded-lg">
         <h2 className="mb-8 ml-5 text-lg font-medium text-gray-900 mt-7">Usage</h2>
         <HighchartsReact highcharts={Highcharts} options={options} />

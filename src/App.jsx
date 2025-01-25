@@ -5,6 +5,8 @@ import DashboardTwo from "./dashboard/DashboardTwo";
 import DashboardThree from "./dashboard/DashboardThree";
 import DashboardFour from "./dashboard/DashboardFour";
 import DashboardFive from "./dashboard/DashboardFive";
+import SearchOne from "./search/SearchOne";
+import SearchTwo from "./search/SearchTwo";
 
 function App() {
   return (
@@ -19,19 +21,31 @@ function App() {
                 <DashboardOne />
                 <DashboardTwo />
                 <div>
-                <DashboardThree />
+                  <DashboardThree />
                 </div>
               </div>
               <div className="">
-                <DashboardFive/>
-                </div>
-                <div >
+                <DashboardFive />
+              </div>
+              <div>
                 <DashboardFour />
-                </div>
+              </div>
             </div>
           }
         />
-        <Route path="/search" element={<div>Search</div>} />
+        <Route
+          path="/search"
+          element={
+            <div>
+              <div>
+                <SearchOne />
+              </div>
+              <div>
+                <SearchTwo />
+              </div>
+            </div>
+          }
+        />
         <Route path="/contacts" element={<div>Contacts</div>} />
         <Route path="/lists" element={<div>Lists</div>} />
         <Route path="/companies" element={<div>Companies</div>} />

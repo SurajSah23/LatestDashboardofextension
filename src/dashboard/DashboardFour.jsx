@@ -48,17 +48,17 @@ function DashboardFour() {
     },
     series: [
       {
-        name: 'Referral',
+        name: 'Direct',
         data: monthlyData.map(data => data.referral),
         color: '#EEF2FF',
       },
       {
-        name: 'Organic search',
+        name: 'Direct',
         data: monthlyData.map(data => data.organic),
         color: '#C7D2FE',
       },
       {
-        name: 'Direct',
+        name: 'Organic search',
         data: monthlyData.map(data => data.direct),
         color: '#6366F1',
       },

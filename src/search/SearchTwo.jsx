@@ -117,7 +117,930 @@ const companiesData = [
       location: 'India',
       avatar: 'https://i.ibb.co/5579dVd/Avatar-20.png'
     }
-  }
+  },
+  {
+    id: 9, // Fixed duplicate ID
+    name: 'Sisyphus',
+    website: 'sisyphus.com',
+    logo: 'https://i.ibb.co/L5NXSMJ/Avatar-14.png',
+    members: 22,
+    contact: {
+      name: 'Orlando Diggs',
+      role: 'Co-Founder',
+      location: 'India',
+      avatar: 'https://i.ibb.co/5579dVd/Avatar-20.png'
+    }
+  },
+  {
+    id: 9, // Fixed duplicate ID
+    name: 'Sisyphus',
+    website: 'sisyphus.com',
+    logo: 'https://i.ibb.co/L5NXSMJ/Avatar-14.png',
+    members: 22,
+    contact: {
+      name: 'Orlando Diggs',
+      role: 'Co-Founder',
+      location: 'India',
+      avatar: 'https://i.ibb.co/5579dVd/Avatar-20.png'
+    }
+  },
+  {
+    id: 9, // Fixed duplicate ID
+    name: 'Sisyphus',
+    website: 'sisyphus.com',
+    logo: 'https://i.ibb.co/L5NXSMJ/Avatar-14.png',
+    members: 22,
+    contact: {
+      name: 'Orlando Diggs',
+      role: 'Co-Founder',
+      location: 'India',
+      avatar: 'https://i.ibb.co/5579dVd/Avatar-20.png'
+    }
+  },
+  {
+    id: 9, // Fixed duplicate ID
+    name: 'Sisyphus',
+    website: 'sisyphus.com',
+    logo: 'https://i.ibb.co/L5NXSMJ/Avatar-14.png',
+    members: 22,
+    contact: {
+      name: 'Orlando Diggs',
+      role: 'Co-Founder',
+      location: 'India',
+      avatar: 'https://i.ibb.co/5579dVd/Avatar-20.png'
+    }
+  },
+  {
+    id: 9, // Fixed duplicate ID
+    name: 'Sisyphus',
+    website: 'sisyphus.com',
+    logo: 'https://i.ibb.co/L5NXSMJ/Avatar-14.png',
+    members: 22,
+    contact: {
+      name: 'Orlando Diggs',
+      role: 'Co-Founder',
+      location: 'India',
+      avatar: 'https://i.ibb.co/5579dVd/Avatar-20.png'
+    }
+  },
+  {
+    id: 9, // Fixed duplicate ID
+    name: 'Sisyphus',
+    website: 'sisyphus.com',
+    logo: 'https://i.ibb.co/L5NXSMJ/Avatar-14.png',
+    members: 22,
+    contact: {
+      name: 'Orlando Diggs',
+      role: 'Co-Founder',
+      location: 'India',
+      avatar: 'https://i.ibb.co/5579dVd/Avatar-20.png'
+    }
+  },
+  {
+    id: 9, // Fixed duplicate ID
+    name: 'Sisyphus',
+    website: 'sisyphus.com',
+    logo: 'https://i.ibb.co/L5NXSMJ/Avatar-14.png',
+    members: 22,
+    contact: {
+      name: 'Orlando Diggs',
+      role: 'Co-Founder',
+      location: 'India',
+      avatar: 'https://i.ibb.co/5579dVd/Avatar-20.png'
+    }
+  },
+  {
+    id: 9, // Fixed duplicate ID
+    name: 'Sisyphus',
+    website: 'sisyphus.com',
+    logo: 'https://i.ibb.co/L5NXSMJ/Avatar-14.png',
+    members: 22,
+    contact: {
+      name: 'Orlando Diggs',
+      role: 'Co-Founder',
+      location: 'India',
+      avatar: 'https://i.ibb.co/5579dVd/Avatar-20.png'
+    }
+  },
+  {
+    id: 9, // Fixed duplicate ID
+    name: 'Sisyphus',
+    website: 'sisyphus.com',
+    logo: 'https://i.ibb.co/L5NXSMJ/Avatar-14.png',
+    members: 22,
+    contact: {
+      name: 'Orlando Diggs',
+      role: 'Co-Founder',
+      location: 'India',
+      avatar: 'https://i.ibb.co/5579dVd/Avatar-20.png'
+    }
+  },
+  {
+    id: 9, // Fixed duplicate ID
+    name: 'Sisyphus',
+    website: 'sisyphus.com',
+    logo: 'https://i.ibb.co/L5NXSMJ/Avatar-14.png',
+    members: 22,
+    contact: {
+      name: 'Orlando Diggs',
+      role: 'Co-Founder',
+      location: 'India',
+      avatar: 'https://i.ibb.co/5579dVd/Avatar-20.png'
+    }
+  },
+  {
+    id: 9, // Fixed duplicate ID
+    name: 'Sisyphus',
+    website: 'sisyphus.com',
+    logo: 'https://i.ibb.co/L5NXSMJ/Avatar-14.png',
+    members: 22,
+    contact: {
+      name: 'Orlando Diggs',
+      role: 'Co-Founder',
+      location: 'India',
+      avatar: 'https://i.ibb.co/5579dVd/Avatar-20.png'
+    }
+  },
+  {
+    id: 9, // Fixed duplicate ID
+    name: 'Sisyphus',
+    website: 'sisyphus.com',
+    logo: 'https://i.ibb.co/L5NXSMJ/Avatar-14.png',
+    members: 22,
+    contact: {
+      name: 'Orlando Diggs',
+      role: 'Co-Founder',
+      location: 'India',
+      avatar: 'https://i.ibb.co/5579dVd/Avatar-20.png'
+    }
+  },
+  {
+    id: 9, // Fixed duplicate ID
+    name: 'Sisyphus',
+    website: 'sisyphus.com',
+    logo: 'https://i.ibb.co/L5NXSMJ/Avatar-14.png',
+    members: 22,
+    contact: {
+      name: 'Orlando Diggs',
+      role: 'Co-Founder',
+      location: 'India',
+      avatar: 'https://i.ibb.co/5579dVd/Avatar-20.png'
+    }
+  },
+  {
+    id: 9, // Fixed duplicate ID
+    name: 'Sisyphus',
+    website: 'sisyphus.com',
+    logo: 'https://i.ibb.co/L5NXSMJ/Avatar-14.png',
+    members: 22,
+    contact: {
+      name: 'Orlando Diggs',
+      role: 'Co-Founder',
+      location: 'India',
+      avatar: 'https://i.ibb.co/5579dVd/Avatar-20.png'
+    }
+  },
+  {
+    id: 9, // Fixed duplicate ID
+    name: 'Sisyphus',
+    website: 'sisyphus.com',
+    logo: 'https://i.ibb.co/L5NXSMJ/Avatar-14.png',
+    members: 22,
+    contact: {
+      name: 'Orlando Diggs',
+      role: 'Co-Founder',
+      location: 'India',
+      avatar: 'https://i.ibb.co/5579dVd/Avatar-20.png'
+    }
+  },
+  {
+    id: 9, // Fixed duplicate ID
+    name: 'Sisyphus',
+    website: 'sisyphus.com',
+    logo: 'https://i.ibb.co/L5NXSMJ/Avatar-14.png',
+    members: 22,
+    contact: {
+      name: 'Orlando Diggs',
+      role: 'Co-Founder',
+      location: 'India',
+      avatar: 'https://i.ibb.co/5579dVd/Avatar-20.png'
+    }
+  },
+  {
+    id: 9, // Fixed duplicate ID
+    name: 'Sisyphus',
+    website: 'sisyphus.com',
+    logo: 'https://i.ibb.co/L5NXSMJ/Avatar-14.png',
+    members: 22,
+    contact: {
+      name: 'Orlando Diggs',
+      role: 'Co-Founder',
+      location: 'India',
+      avatar: 'https://i.ibb.co/5579dVd/Avatar-20.png'
+    }
+  },
+  {
+    id: 9, // Fixed duplicate ID
+    name: 'Sisyphus',
+    website: 'sisyphus.com',
+    logo: 'https://i.ibb.co/L5NXSMJ/Avatar-14.png',
+    members: 22,
+    contact: {
+      name: 'Orlando Diggs',
+      role: 'Co-Founder',
+      location: 'India',
+      avatar: 'https://i.ibb.co/5579dVd/Avatar-20.png'
+    }
+  },
+  {
+    id: 9, // Fixed duplicate ID
+    name: 'Sisyphus',
+    website: 'sisyphus.com',
+    logo: 'https://i.ibb.co/L5NXSMJ/Avatar-14.png',
+    members: 22,
+    contact: {
+      name: 'Orlando Diggs',
+      role: 'Co-Founder',
+      location: 'India',
+      avatar: 'https://i.ibb.co/5579dVd/Avatar-20.png'
+    }
+  },
+  {
+    id: 9, // Fixed duplicate ID
+    name: 'Sisyphus',
+    website: 'sisyphus.com',
+    logo: 'https://i.ibb.co/L5NXSMJ/Avatar-14.png',
+    members: 22,
+    contact: {
+      name: 'Orlando Diggs',
+      role: 'Co-Founder',
+      location: 'India',
+      avatar: 'https://i.ibb.co/5579dVd/Avatar-20.png'
+    }
+  },
+  {
+    id: 9, // Fixed duplicate ID
+    name: 'Sisyphus',
+    website: 'sisyphus.com',
+    logo: 'https://i.ibb.co/L5NXSMJ/Avatar-14.png',
+    members: 22,
+    contact: {
+      name: 'Orlando Diggs',
+      role: 'Co-Founder',
+      location: 'India',
+      avatar: 'https://i.ibb.co/5579dVd/Avatar-20.png'
+    }
+  },
+  {
+    id: 9, // Fixed duplicate ID
+    name: 'Sisyphus',
+    website: 'sisyphus.com',
+    logo: 'https://i.ibb.co/L5NXSMJ/Avatar-14.png',
+    members: 22,
+    contact: {
+      name: 'Orlando Diggs',
+      role: 'Co-Founder',
+      location: 'India',
+      avatar: 'https://i.ibb.co/5579dVd/Avatar-20.png'
+    }
+  },
+  {
+    id: 9, // Fixed duplicate ID
+    name: 'Sisyphus',
+    website: 'sisyphus.com',
+    logo: 'https://i.ibb.co/L5NXSMJ/Avatar-14.png',
+    members: 22,
+    contact: {
+      name: 'Orlando Diggs',
+      role: 'Co-Founder',
+      location: 'India',
+      avatar: 'https://i.ibb.co/5579dVd/Avatar-20.png'
+    }
+  },
+  {
+    id: 9, // Fixed duplicate ID
+    name: 'Sisyphus',
+    website: 'sisyphus.com',
+    logo: 'https://i.ibb.co/L5NXSMJ/Avatar-14.png',
+    members: 22,
+    contact: {
+      name: 'Orlando Diggs',
+      role: 'Co-Founder',
+      location: 'India',
+      avatar: 'https://i.ibb.co/5579dVd/Avatar-20.png'
+    }
+  },
+  {
+    id: 9, // Fixed duplicate ID
+    name: 'Sisyphus',
+    website: 'sisyphus.com',
+    logo: 'https://i.ibb.co/L5NXSMJ/Avatar-14.png',
+    members: 22,
+    contact: {
+      name: 'Orlando Diggs',
+      role: 'Co-Founder',
+      location: 'India',
+      avatar: 'https://i.ibb.co/5579dVd/Avatar-20.png'
+    }
+  },
+  {
+    id: 9, // Fixed duplicate ID
+    name: 'Sisyphus',
+    website: 'sisyphus.com',
+    logo: 'https://i.ibb.co/L5NXSMJ/Avatar-14.png',
+    members: 22,
+    contact: {
+      name: 'Orlando Diggs',
+      role: 'Co-Founder',
+      location: 'India',
+      avatar: 'https://i.ibb.co/5579dVd/Avatar-20.png'
+    }
+  },
+  {
+    id: 9, // Fixed duplicate ID
+    name: 'Sisyphus',
+    website: 'sisyphus.com',
+    logo: 'https://i.ibb.co/L5NXSMJ/Avatar-14.png',
+    members: 22,
+    contact: {
+      name: 'Orlando Diggs',
+      role: 'Co-Founder',
+      location: 'India',
+      avatar: 'https://i.ibb.co/5579dVd/Avatar-20.png'
+    }
+  },
+  {
+    id: 9, // Fixed duplicate ID
+    name: 'Sisyphus',
+    website: 'sisyphus.com',
+    logo: 'https://i.ibb.co/L5NXSMJ/Avatar-14.png',
+    members: 22,
+    contact: {
+      name: 'Orlando Diggs',
+      role: 'Co-Founder',
+      location: 'India',
+      avatar: 'https://i.ibb.co/5579dVd/Avatar-20.png'
+    }
+  },
+  {
+    id: 9, // Fixed duplicate ID
+    name: 'Sisyphus',
+    website: 'sisyphus.com',
+    logo: 'https://i.ibb.co/L5NXSMJ/Avatar-14.png',
+    members: 22,
+    contact: {
+      name: 'Orlando Diggs',
+      role: 'Co-Founder',
+      location: 'India',
+      avatar: 'https://i.ibb.co/5579dVd/Avatar-20.png'
+    }
+  },
+  {
+    id: 9, // Fixed duplicate ID
+    name: 'Sisyphus',
+    website: 'sisyphus.com',
+    logo: 'https://i.ibb.co/L5NXSMJ/Avatar-14.png',
+    members: 22,
+    contact: {
+      name: 'Orlando Diggs',
+      role: 'Co-Founder',
+      location: 'India',
+      avatar: 'https://i.ibb.co/5579dVd/Avatar-20.png'
+    }
+  },
+  {
+    id: 9, // Fixed duplicate ID
+    name: 'Sisyphus',
+    website: 'sisyphus.com',
+    logo: 'https://i.ibb.co/L5NXSMJ/Avatar-14.png',
+    members: 22,
+    contact: {
+      name: 'Orlando Diggs',
+      role: 'Co-Founder',
+      location: 'India',
+      avatar: 'https://i.ibb.co/5579dVd/Avatar-20.png'
+    }
+  },
+  {
+    id: 9, // Fixed duplicate ID
+    name: 'Sisyphus',
+    website: 'sisyphus.com',
+    logo: 'https://i.ibb.co/L5NXSMJ/Avatar-14.png',
+    members: 22,
+    contact: {
+      name: 'Orlando Diggs',
+      role: 'Co-Founder',
+      location: 'India',
+      avatar: 'https://i.ibb.co/5579dVd/Avatar-20.png'
+    }
+  },
+  {
+    id: 9, // Fixed duplicate ID
+    name: 'Sisyphus',
+    website: 'sisyphus.com',
+    logo: 'https://i.ibb.co/L5NXSMJ/Avatar-14.png',
+    members: 22,
+    contact: {
+      name: 'Orlando Diggs',
+      role: 'Co-Founder',
+      location: 'India',
+      avatar: 'https://i.ibb.co/5579dVd/Avatar-20.png'
+    }
+  },
+  {
+    id: 9, // Fixed duplicate ID
+    name: 'Sisyphus',
+    website: 'sisyphus.com',
+    logo: 'https://i.ibb.co/L5NXSMJ/Avatar-14.png',
+    members: 22,
+    contact: {
+      name: 'Orlando Diggs',
+      role: 'Co-Founder',
+      location: 'India',
+      avatar: 'https://i.ibb.co/5579dVd/Avatar-20.png'
+    }
+  },
+  {
+    id: 9, // Fixed duplicate ID
+    name: 'Sisyphus',
+    website: 'sisyphus.com',
+    logo: 'https://i.ibb.co/L5NXSMJ/Avatar-14.png',
+    members: 22,
+    contact: {
+      name: 'Orlando Diggs',
+      role: 'Co-Founder',
+      location: 'India',
+      avatar: 'https://i.ibb.co/5579dVd/Avatar-20.png'
+    }
+  },
+  {
+    id: 9, // Fixed duplicate ID
+    name: 'Sisyphus',
+    website: 'sisyphus.com',
+    logo: 'https://i.ibb.co/L5NXSMJ/Avatar-14.png',
+    members: 22,
+    contact: {
+      name: 'Orlando Diggs',
+      role: 'Co-Founder',
+      location: 'India',
+      avatar: 'https://i.ibb.co/5579dVd/Avatar-20.png'
+    }
+  },
+  {
+    id: 9, // Fixed duplicate ID
+    name: 'Sisyphus',
+    website: 'sisyphus.com',
+    logo: 'https://i.ibb.co/L5NXSMJ/Avatar-14.png',
+    members: 22,
+    contact: {
+      name: 'Orlando Diggs',
+      role: 'Co-Founder',
+      location: 'India',
+      avatar: 'https://i.ibb.co/5579dVd/Avatar-20.png'
+    }
+  },
+  {
+    id: 9, // Fixed duplicate ID
+    name: 'Sisyphus',
+    website: 'sisyphus.com',
+    logo: 'https://i.ibb.co/L5NXSMJ/Avatar-14.png',
+    members: 22,
+    contact: {
+      name: 'Orlando Diggs',
+      role: 'Co-Founder',
+      location: 'India',
+      avatar: 'https://i.ibb.co/5579dVd/Avatar-20.png'
+    }
+  },
+  {
+    id: 9, // Fixed duplicate ID
+    name: 'Sisyphus',
+    website: 'sisyphus.com',
+    logo: 'https://i.ibb.co/L5NXSMJ/Avatar-14.png',
+    members: 22,
+    contact: {
+      name: 'Orlando Diggs',
+      role: 'Co-Founder',
+      location: 'India',
+      avatar: 'https://i.ibb.co/5579dVd/Avatar-20.png'
+    }
+  },
+  {
+    id: 9, // Fixed duplicate ID
+    name: 'Sisyphus',
+    website: 'sisyphus.com',
+    logo: 'https://i.ibb.co/L5NXSMJ/Avatar-14.png',
+    members: 22,
+    contact: {
+      name: 'Orlando Diggs',
+      role: 'Co-Founder',
+      location: 'India',
+      avatar: 'https://i.ibb.co/5579dVd/Avatar-20.png'
+    }
+  },
+  {
+    id: 9, // Fixed duplicate ID
+    name: 'Sisyphus',
+    website: 'sisyphus.com',
+    logo: 'https://i.ibb.co/L5NXSMJ/Avatar-14.png',
+    members: 22,
+    contact: {
+      name: 'Orlando Diggs',
+      role: 'Co-Founder',
+      location: 'India',
+      avatar: 'https://i.ibb.co/5579dVd/Avatar-20.png'
+    }
+  },
+  {
+    id: 9, // Fixed duplicate ID
+    name: 'Sisyphus',
+    website: 'sisyphus.com',
+    logo: 'https://i.ibb.co/L5NXSMJ/Avatar-14.png',
+    members: 22,
+    contact: {
+      name: 'Orlando Diggs',
+      role: 'Co-Founder',
+      location: 'India',
+      avatar: 'https://i.ibb.co/5579dVd/Avatar-20.png'
+    }
+  },
+  {
+    id: 9, // Fixed duplicate ID
+    name: 'Sisyphus',
+    website: 'sisyphus.com',
+    logo: 'https://i.ibb.co/L5NXSMJ/Avatar-14.png',
+    members: 22,
+    contact: {
+      name: 'Orlando Diggs',
+      role: 'Co-Founder',
+      location: 'India',
+      avatar: 'https://i.ibb.co/5579dVd/Avatar-20.png'
+    }
+  },
+  {
+    id: 9, // Fixed duplicate ID
+    name: 'Sisyphus',
+    website: 'sisyphus.com',
+    logo: 'https://i.ibb.co/L5NXSMJ/Avatar-14.png',
+    members: 22,
+    contact: {
+      name: 'Orlando Diggs',
+      role: 'Co-Founder',
+      location: 'India',
+      avatar: 'https://i.ibb.co/5579dVd/Avatar-20.png'
+    }
+  },
+  {
+    id: 9, // Fixed duplicate ID
+    name: 'Sisyphus',
+    website: 'sisyphus.com',
+    logo: 'https://i.ibb.co/L5NXSMJ/Avatar-14.png',
+    members: 22,
+    contact: {
+      name: 'Orlando Diggs',
+      role: 'Co-Founder',
+      location: 'India',
+      avatar: 'https://i.ibb.co/5579dVd/Avatar-20.png'
+    }
+  },
+  {
+    id: 9, // Fixed duplicate ID
+    name: 'Sisyphus',
+    website: 'sisyphus.com',
+    logo: 'https://i.ibb.co/L5NXSMJ/Avatar-14.png',
+    members: 22,
+    contact: {
+      name: 'Orlando Diggs',
+      role: 'Co-Founder',
+      location: 'India',
+      avatar: 'https://i.ibb.co/5579dVd/Avatar-20.png'
+    }
+  },
+  {
+    id: 9, // Fixed duplicate ID
+    name: 'Sisyphus',
+    website: 'sisyphus.com',
+    logo: 'https://i.ibb.co/L5NXSMJ/Avatar-14.png',
+    members: 22,
+    contact: {
+      name: 'Orlando Diggs',
+      role: 'Co-Founder',
+      location: 'India',
+      avatar: 'https://i.ibb.co/5579dVd/Avatar-20.png'
+    }
+  },
+  {
+    id: 9, // Fixed duplicate ID
+    name: 'Sisyphus',
+    website: 'sisyphus.com',
+    logo: 'https://i.ibb.co/L5NXSMJ/Avatar-14.png',
+    members: 22,
+    contact: {
+      name: 'Orlando Diggs',
+      role: 'Co-Founder',
+      location: 'India',
+      avatar: 'https://i.ibb.co/5579dVd/Avatar-20.png'
+    }
+  },
+  {
+    id: 9, // Fixed duplicate ID
+    name: 'Sisyphus',
+    website: 'sisyphus.com',
+    logo: 'https://i.ibb.co/L5NXSMJ/Avatar-14.png',
+    members: 22,
+    contact: {
+      name: 'Orlando Diggs',
+      role: 'Co-Founder',
+      location: 'India',
+      avatar: 'https://i.ibb.co/5579dVd/Avatar-20.png'
+    }
+  },
+  {
+    id: 9, // Fixed duplicate ID
+    name: 'Sisyphus',
+    website: 'sisyphus.com',
+    logo: 'https://i.ibb.co/L5NXSMJ/Avatar-14.png',
+    members: 22,
+    contact: {
+      name: 'Orlando Diggs',
+      role: 'Co-Founder',
+      location: 'India',
+      avatar: 'https://i.ibb.co/5579dVd/Avatar-20.png'
+    }
+  },
+  {
+    id: 9, // Fixed duplicate ID
+    name: 'Sisyphus',
+    website: 'sisyphus.com',
+    logo: 'https://i.ibb.co/L5NXSMJ/Avatar-14.png',
+    members: 22,
+    contact: {
+      name: 'Orlando Diggs',
+      role: 'Co-Founder',
+      location: 'India',
+      avatar: 'https://i.ibb.co/5579dVd/Avatar-20.png'
+    }
+  },
+  {
+    id: 9, // Fixed duplicate ID
+    name: 'Sisyphus',
+    website: 'sisyphus.com',
+    logo: 'https://i.ibb.co/L5NXSMJ/Avatar-14.png',
+    members: 22,
+    contact: {
+      name: 'Orlando Diggs',
+      role: 'Co-Founder',
+      location: 'India',
+      avatar: 'https://i.ibb.co/5579dVd/Avatar-20.png'
+    }
+  },
+  {
+    id: 9, // Fixed duplicate ID
+    name: 'Sisyphus',
+    website: 'sisyphus.com',
+    logo: 'https://i.ibb.co/L5NXSMJ/Avatar-14.png',
+    members: 22,
+    contact: {
+      name: 'Orlando Diggs',
+      role: 'Co-Founder',
+      location: 'India',
+      avatar: 'https://i.ibb.co/5579dVd/Avatar-20.png'
+    }
+  },
+  {
+    id: 9, // Fixed duplicate ID
+    name: 'Sisyphus',
+    website: 'sisyphus.com',
+    logo: 'https://i.ibb.co/L5NXSMJ/Avatar-14.png',
+    members: 22,
+    contact: {
+      name: 'Orlando Diggs',
+      role: 'Co-Founder',
+      location: 'India',
+      avatar: 'https://i.ibb.co/5579dVd/Avatar-20.png'
+    }
+  },
+  {
+    id: 9, // Fixed duplicate ID
+    name: 'Sisyphus',
+    website: 'sisyphus.com',
+    logo: 'https://i.ibb.co/L5NXSMJ/Avatar-14.png',
+    members: 22,
+    contact: {
+      name: 'Orlando Diggs',
+      role: 'Co-Founder',
+      location: 'India',
+      avatar: 'https://i.ibb.co/5579dVd/Avatar-20.png'
+    }
+  },
+  {
+    id: 9, // Fixed duplicate ID
+    name: 'Sisyphus',
+    website: 'sisyphus.com',
+    logo: 'https://i.ibb.co/L5NXSMJ/Avatar-14.png',
+    members: 22,
+    contact: {
+      name: 'Orlando Diggs',
+      role: 'Co-Founder',
+      location: 'India',
+      avatar: 'https://i.ibb.co/5579dVd/Avatar-20.png'
+    }
+  },
+  {
+    id: 9, // Fixed duplicate ID
+    name: 'Sisyphus',
+    website: 'sisyphus.com',
+    logo: 'https://i.ibb.co/L5NXSMJ/Avatar-14.png',
+    members: 22,
+    contact: {
+      name: 'Orlando Diggs',
+      role: 'Co-Founder',
+      location: 'India',
+      avatar: 'https://i.ibb.co/5579dVd/Avatar-20.png'
+    }
+  },
+  {
+    id: 9, // Fixed duplicate ID
+    name: 'Sisyphus',
+    website: 'sisyphus.com',
+    logo: 'https://i.ibb.co/L5NXSMJ/Avatar-14.png',
+    members: 22,
+    contact: {
+      name: 'Orlando Diggs',
+      role: 'Co-Founder',
+      location: 'India',
+      avatar: 'https://i.ibb.co/5579dVd/Avatar-20.png'
+    }
+  },
+  {
+    id: 9, // Fixed duplicate ID
+    name: 'Sisyphus',
+    website: 'sisyphus.com',
+    logo: 'https://i.ibb.co/L5NXSMJ/Avatar-14.png',
+    members: 22,
+    contact: {
+      name: 'Orlando Diggs',
+      role: 'Co-Founder',
+      location: 'India',
+      avatar: 'https://i.ibb.co/5579dVd/Avatar-20.png'
+    }
+  },
+  {
+    id: 9, // Fixed duplicate ID
+    name: 'Sisyphus',
+    website: 'sisyphus.com',
+    logo: 'https://i.ibb.co/L5NXSMJ/Avatar-14.png',
+    members: 22,
+    contact: {
+      name: 'Orlando Diggs',
+      role: 'Co-Founder',
+      location: 'India',
+      avatar: 'https://i.ibb.co/5579dVd/Avatar-20.png'
+    }
+  },
+  {
+    id: 9, // Fixed duplicate ID
+    name: 'Sisyphus',
+    website: 'sisyphus.com',
+    logo: 'https://i.ibb.co/L5NXSMJ/Avatar-14.png',
+    members: 22,
+    contact: {
+      name: 'Orlando Diggs',
+      role: 'Co-Founder',
+      location: 'India',
+      avatar: 'https://i.ibb.co/5579dVd/Avatar-20.png'
+    }
+  },
+  {
+    id: 9, // Fixed duplicate ID
+    name: 'Sisyphus',
+    website: 'sisyphus.com',
+    logo: 'https://i.ibb.co/L5NXSMJ/Avatar-14.png',
+    members: 22,
+    contact: {
+      name: 'Orlando Diggs',
+      role: 'Co-Founder',
+      location: 'India',
+      avatar: 'https://i.ibb.co/5579dVd/Avatar-20.png'
+    }
+  },
+  {
+    id: 9, // Fixed duplicate ID
+    name: 'Sisyphus',
+    website: 'sisyphus.com',
+    logo: 'https://i.ibb.co/L5NXSMJ/Avatar-14.png',
+    members: 22,
+    contact: {
+      name: 'Orlando Diggs',
+      role: 'Co-Founder',
+      location: 'India',
+      avatar: 'https://i.ibb.co/5579dVd/Avatar-20.png'
+    }
+  },
+  {
+    id: 9, // Fixed duplicate ID
+    name: 'Sisyphus',
+    website: 'sisyphus.com',
+    logo: 'https://i.ibb.co/L5NXSMJ/Avatar-14.png',
+    members: 22,
+    contact: {
+      name: 'Orlando Diggs',
+      role: 'Co-Founder',
+      location: 'India',
+      avatar: 'https://i.ibb.co/5579dVd/Avatar-20.png'
+    }
+  },
+  {
+    id: 9, // Fixed duplicate ID
+    name: 'Sisyphus',
+    website: 'sisyphus.com',
+    logo: 'https://i.ibb.co/L5NXSMJ/Avatar-14.png',
+    members: 22,
+    contact: {
+      name: 'Orlando Diggs',
+      role: 'Co-Founder',
+      location: 'India',
+      avatar: 'https://i.ibb.co/5579dVd/Avatar-20.png'
+    }
+  },
+  {
+    id: 9, // Fixed duplicate ID
+    name: 'Sisyphus',
+    website: 'sisyphus.com',
+    logo: 'https://i.ibb.co/L5NXSMJ/Avatar-14.png',
+    members: 22,
+    contact: {
+      name: 'Orlando Diggs',
+      role: 'Co-Founder',
+      location: 'India',
+      avatar: 'https://i.ibb.co/5579dVd/Avatar-20.png'
+    }
+  },
+  {
+    id: 9, // Fixed duplicate ID
+    name: 'Sisyphus',
+    website: 'sisyphus.com',
+    logo: 'https://i.ibb.co/L5NXSMJ/Avatar-14.png',
+    members: 22,
+    contact: {
+      name: 'Orlando Diggs',
+      role: 'Co-Founder',
+      location: 'India',
+      avatar: 'https://i.ibb.co/5579dVd/Avatar-20.png'
+    }
+  },
+  {
+    id: 9, // Fixed duplicate ID
+    name: 'Sisyphus',
+    website: 'sisyphus.com',
+    logo: 'https://i.ibb.co/L5NXSMJ/Avatar-14.png',
+    members: 22,
+    contact: {
+      name: 'Orlando Diggs',
+      role: 'Co-Founder',
+      location: 'India',
+      avatar: 'https://i.ibb.co/5579dVd/Avatar-20.png'
+    }
+  },
+  {
+    id: 9, // Fixed duplicate ID
+    name: 'Sisyphus',
+    website: 'sisyphus.com',
+    logo: 'https://i.ibb.co/L5NXSMJ/Avatar-14.png',
+    members: 22,
+    contact: {
+      name: 'Orlando Diggs',
+      role: 'Co-Founder',
+      location: 'India',
+      avatar: 'https://i.ibb.co/5579dVd/Avatar-20.png'
+    }
+  },
+  {
+    id: 9, // Fixed duplicate ID
+    name: 'Sisyphus',
+    website: 'sisyphus.com',
+    logo: 'https://i.ibb.co/L5NXSMJ/Avatar-14.png',
+    members: 22,
+    contact: {
+      name: 'Orlando Diggs',
+      role: 'Co-Founder',
+      location: 'India',
+      avatar: 'https://i.ibb.co/5579dVd/Avatar-20.png'
+    }
+  },
+  {
+    id: 9, // Fixed duplicate ID
+    name: 'Sisyphus',
+    website: 'sisyphus.com',
+    logo: 'https://i.ibb.co/L5NXSMJ/Avatar-14.png',
+    members: 22,
+    contact: {
+      name: 'Orlando Diggs',
+      role: 'Co-Founder',
+      location: 'India',
+      avatar: 'https://i.ibb.co/5579dVd/Avatar-20.png'
+    }
+  },
 ];
 
 function SearchTwo() {
@@ -130,7 +1053,7 @@ function SearchTwo() {
   const currentCompanies = companiesData.slice(startIndex, endIndex);
 
   return (
-    <div className="max-w-[600px] mx-auto absolute top-1/3 bottom- left-3">
+    <div className="w-[800px] h-[850px] absolute top-1/3 left-8 rounded-lg border">
       {/* Header Tabs */}
       <div className="border-b border-gray-200">
         <nav className="flex space-x-8">
@@ -251,6 +1174,10 @@ function SearchTwo() {
           </button>
         </div>
       </div>
+          <br />
+          <br />
+          <br />
+          <br />
     </div>
   );
 }

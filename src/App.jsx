@@ -7,6 +7,7 @@ import DashboardFour from "./dashboard/DashboardFour";
 import DashboardFive from "./dashboard/DashboardFive";
 import SearchOne from "./search/SearchOne";
 import SearchTwo from "./search/SearchTwo";
+import SearchThree from "./search/SearchThree";
 
 function App() {
   return (
@@ -42,6 +43,9 @@ function App() {
               </div>
               <div>
                 <SearchTwo />
+              </div>
+              <div>
+                <SearchThree />
               </div>
             </div>
           }

@@ -18,8 +18,8 @@ function DashboardThree() {
         {/* Stats List */}
         <div className="space-y-12">
           {/* Current Plan */}
-          <div className="flex items-center rounded-lg border bg-blue-100 h-[50px]">
-            <div className="flex items-center justify-center w-10 h-10 mr-3 rounded-xl bg-blue-50">
+          <div className="flex items-center rounded-lg border bg-blue-100 h-[50px] ">
+            <div className="flex items-center justify-center w-10 h-10 mr-3 rounded-xl bg-blue-50 relative left-2">
               <img
                 src="https://i.ibb.co/55DYS9Q/Featured-icon-1.png"
                 alt="Monitor"
@@ -28,7 +28,7 @@ function DashboardThree() {
             </div>
             <div className="flex-1">
               <div className="flex items-center rounded-lg border bg-blue-100 h-[50px]">
-                <span className="text-gray-700">Current Plan</span>
+                <span className="text-gray-700 whitespace-nowrap mr-5">Current Plan</span>
                 <span className="text-sm text-blue-500 mr-3 ml-23">Free Plan</span>
               </div>
             </div>
@@ -36,7 +36,7 @@ function DashboardThree() {
 
           {/* Credit */}
           <div className="flex items-center bg-pink-100 rounded-xl h-[50px]">
-            <div className="flex items-center justify-center w-10 h-10 mr-3 rounded-xl bg-pink-50">
+            <div className="flex items-center justify-center w-10 h-10 mr-3 rounded-xl bg-pink-50 relative left-2">
               <img
                 src="https://i.ibb.co/QbD7jVY/Featured-icon-2.png"
                 alt="Credit Card"
@@ -46,17 +46,17 @@ function DashboardThree() {
             <div className="flex-1">
               <div className="flex items-center justify-between mb-1">
                 <span className="text-gray-700">Credit</span>
-                <span className="text-sm text-gray-600">3/50</span>
+                <span className="text-sm text-gray-600 relative right-10">3/50</span>
               </div>
-              <div className="w-full bg-gray-100 rounded-full h-1.5">
+              <div className="w-40 bg-gray-100 rounded-full h-1.5">
                 <div className="bg-pink-500 h-1.5 rounded-full w-[75%]"></div>
               </div>
             </div>
           </div>
 
           {/* Verification */}
-          <div className="flex items-center h-[50px] bg-blue-100 rounded-xl">
-            <div className="flex items-center justify-center w-10 h-10 mr-3 rounded-xl bg-blue-100">
+          <div className="flex items-center h-[50px] bg-[#F5F8FF] rounded-xl">
+            <div className="flex items-center justify-center w-10 h-10 mr-3 rounded-xl bg-blue-100 relative left-2">
               <img
                 src="https://i.ibb.co/55DYS9Q/Featured-icon-1.png"
                 alt="Shopping Cart"
@@ -66,9 +66,9 @@ function DashboardThree() {
             <div className="flex-1">
               <div className="flex items-center justify-between mb-1">
                 <span className="text-gray-700">Verification</span>
-                <span className="text-sm text-gray-600">2/100</span>
+                <span className="text-sm text-gray-600 relative right-10">2/100</span>
               </div>
-              <div className="w-full bg-gray-100 rounded-full h-1.5">
+              <div className="w-40 bg-gray-100 rounded-full h-1.5">
                 <div className="bg-indigo-500 h-1.5 rounded-full w-[70%]"></div>
               </div>
             </div>
@@ -76,17 +76,17 @@ function DashboardThree() {
 
           {/* Next Renewal */}
           <div className="flex items-center bg-blue-100 rounded-xl h-[50px]">
-            <div className="flex items-center justify-center w-10 h-10 mr-3 rounded-xl bg-green-50">
+            <div className="flex items-center justify-center w-10 h-10 mr-3 rounded-xl bg-green-50 relative left-2">
               <img
                 src="https://i.ibb.co/SPqCs7x/Featured-icon-4.png" 
                 alt="Calendar Clock"
-                className="w-5 h-5 text-green-600"
+                className="w-7 h-7 text-green-600"
               />
             </div>
             <div className="flex-1">
               <div className="flex items-center justify-between">
                 <span className="text-gray-700">Next Renewal</span>
-                <span className="text-sm text-gray-600">Jan 21, 2025</span>
+                <span className="text-sm text-gray-600 relative right-2">Jan 21, 2025</span>
               </div>
             </div>
           </div>

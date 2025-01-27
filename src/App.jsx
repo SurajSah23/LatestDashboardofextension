@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Navbar from "./Navbar";
+import Navbar from "./navbar/Navbar";
 import DashboardOne from "./dashboard/DashboardOne";
 import DashboardTwo from "./dashboard/DashboardTwo";
 import DashboardThree from "./dashboard/DashboardThree";

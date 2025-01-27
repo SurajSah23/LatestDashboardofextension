@@ -8,6 +8,7 @@ import DashboardFive from "./dashboard/DashboardFive";
 import SearchOne from "./search/SearchOne";
 import SearchTwo from "./search/SearchTwo";
 import SearchThree from "./search/SearchThree";
+import ContactsOne from "./contacts/ContactsOne";
 
 function App() {
   return (
@@ -50,7 +51,9 @@ function App() {
             </div>
           }
         />
-        <Route path="/contacts" element={<div>Contacts</div>} />
+        <Route path="/contacts" element={<div>
+          <ContactsOne />
+        </div>} />
         <Route path="/lists" element={<div>Lists</div>} />
         <Route path="/companies" element={<div>Companies</div>} />
         <Route path="/enrich" element={<div>Enrich</div>} />

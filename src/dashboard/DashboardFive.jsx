@@ -1,6 +1,6 @@
 function DashboardFive() {
   return (
-    <div className="h-[600px] w-full max-w-[280px] bg-white border rounded-xl shadow-sm p-6 space-y-6 absolute top-3/4 left-3/4 mt-64 mr-1 ml-12 mb-8 -translate-y-5">
+    <div className="h-[600px] w-full max-w-[280px] bg-white border rounded-xl shadow-sm p-6 space-y-6 absolute top-3/4 left-3/4 mt-64 mr-1 ml-7 mb-10">
       {/* Suggest For You Section */}
       <div className="space-y-3">
         <h2 className="text-[#1d2b4e] text-lg font-semibold">

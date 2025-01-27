@@ -1,6 +1,6 @@
 function DashboardTwo() {
   return (
-      <div className="mt-4 mx-2 border border-gray-200 shadow-xl w-[500px] h-[390px] bg-white rounded-2xl">
+      <div className="mt-4 mx-2 border border-gray-200 shadow-xl w-[520px] h-[390px] bg-white rounded-2xl mr-10">
         <div className="flex flex-col items-center justify-center py-12">
           <div className="p-3 mb-4 rounded-lg bg-blue-50">
             <img

@@ -53,7 +53,7 @@ function DashboardFour() {
         color: '#EEF2FF',
       },
       {
-        name: 'Direct',
+        name: 'irect',
         data: monthlyData.map(data => data.organic),
         color: '#C7D2FE',
       },

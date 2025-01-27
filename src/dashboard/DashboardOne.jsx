@@ -4,7 +4,7 @@ function DashboardOne() {
   const [activeTab, setActiveTab] = useState("recent");
 
   return (
-    <div className="w-[585px] h-[390px] rounded-[20px] border-[1px] mt-4 shadow-lg ml-4">
+    <div className="w-[790px] h-[390px] rounded-[20px] border-[1px] mt-4 shadow-lg ml-4 relative left-2 mr-9">
       <div className="w-[249px] h-[42px] gap-[18]">
         {/* Tabs */}
         <div className="flex space-x-6 border-gray-100 mb-8 p-[20px] whitespace-nowrap">

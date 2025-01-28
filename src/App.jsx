@@ -9,6 +9,8 @@ import SearchOne from "./search/SearchOne";
 import SearchTwo from "./search/SearchTwo";
 import SearchThree from "./search/SearchThree";
 import ContactsOne from "./contacts/ContactsOne";
+import ContactTwo from "./contacts/ContactsTwo";
+import ContactsThree from "./contacts/ContactsThree";
 
 function App() {
   return (
@@ -51,9 +53,22 @@ function App() {
             </div>
           }
         />
-        <Route path="/contacts" element={<div>
-          <ContactsOne />
-        </div>} />
+        <Route
+          path="/contacts"
+          element={
+            <div>
+              <div>
+                <ContactsOne />
+              </div>
+              <div>
+                <ContactTwo />
+              </div>
+              <div className="flex absolute top-20 right-32 mt-779">
+                <ContactsThree />
+              </div>
+            </div>
+          }
+        />
         <Route path="/lists" element={<div>Lists</div>} />
         <Route path="/companies" element={<div>Companies</div>} />
         <Route path="/enrich" element={<div>Enrich</div>} />

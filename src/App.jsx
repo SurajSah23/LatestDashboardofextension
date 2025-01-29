@@ -14,6 +14,7 @@ import ContactsThree from "./contacts/ContactsThree";
 import ListsOne from "./lists/ListsOne";
 import ListsTwo from "./lists/ListsTwo";
 import ListsThree from "./dashboard/ListsThree";
+import CompaniesOne from "./companies/CompaniesOne";
 
 function App() {
   return (
@@ -79,7 +80,9 @@ function App() {
             <ListsThree />
           </div>
         </div>} />
-        <Route path="/companies" element={<div>Companies</div>} />
+        <Route path="/companies" element={<div>
+          <CompaniesOne />
+        </div>} />
         <Route path="/enrich" element={<div>Enrich</div>} />
         <Route path="/verify" element={<div>Verify</div>} />
       </Routes>

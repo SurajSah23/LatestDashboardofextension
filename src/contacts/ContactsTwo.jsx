@@ -106,7 +106,7 @@ function ContactsTwo() {
                     <td className="whitespace-nowrap px-4 py-3 border-r border-gray-300">
                       <span className="text-sm text-gray-900">{user.jobTitle}</span>
                     </td>
-                    <td className="whitespace-nowrap px-4 py-3 border-r border-gray-300 flex items-center gap-2">
+                    <td className="whitespace-nowrap px-4 py-3 border-r border-gray-300  items-center gap-2">
                       {companyLogos[user.company] && (
                         <img src={companyLogos[user.company]} alt={user.company} className="h-4 w-4" />
                       )}

@@ -2,8 +2,8 @@ import { Link } from "react-router-dom";
 
 function ContactsThree() {
   return (
-    <div className="h-[700px] border rounded-xl relative top-24 mt-12 mb-39">
-      <div className="mt-500 relative top-2 mt-17">
+    <div className="h-[650px] border border-gray-200 rounded-xl bg-white shadow-lg ">
+      <div className="">
         <div className="w-64 border-r border-gray-200 px-4 py-6 mt-30 ">
           <nav className="space-y-1">
             <Link to="/" className="block py-2 text-blue-500 font-medium">

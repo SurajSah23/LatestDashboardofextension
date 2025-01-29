@@ -50,10 +50,10 @@ function ContactsTwo() {
   };
 
   return (
-      <div className="p-4 w-[810px] absolute top-16 mt-40 ml-9 overflow-x-auto">
+      <div className=" w-[970px] h-[650px] ml-10 border rounded-xl border-gray-200 shadow-lg">
         <div className="rounded-lg border border-gray-200 bg-white">
           <div className="overflow-y-auto max-w-full">
-            <table className="w-full divide-y divide-gray-200 border-collapse">
+            <table className="w-full  border-collapse">
               <thead className="bg-gray-50">
                 <tr>
                   <th scope="col" className="w-12 px-4 py-3 border-r border-gray-300">

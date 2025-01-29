@@ -13,7 +13,7 @@ import ContactTwo from "./contacts/ContactsTwo";
 import ContactsThree from "./contacts/ContactsThree";
 import ListsOne from "./lists/ListsOne";
 import ListsTwo from "./lists/ListsTwo";
-import ListsThree from "./lists/ListsThree";
+import ListsThree from "./dashboard/ListsThree";
 
 function App() {
   return (
@@ -63,10 +63,8 @@ function App() {
               <div>
                 <ContactsOne />
               </div>
-              <div>
+              <div className="flex flex-row gap-5 mb-4">
                 <ContactTwo />
-              </div>
-              <div className="flex absolute top-20 right-32 mt-779">
                 <ContactsThree />
               </div>
             </div>

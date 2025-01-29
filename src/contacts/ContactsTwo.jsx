@@ -50,8 +50,7 @@ function ContactsTwo() {
   };
 
   return (
-    <div className="p-4 w-[810px] absolute top-16 mt-16 ml-5 bottom-4/4">
-      <div className="w-full overflow-x-auto">
+      <div className="p-4 w-[810px] absolute top-16 mt-40 ml-9 overflow-x-auto">
         <div className="rounded-lg border border-gray-200 bg-white">
           <div className="overflow-y-auto max-w-full">
             <table className="w-full divide-y divide-gray-200 border-collapse">
@@ -126,7 +125,6 @@ function ContactsTwo() {
           </div>
         </div>
       </div>
-    </div>
   );
 }
 

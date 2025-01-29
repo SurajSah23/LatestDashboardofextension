@@ -125,7 +125,7 @@ function ContactsTwo() {
                     </div>
                   </td>
                   <td className="whitespace-nowrap px-4 py-3 border-r border-gray-300">
-                    <div className="flex items-center gap-2">
+                    <div className="flex items-center gap-2 mr-3">
                       {user.email === "Not found" ? (
                         <img
                           src="https://i.ibb.co/d40jVr0/Ellipse-47-1.png"
@@ -164,7 +164,7 @@ function ContactsTwo() {
                           className="h-4 w-4"
                         />
                       )}
-                      <span className="text-sm text-gray-900">
+                      <span className="text-sm text-gray-900 mr-3">
                         {user.company}
                       </span>
                     </div>

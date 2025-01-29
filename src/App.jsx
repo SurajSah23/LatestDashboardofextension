@@ -13,8 +13,9 @@ import ContactTwo from "./contacts/ContactsTwo";
 import ContactsThree from "./contacts/ContactsThree";
 import ListsOne from "./lists/ListsOne";
 import ListsTwo from "./lists/ListsTwo";
-import ListsThree from "./dashboard/ListsThree";
+import ListsThree from "./lists/ListsThree";
 import CompaniesOne from "./companies/CompaniesOne";
+import CompaniesTwo from "./companies/CompaniesTwo";
 
 function App() {
   return (
@@ -71,18 +72,29 @@ function App() {
             </div>
           }
         />
-        <Route path="/lists" element={<div>
-          <div>
-            <ListsOne />
-          </div>
-          <div className="flex flex-row gap-4 ml-12">
-            <ListsTwo />
-            <ListsThree />
-          </div>
-        </div>} />
-        <Route path="/companies" element={<div>
-          <CompaniesOne />
-        </div>} />
+        <Route
+          path="/lists"
+          element={
+            <div>
+              <div>
+                <ListsOne />
+              </div>
+              <div className="flex flex-row gap-4 ml-12">
+                <ListsTwo />
+                <ListsThree />
+              </div>
+            </div>
+          }
+        />
+        <Route
+          path="/companies"
+          element={
+            <div>
+              <CompaniesOne />
+              <CompaniesTwo />
+            </div>
+          }
+        />
         <Route path="/enrich" element={<div>Enrich</div>} />
         <Route path="/verify" element={<div>Verify</div>} />
       </Routes>

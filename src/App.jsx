@@ -76,10 +76,8 @@ function App() {
           <div>
             <ListsOne />
           </div>
-          <div>
+          <div className="flex flex-row gap-4 ml-12">
             <ListsTwo />
-          </div>
-          <div>
             <ListsThree />
           </div>
         </div>} />

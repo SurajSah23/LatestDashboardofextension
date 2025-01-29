@@ -1,6 +1,6 @@
 function ListsTwo() {
   return (
-    <div className="flex flex-col items-center pt-20 w-[1025px] p-20">
+    <div className="flex flex-col h-[500px] items-center pt-12 mt-4 w-[1000px] bg-white shadow-lg border rounded-lg ">
       {/* Header */}
       <div>
         <h1 className="text-2xl font-semibold text-gray-800 mb-2">

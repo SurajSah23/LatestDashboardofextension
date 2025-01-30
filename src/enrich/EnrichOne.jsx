@@ -21,7 +21,7 @@ function EnrichOne() {
                 <input
                   type="text"
                   placeholder="Enter Lead Name"
-                  className="w-[600px] p-3 border border-gray-200 rounded-lg focus:outline-none focus:border-blue-400"
+                  className="w-full p-3 border border-gray-200 rounded-lg focus:outline-none focus:border-blue-400"
                 />
               </div>
               <div className="mb-6">
@@ -74,7 +74,7 @@ function EnrichOne() {
   };
 
   return (
-    <div className="min-h-screen bg-gray-50 flex items-center justify-center p-4">
+    <div className="flex items-center justify-center p-4">
       <div className="w-full max-w-3xl bg-white rounded-lg border border-gray-200 p-6">
         <div className="flex space-x-6 border-b border-gray-200 mb-6">
           {tabs.map((tab) => (

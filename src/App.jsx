@@ -28,17 +28,18 @@ function App() {
           path="/dashboard"
           element={
             <div>
-              <div className="flex flex-row gap-2 border-red-800 border-3">
+              {/* Dashboard section with responsiveness */}
+              <div className="flex flex-col sm:flex-row gap-2 border-red-800 border-3">
                 <DashboardOne />
                 <DashboardTwo />
                 <div>
                   <DashboardThree />
                 </div>
               </div>
-              <div className="">
+              <div className="mt-4 sm:mt-8">
                 <DashboardFive />
               </div>
-              <div>
+              <div className="mt-4 sm:mt-8">
                 <DashboardFour />
               </div>
             </div>
@@ -48,13 +49,14 @@ function App() {
           path="/search"
           element={
             <div>
-              <div>
+              {/* Search section with responsiveness */}
+              <div className="mt-4 sm:mt-8">
                 <SearchOne />
               </div>
-              <div>
+              <div className="mt-4 sm:mt-8">
                 <SearchTwo />
               </div>
-              <div>
+              <div className="mt-4 sm:mt-8">
                 <SearchThree />
               </div>
             </div>
@@ -64,10 +66,11 @@ function App() {
           path="/contacts"
           element={
             <div>
-              <div>
+              {/* Contacts section with responsiveness */}
+              <div className="mt-4 sm:mt-8">
                 <ContactsOne />
               </div>
-              <div className="flex gap-6">
+              <div className="flex flex-col sm:flex-row gap-6 mt-4">
                 <ContactTwo />
                 <ContactsThree />
               </div>
@@ -78,13 +81,14 @@ function App() {
           path="/lists"
           element={
             <div>
-              <div>
+              {/* Lists section with responsiveness */}
+              <div className="mt-4 sm:mt-8">
                 <ListsOne />
               </div>
-              <div className="flex flex-row gap-4 ml-12">
+              <div className="flex flex-col sm:flex-row gap-4 ml-12 mt-4">
                 <ListsTwo />
-                <div className="">
-                <ListsThree />
+                <div>
+                  <ListsThree />
                 </div>
               </div>
             </div>
@@ -94,19 +98,17 @@ function App() {
           path="/companies"
           element={
             <div>
+              {/* Companies section with responsiveness */}
               <CompaniesOne />
-              <div className="flex gap-2">
-              <CompaniesTwo />
-              <CompaniesThree />
-
+              <div className="flex flex-col sm:flex-row gap-2 mt-4">
+                <CompaniesTwo />
+                <CompaniesThree />
               </div>
             </div>
           }
         />
-        <Route path="/enrich" element={<div>
-          <EnrichOne />
-        </div>} />
-        <Route path="/verify" element={<div>Verify</div>} />
+        <Route path="/enrich" element={<div className="mt-4 sm:mt-8"><EnrichOne /></div>} />
+        <Route path="/verify" element={<div className="mt-4 sm:mt-8">Verify</div>} />
       </Routes>
     </Router>
   );

@@ -66,7 +66,7 @@ function App() {
               <div>
                 <ContactsOne />
               </div>
-              <div className="flex flex-row gap-5 mb-4">
+              <div className="flex gap-6">
                 <ContactTwo />
                 <ContactsThree />
               </div>
@@ -82,7 +82,9 @@ function App() {
               </div>
               <div className="flex flex-row gap-4 ml-12">
                 <ListsTwo />
+                <div className="">
                 <ListsThree />
+                </div>
               </div>
             </div>
           }
@@ -92,7 +94,7 @@ function App() {
           element={
             <div>
               <CompaniesOne />
-              <div className="flex gap-8 ">
+              <div className="flex gap-2">
               <CompaniesTwo />
               <CompaniesThree />
 

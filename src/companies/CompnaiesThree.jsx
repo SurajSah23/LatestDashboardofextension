@@ -1,12 +1,12 @@
 import { useState } from 'react';
 
-function App() {
+function CompaniesThree() {
   const [activeSection, setActiveSection] = useState('all-companies');
 
   return (
-    <div className="h-[30px] bg-red-500">
+    <div>
       {/* Sidebar */}
-      <div className="w-64 bg-white border-r border-gray-200 p-4">
+      <div className="w-64 p-4 h-[1072px]">
         <nav className="space-y-2">
           <div
             className={`block text-sm ${
@@ -43,4 +43,4 @@ function App() {
   );
 }
 
-export default App;
+export default CompaniesThree;

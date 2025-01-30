@@ -43,7 +43,7 @@ const companies = [
   
   function CompaniesTwo() {
     return (
-      <div className="rounded-xl shadow-sm overflow-x-auto w-[1047px] ml-3 mb-3">
+      <div className="rounded-xl shadow-sm overflow-x-auto w-[1047px] ml-3 mb-3 h-[348px]">
         <table className="w-full border-collapse border border-gray-300">
           <thead>
             <tr className="text-left border-b border-gray-300 bg-gray-100">

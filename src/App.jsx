@@ -16,6 +16,7 @@ import ListsTwo from "./lists/ListsTwo";
 import ListsThree from "./lists/ListsThree";
 import CompaniesOne from "./companies/CompaniesOne";
 import CompaniesTwo from "./companies/CompaniesTwo";
+import CompaniesThree from "./companies/CompnaiesThree";
 
 function App() {
   return (
@@ -91,7 +92,11 @@ function App() {
           element={
             <div>
               <CompaniesOne />
+              <div className="flex">
               <CompaniesTwo />
+              <CompaniesThree />
+
+              </div>
             </div>
           }
         />

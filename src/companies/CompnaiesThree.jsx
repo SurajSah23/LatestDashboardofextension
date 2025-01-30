@@ -4,9 +4,9 @@ function App() {
   const [activeSection, setActiveSection] = useState('all-companies');
 
   return (
-    <div className="bg-gray-100 flex">
+    <div className="h-[30px] bg-red-500">
       {/* Sidebar */}
-      <div className="w-64 min-h-screen bg-white border-r border-gray-200 p-4">
+      <div className="w-64 bg-white border-r border-gray-200 p-4">
         <nav className="space-y-2">
           <div
             className={`block text-sm ${

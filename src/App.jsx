@@ -92,7 +92,7 @@ function App() {
           element={
             <div>
               <CompaniesOne />
-              <div className="flex">
+              <div className="flex gap-8 ">
               <CompaniesTwo />
               <CompaniesThree />
 

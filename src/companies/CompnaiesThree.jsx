@@ -6,7 +6,7 @@ function CompaniesThree() {
   return (
     <div>
       {/* Sidebar */}
-      <div className="w-64 p-4 h-[1072px]">
+      <div className="w-64 p-4 h-[1072px] border border-gray-200 rounded-xl">
         <nav className="space-y-2">
           <div
             className={`block text-sm ${

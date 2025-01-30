@@ -43,10 +43,10 @@ const companies = [
   
   function CompaniesTwo() {
     return (
-      <div className="rounded-xl shadow-sm overflow-x-auto w-[1047px] ml-3 mb-3 h-[348px]">
+      <div className="shadow-sm overflow-x-auto w-[1047px] ml-3 mb-3 h-[348px] border border-gray-200 rounded-xl">
         <table className="w-full border-collapse border border-gray-300">
           <thead>
-            <tr className="text-left border-b border-gray-300 bg-gray-100">
+            <tr className="text-left border-b border-gray-300 bg-white-500">
               <th className="px-6 py-4 text-sm font-medium text-gray-600 border-r border-gray-300">Name</th>
               <th className="px-6 py-4 text-sm font-medium text-gray-600 border-r border-gray-300">Domain</th>
               <th className="px-6 py-4 text-sm font-medium text-gray-600 border-r border-gray-300">Industry</th>

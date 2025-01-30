@@ -17,6 +17,7 @@ import ListsThree from "./lists/ListsThree";
 import CompaniesOne from "./companies/CompaniesOne";
 import CompaniesTwo from "./companies/CompaniesTwo";
 import CompaniesThree from "./companies/CompnaiesThree";
+import EnrichOne from "./enrich/EnrichOne";
 
 function App() {
   return (
@@ -102,7 +103,9 @@ function App() {
             </div>
           }
         />
-        <Route path="/enrich" element={<div>Enrich</div>} />
+        <Route path="/enrich" element={<div>
+          <EnrichOne />
+        </div>} />
         <Route path="/verify" element={<div>Verify</div>} />
       </Routes>
     </Router>

@@ -6,7 +6,7 @@ function CompaniesThree() {
   return (
     <div>
       {/* Sidebar */}
-      <div className="w-64 p-4 h-[1072px] border border-gray-200 rounded-xl">
+      <div className="w-[276px] p-4 h-[1072px] border border-gray-200 rounded-xl">
         <nav className="space-y-2">
           <div
             className={`block text-sm ${
@@ -29,6 +29,7 @@ function CompaniesThree() {
             onClick={() => setActiveSection('saved-views')}
           >
             <span>All Saved Views</span>
+            <img src="https://i.ibb.co/MxLS7qQv/ooui-next-ltr-1.png" className="w-3 h-3 mr-10"/>
           </div>
         </nav>
       </div>

@@ -17,7 +17,7 @@ function EnrichOne() {
           <>
             <div className="flex justify-between">
               <div className="mb-4">
-                <label className="block text-gray-600 mb-2">Lead Name</label>
+                <label className="block text-gray-600 mb-2 w-[350px]">Lead Name</label>
                 <input
                   type="text"
                   placeholder="Enter Lead Name"
@@ -25,7 +25,7 @@ function EnrichOne() {
                 />
               </div>
               <div className="mb-6">
-                <label className="block text-gray-600 mb-2">Enter Domain</label>
+                <label className="block text-gray-600 mb-2 w-[350px]">Enter Domain</label>
                 <input
                   type="text"
                   placeholder="Enter Domain"

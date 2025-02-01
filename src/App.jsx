@@ -4,7 +4,6 @@ import DashboardOne from "./dashboard/DashboardOne";
 import DashboardTwo from "./dashboard/DashboardTwo";
 import DashboardThree from "./dashboard/DashboardThree";
 import DashboardFour from "./dashboard/DashboardFour";
-import DashboardFive from "./dashboard/DashboardFive";
 import SearchOne from "./search/SearchOne";
 import SearchTwo from "./search/SearchTwo";
 import SearchThree from "./search/SearchThree";
@@ -29,18 +28,13 @@ function App() {
           element={
             <div>
               {/* Dashboard section with responsiveness */}
-              <div className="flex flex-col sm:flex-row gap-2 border-red-800 border-3">
+              <div className="flex">
                 <DashboardOne />
                 <DashboardTwo />
-                <div>
-                  <DashboardThree />
-                </div>
+                <DashboardThree />
               </div>
-              <div className="mt-4 sm:mt-8">
-                <DashboardFive />
-              </div>
-              <div className="mt-4 sm:mt-8">
-                <DashboardFour />
+              <div>
+                <DashboardFour/>
               </div>
             </div>
           }
@@ -107,8 +101,18 @@ function App() {
             </div>
           }
         />
-        <Route path="/enrich" element={<div className="mt-4 sm:mt-8"><EnrichOne /></div>} />
-        <Route path="/verify" element={<div className="mt-4 sm:mt-8">Verify</div>} />
+        <Route
+          path="/enrich"
+          element={
+            <div className="mt-4 sm:mt-8">
+              <EnrichOne />
+            </div>
+          }
+        />
+        <Route
+          path="/verify"
+          element={<div className="mt-4 sm:mt-8">Verify</div>}
+        />
       </Routes>
     </Router>
   );

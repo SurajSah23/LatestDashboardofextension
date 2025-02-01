@@ -1,97 +1,91 @@
+import DashboardFive from "./DashboardFive";
 
 function DashboardThree() {
   return (
-      <div className="bg-white h-[586px] rounded-2xl shadow-lg w-full max-w-[500px] p-6 border border-gray-200 mt-4 mr-10 relative right-4">
-        {/* Profile Section */}
-        <div className="flex flex-col items-center mb-6 border-b-2">
-          <div className="w-20 h-20 mb-3 rounded-full bg-blue-50">
-            <img
-              src="https://i.ibb.co/X80DpC0/Avatar-8.png"
-              alt="Profile"
-              className="object-cover w-full h-full rounded-full"
+    <div className="w-[326px] h-[586px] mt-4 mr-2 rounded-[20px] border border-gray-300 space-y-6">
+      {/* Profile Section */}
+      <div className="text-center mt-4">
+        <img
+          src="https://i.ibb.co/X80DpC0/Avatar-8.png"
+          alt="Profile"
+          className="mx-auto"
+        />
+        <h2 className="mt-2 text-2xl font-semibold">Charles Robbie</h2>
+        <p className="text-sm text-gray-400">User@gmail.com</p>
+      </div>
+      <hr className="my-3" />
+
+      {/* Stats List */}
+      <div className="space-y-2 px-4">
+        {/* Current Plan */}
+        <div className="flex items-center bg-blue-50 p-3 rounded-xl">
+          <img
+            src="https://i.ibb.co/55DYS9Q/Featured-icon-1.png"
+            alt="Monitor"
+            className="h-10"
             />
-          </div>
-          <h2 className="text-xl font-semibold text-gray-800">Charles Robbie</h2>
-          <p className="text-sm text-gray-400">User @gmail.com</p>
+          <span className="ml-3 text-blue-500 flex-1">Current Plan</span>
+          <span className="text-blue-500">Free Plan</span>
         </div>
 
-        {/* Stats List */}
-        <div className="space-y-12">
-          {/* Current Plan */}
-          <div className="flex items-center rounded-lg border bg-blue-100 h-[50px] ">
-            <div className="flex items-center justify-center w-10 h-10 mr-3 rounded-xl bg-blue-50 relative left-2">
-              <img
-                src="https://i.ibb.co/55DYS9Q/Featured-icon-1.png"
-                alt="Monitor"
-                className="w-5 h-5 text-blue-600"
-              />
+        {/* Credit */}
+        <div className="flex items-center bg-blue-50 p-3 rounded-xl">
+          <img
+            src="https://i.ibb.co/QbD7jVY/Featured-icon-2.png"
+            alt="Credit Card"
+            className="h-15 ml-2 p-2"
+          />
+          <div className="flex-1">
+            <div className="flex items-center justify-between mb-2 relative bottom-2">
+              <span className="p-4 -ml-2 text-blue-500">Verification</span>
+              <span className="text-sm text-blue-500 relative right-10 -mr-5">
+                2/100
+              </span>
             </div>
-            <div className="flex-1">
-              <div className="flex items-center rounded-lg border bg-blue-100 h-[50px]">
-                <span className="text-gray-700 whitespace-nowrap mr-5">Current Plan</span>
-                <span className="text-sm text-blue-500 mr-3 ml-23">Free Plan</span>
-              </div>
+            <div className="w-[213px] bg-gray-100 rounded-full h-1.5 relative right-3 bottom-6 ml-2">
+              <div className="bg-blue-500 h-1.5 rounded-full w-[75%]"></div>
             </div>
           </div>
+        </div>
 
-          {/* Credit */}
-          <div className="flex items-center bg-pink-100 rounded-xl h-[50px]">
-            <div className="flex items-center justify-center w-10 h-10 mr-3 rounded-xl bg-pink-50 relative left-2">
-              <img
-                src="https://i.ibb.co/QbD7jVY/Featured-icon-2.png"
-                alt="Credit Card"
-                className="w-5 h-5 text-pink-600"
-              />
+        {/* Verification */}
+        <div className="flex items-center bg-blue-50 p-3 rounded-xl">
+          <img
+            src="https://i.ibb.co/Cd0sg2b/Featured-icon-5.png"
+            alt="Credit Card"
+            className="h-15 ml-2 p-2"
+          />
+          <div className="flex-1">
+            <div className="flex items-center justify-between mb-2 relative bottom-2">
+              <span className="p-4 -ml-2 text-blue-500">Verification</span>
+              <span className="text-sm text-blue-500 relative right-10 -mr-5">
+                2/100
+              </span>
             </div>
-            <div className="flex-1">
-              <div className="flex items-center justify-between mb-1">
-                <span className="text-gray-700">Credit</span>
-                <span className="text-sm text-gray-600 relative right-10">3/50</span>
-              </div>
-              <div className="w-40 bg-gray-100 rounded-full h-1.5">
-                <div className="bg-pink-500 h-1.5 rounded-full w-[75%]"></div>
-              </div>
+            <div className="w-[213px] bg-gray-100 rounded-full h-1.5 relative right-3 bottom-6 ml-2">
+              <div className="bg-blue-500 h-1.5 rounded-full w-[75%]"></div>
             </div>
           </div>
+        </div>
 
-          {/* Verification */}
-          <div className="flex items-center h-[50px] bg-[#F5F8FF] rounded-xl">
-            <div className="flex items-center justify-center w-10 h-10 mr-3 rounded-xl bg-blue-100 relative left-2">
-              <img
-                src="https://i.ibb.co/55DYS9Q/Featured-icon-1.png"
-                alt="Shopping Cart"
-                className="w-5 h-5 text-indigo-600"
-              />
-            </div>
-            <div className="flex-1">
-              <div className="flex items-center justify-between mb-1">
-                <span className="text-gray-700">Verification</span>
-                <span className="text-sm text-gray-600 relative right-10">2/100</span>
-              </div>
-              <div className="w-40 bg-gray-100 rounded-full h-1.5">
-                <div className="bg-indigo-500 h-1.5 rounded-full w-[70%]"></div>
-              </div>
-            </div>
-          </div>
-
-          {/* Next Renewal */}
-          <div className="flex items-center bg-blue-100 rounded-xl h-[50px]">
-            <div className="flex items-center justify-center w-10 h-10 mr-3 rounded-xl bg-green-50 relative left-2">
-              <img
-                src="https://i.ibb.co/SPqCs7x/Featured-icon-4.png" 
-                alt="Calendar Clock"
-                className="w-7 h-7 text-green-600"
-              />
-            </div>
-            <div className="flex-1">
-              <div className="flex items-center justify-between">
-                <span className="text-gray-700">Next Renewal</span>
-                <span className="text-sm text-gray-600 relative right-2">Jan 21, 2025</span>
-              </div>
-            </div>
-          </div>
+        {/* Next Renewal */}
+        <div className="flex items-center bg-green-50 p-3 rounded-xl">
+          <img
+            src="https://i.ibb.co/SPqCs7x/Featured-icon-4.png"
+            alt="Renewal"
+            className="h-10"
+          />
+          <span className="ml-3 text-green-500 flex-1">Next Renewal</span>
+          <span className="text-green-500">Jan 21, 2025</span>
         </div>
       </div>
+      <br />
+
+      {/* DashboardFive Component */}
+      <div className="">
+        <DashboardFive />
+      </div>
+    </div>
   );
 }
 

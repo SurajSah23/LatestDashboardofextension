@@ -1,7 +1,7 @@
 
 function ContactsOne() {
   return (
-    <div className="h-[150px] bg-white border border-gray-300 shadow-lg mb-4">
+    <div className="h-[150px] bg-white shadow-lg mb-4">
       {/* Navigation */}
       <nav className="border-b border-gray-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

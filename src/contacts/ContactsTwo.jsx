@@ -50,133 +50,56 @@ function ContactsTwo() {
   };
 
   return (
-    <div className=" w-[970px] h-[650px] ml-10 border rounded-xl border-gray-200 shadow-lg">
-      <div className="rounded-lg border border-gray-200 bg-white">
+    <div className="w-full sm:w-[640px] md:w-[768px] lg:w-[970px] mx-auto border rounded-xl border-gray-200 shadow-lg overflow-x-auto">
+      <div className="rounded-lg border border-gray-200 bg-white overflow-x-auto">
         <div className="overflow-y-auto max-w-full">
-          <table className="w-full  border-collapse">
+          <table className="w-full border-collapse">
             <thead className="bg-gray-50">
               <tr>
-                <th
-                  scope="col"
-                  className="w-12 px-4 py-3 border-r border-gray-300"
-                >
-                  <input
-                    type="checkbox"
-                    className="h-4 w-4 rounded border-gray-300"
-                  />
+                <th className="px-2 py-2 sm:px-4 sm:py-3 border-r border-gray-300">
+                  <input type="checkbox" className="h-4 w-4 rounded border-gray-300" />
                 </th>
-                <th
-                  scope="col"
-                  className="w-[200px] px-4 py-3 text-left text-sm font-semibold text-gray-900 border-r border-gray-300"
-                >
-                  Name
-                </th>
-                <th
-                  scope="col"
-                  className="w-[250px] px-4 py-3 text-left text-sm font-semibold text-gray-900 border-r border-gray-300"
-                >
-                  Email
-                </th>
-                <th
-                  scope="col"
-                  className="w-[200px] px-4 py-3 text-left text-sm font-semibold text-gray-900 border-r border-gray-300"
-                >
-                  Job Title
-                </th>
-                <th
-                  scope="col"
-                  className="w-[200px] px-4 py-3 text-left text-sm font-semibold text-gray-900 border-r border-gray-300"
-                >
-                  Company
-                </th>
-                <th
-                  scope="col"
-                  className="w-[200px] px-4 py-3 text-left text-sm font-semibold text-gray-900 border-r border-gray-300"
-                >
-                  Created at
-                </th>
-                <th
-                  scope="col"
-                  className="w-[150px] px-4 py-3 text-left text-sm font-semibold text-gray-900"
-                >
-                  Source
-                </th>
+                <th className="px-2 py-2 sm:px-4 sm:py-3 text-left text-xs sm:text-sm font-semibold text-gray-900 border-r border-gray-300">Name</th>
+                <th className="px-2 py-2 sm:px-4 sm:py-3 text-left text-xs sm:text-sm font-semibold text-gray-900 border-r border-gray-300">Email</th>
+                <th className="px-2 py-2 sm:px-4 sm:py-3 text-left text-xs sm:text-sm font-semibold text-gray-900 border-r border-gray-300">Job Title</th>
+                <th className="px-2 py-2 sm:px-4 sm:py-3 text-left text-xs sm:text-sm font-semibold text-gray-900 border-r border-gray-300">Company</th>
+                <th className="px-2 py-2 sm:px-4 sm:py-3 text-left text-xs sm:text-sm font-semibold text-gray-900 border-r border-gray-300">Created at</th>
+                <th className="px-2 py-2 sm:px-4 sm:py-3 text-left text-xs sm:text-sm font-semibold text-gray-900">Source</th>
               </tr>
             </thead>
             <tbody className="divide-y divide-gray-200">
               {users.map((user) => (
-                <tr key={user.id}>
-                  <td className="px-4 py-3 border-r border-gray-300">
-                    <input
-                      type="checkbox"
-                      className="h-4 w-4 rounded border-gray-300"
-                    />
+                <tr key={user.id} className="text-xs sm:text-sm">
+                  <td className="px-2 py-2 sm:px-4 sm:py-3 border-r border-gray-300">
+                    <input type="checkbox" className="h-4 w-4 rounded border-gray-300" />
                   </td>
-                  <td className="whitespace-nowrap px-4 py-3 border-r border-gray-300">
-                    <div className="flex items-center gap-3">
-                      <img
-                        src={user.avatar}
-                        alt="Avatar"
-                        className="h-8 w-8 rounded-full object-cover"
-                      />
-                      <span className="text-sm font-medium text-gray-900 mr-6">
-                        {user.name}
-                      </span>
+                  <td className="px-2 py-2 sm:px-4 sm:py-3 border-r border-gray-300">
+                    <div className="flex items-center gap-2 sm:gap-3">
+                      <img src={user.avatar} alt="Avatar" className="h-6 w-6 sm:h-8 sm:w-8 rounded-full object-cover" />
+                      <span className="text-gray-900 font-medium">{user.name}</span>
                     </div>
                   </td>
-                  <td className="whitespace-nowrap px-4 py-3 border-r border-gray-300">
-                    <div className="flex items-center gap-2 mr-3">
+                  <td className="px-2 py-2 sm:px-4 sm:py-3 border-r border-gray-300">
+                    <div className="flex items-center gap-1 sm:gap-2">
                       {user.email === "Not found" ? (
-                        <img
-                          src="https://i.ibb.co/d40jVr0/Ellipse-47-1.png"
-                          alt="Warning"
-                          className="h-4 w-4"
-                        />
+                        <img src="https://i.ibb.co/d40jVr0/Ellipse-47-1.png" alt="Warning" className="h-3 w-3 sm:h-4 sm:w-4" />
                       ) : (
-                        <img
-                          src="https://i.ibb.co/yRtwCB0/Ellipse-47.png"
-                          alt="Checkmark"
-                          className="h-4 w-4"
-                        />
+                        <img src="https://i.ibb.co/yRtwCB0/Ellipse-47.png" alt="Checkmark" className="h-3 w-3 sm:h-4 sm:w-4" />
                       )}
-                      <span
-                        className={`text-sm ${
-                          user.email === "Not found"
-                            ? "text-gray-500"
-                            : "text-gray-900"
-                        }`}
-                      >
-                        {user.email}
-                      </span>
+                      <span className={`${user.email === "Not found" ? "text-gray-500" : "text-gray-900"}`}>{user.email}</span>
                     </div>
                   </td>
-                  <td className="whitespace-nowrap px-4 py-3 border-r border-gray-300">
-                    <span className="text-sm text-gray-900">
-                      {user.jobTitle}
-                    </span>
-                  </td>
-                  <td className="whitespace-nowrap px-4 py-3 border-r border-gray-300 items-center gap-2">
-                    <div className="flex gap-3">
+                  <td className="px-2 py-2 sm:px-4 sm:py-3 border-r border-gray-300">{user.jobTitle}</td>
+                  <td className="px-2 py-2 sm:px-4 sm:py-3 border-r border-gray-300">
+                    <div className="flex items-center gap-2">
                       {companyLogos[user.company] && (
-                        <img
-                          src={companyLogos[user.company]}
-                          alt={user.company}
-                          className="h-4 w-4"
-                        />
+                        <img src={companyLogos[user.company]} alt={user.company} className="h-3 w-3 sm:h-4 sm:w-4" />
                       )}
-                      <span className="text-sm text-gray-900 mr-3">
-                        {user.company}
-                      </span>
+                      <span>{user.company}</span>
                     </div>
                   </td>
-                  <td className="whitespace-nowrap px-4 py-3 border-r border-gray-300">
-                    <span className="text-sm text-gray-900">
-                      {user.createdAt}
-                    </span>
-                  </td>
-                  <td className="whitespace-nowrap px-4 py-3">
-                    <span className="text-sm text-gray-900">{user.source}</span>
-                  </td>
+                  <td className="px-2 py-2 sm:px-4 sm:py-3 border-r border-gray-300">{user.createdAt}</td>
+                  <td className="px-2 py-2 sm:px-4 sm:py-3">{user.source}</td>
                 </tr>
               ))}
             </tbody>

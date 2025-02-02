@@ -15,17 +15,17 @@ function EnrichOne() {
       case "lead":
         return (
           <>
-            <div className="flex justify-between">
-              <div className="mb-4">
-                <label className="block text-gray-600 mb-2 w-[350px]">Lead Name</label>
+            <div className="flex flex-col sm:flex-row justify-between gap-4">
+              <div className="mb-4 sm:w-[350px] w-full">
+                <label className="block text-gray-600 mb-2">Lead Name</label>
                 <input
                   type="text"
                   placeholder="Enter Lead Name"
                   className="w-full p-3 border border-gray-200 rounded-lg focus:outline-none focus:border-blue-400"
                 />
               </div>
-              <div className="mb-6">
-                <label className="block text-gray-600 mb-2 w-[350px]">Enter Domain</label>
+              <div className="mb-6 sm:w-[350px] w-full">
+                <label className="block text-gray-600 mb-2">Enter Domain</label>
                 <input
                   type="text"
                   placeholder="Enter Domain"
@@ -37,7 +37,7 @@ function EnrichOne() {
         );
       case "company":
         return (
-          <div className="mb-6">
+          <div className="mb-6 w-full sm:w-[350px]">
             <label className="block text-gray-600 mb-2">Enter Domain</label>
             <input
               type="text"
@@ -48,7 +48,7 @@ function EnrichOne() {
         );
       case "linkedin":
         return (
-          <div className="mb-6">
+          <div className="mb-6 w-full sm:w-[350px]">
             <label className="block text-gray-600 mb-2">LinkedIn url</label>
             <input
               type="text"
@@ -59,7 +59,7 @@ function EnrichOne() {
         );
       case "email":
         return (
-          <div className="mb-6">
+          <div className="mb-6 w-full sm:w-[350px]">
             <label className="block text-gray-600 mb-2">Enter Email</label>
             <input
               type="email"
@@ -76,12 +76,12 @@ function EnrichOne() {
   return (
     <div className="flex items-center justify-center p-4">
       <div className="w-full max-w-3xl bg-white rounded-lg border border-gray-200 p-6">
-        <div className="flex space-x-6 border-b border-gray-200 mb-6">
+        <div className="flex flex-wrap justify-start sm:justify-center space-x-0 sm:space-x-6 border-b border-gray-200 mb-6">
           {tabs.map((tab) => (
             <button
               key={tab.id}
               onClick={() => setActiveTab(tab.id)}
-              className={`pb-4 px-2 ${
+              className={`pb-4 px-2 text-sm sm:text-base ${
                 activeTab === tab.id
                   ? "text-blue-500 border-b-2 border-blue-500 -mb-[1px]"
                   : "text-gray-500 hover:text-gray-700"

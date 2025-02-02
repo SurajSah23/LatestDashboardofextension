@@ -13,7 +13,7 @@ const Navbar = () => {
         <span className="font-bold mr-4">LOGO</span>
 
         {/* Navigation Links */}
-        <div className="flex flex-wrap w-full md:w-auto justify-center md:justify-start">
+        <div className="flex flex-wrap w-full sm:w-auto justify-center sm:justify-start">
           <NavLink to="/dashboard" className={getNavLinkClass}>
             Dashboard
           </NavLink>
@@ -39,9 +39,9 @@ const Navbar = () => {
       </div>
 
       {/* Right-Side Elements */}
-      <div className="flex items-center w-full md:w-auto justify-between md:justify-start mt-4 md:mt-0">
+      <div className="flex items-center w-full sm:w-auto justify-between sm:justify-start mt-4 sm:mt-0">
         {/* Search Bar */}
-        <div className="relative mr-4 w-full md:w-auto">
+        <div className="relative mr-4 w-full sm:w-auto">
           <input
             type="text"
             placeholder="Search"

@@ -15,7 +15,7 @@ import ListsTwo from "./lists/ListsTwo";
 import ListsThree from "./lists/ListsThree";
 import CompaniesOne from "./companies/CompaniesOne";
 import CompaniesTwo from "./companies/CompaniesTwo";
-import CompaniesThree from "./companies/CompnaiesThree";
+import CompaniesThree from "./companies/CompaniesThree";
 import EnrichOne from "./enrich/EnrichOne";
 
 function App() {

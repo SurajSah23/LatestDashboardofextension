@@ -29,7 +29,7 @@ function DashboardThree() {
         </div>
 
         {/* Credit */}
-        <div className="flex items-center bg-blue-50 p-3 rounded-xl">
+        <div className="flex items-center bg-pink-50 p-3 rounded-xl">
           <img
             src="https://i.ibb.co/QbD7jVY/Featured-icon-2.png"
             alt="Credit Card"

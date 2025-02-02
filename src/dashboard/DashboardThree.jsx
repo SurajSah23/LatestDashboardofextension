@@ -2,7 +2,7 @@ import DashboardFive from "./DashboardFive";
 
 function DashboardThree() {
   return (
-    <div className="w-[326px] h-[586px] mt-4 mr-2 rounded-[20px] border border-gray-300 space-y-6">
+    <div className="w-[326px] h-[586px] mt-4 mr-2 rounded-[20px] border border-gray-200 space-y-6">
       {/* Profile Section */}
       <div className="text-center mt-4">
         <img
@@ -33,16 +33,16 @@ function DashboardThree() {
           <img
             src="https://i.ibb.co/QbD7jVY/Featured-icon-2.png"
             alt="Credit Card"
-            className="h-15 ml-2 p-2"
+            className="h-10"
           />
           <div className="flex-1">
             <div className="flex items-center justify-between mb-2 relative bottom-2">
-              <span className="p-4 -ml-2 text-blue-500">Verification</span>
+              <span className="p-4 -ml-2 text-blue-500">Credit</span>
               <span className="text-sm text-blue-500 relative right-10 -mr-5">
                 2/100
               </span>
             </div>
-            <div className="w-[213px] bg-gray-100 rounded-full h-1.5 relative right-3 bottom-6 ml-2">
+            <div className="w-[213px] bg-gray-100 rounded-full h-1.5 relative right-3 bottom-6 ml-6">
               <div className="bg-blue-500 h-1.5 rounded-full w-[75%]"></div>
             </div>
           </div>
@@ -53,7 +53,7 @@ function DashboardThree() {
           <img
             src="https://i.ibb.co/Cd0sg2b/Featured-icon-5.png"
             alt="Credit Card"
-            className="h-15 ml-2 p-2"
+            className="h-10"
           />
           <div className="flex-1">
             <div className="flex items-center justify-between mb-2 relative bottom-2">
@@ -62,8 +62,8 @@ function DashboardThree() {
                 2/100
               </span>
             </div>
-            <div className="w-[213px] bg-gray-100 rounded-full h-1.5 relative right-3 bottom-6 ml-2">
-              <div className="bg-blue-500 h-1.5 rounded-full w-[75%]"></div>
+            <div className="w-[213px] bg-gray-100 rounded-full h-1.5 relative right-3 bottom-6 ml-6">
+              <div className="bg-pink-500 h-1.5 rounded-full w-[75%]"></div>
             </div>
           </div>
         </div>

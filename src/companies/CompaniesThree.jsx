@@ -4,9 +4,9 @@ function CompaniesThree() {
   const [activeSection, setActiveSection] = useState('all-companies');
 
   return (
-    <div>
+    <div className="flex flex-col sm:flex-row">
       {/* Sidebar */}
-      <div className="w-[276px] p-4 h-[1072px] border border-gray-200 rounded-xl">
+      <div className="w-full sm:w-[276px] p-4 h-auto sm:h-[1072px] border border-gray-200 rounded-xl">
         <nav className="space-y-2">
           <div
             className={`block text-sm ${
@@ -34,12 +34,12 @@ function CompaniesThree() {
         </nav>
       </div>
 
-      {/* Content Area */}
-      <div className="p-6">
-        {activeSection === 'all-companies' && <h1></h1>}
-        {activeSection === 'my-companies' && <h1></h1>}
-        {activeSection === 'saved-views' && <h1></h1>}
-      </div>
+      {/* Content Area
+      <div className="w-full sm:flex-1 p-6">
+        {activeSection === 'all-companies' && <h1>All Companies</h1>}
+        {activeSection === 'my-companies' && <h1>My Companies</h1>}
+        {activeSection === 'saved-views' && <h1>Saved Views</h1>}
+      </div> */}
     </div>
   );
 }

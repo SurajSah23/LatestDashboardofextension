@@ -1045,7 +1045,7 @@ const companiesData = [
 
 function SearchTwo() {
   const [currentPage, setCurrentPage] = useState(1);
-  const itemsPerPage = 8; // Reduced for demonstration
+  const itemsPerPage = 8;
   const totalPages = Math.ceil(companiesData.length / itemsPerPage);
 
   const startIndex = (currentPage - 1) * itemsPerPage;
@@ -1053,88 +1053,64 @@ function SearchTwo() {
   const currentCompanies = companiesData.slice(startIndex, endIndex);
 
   return (
-    <div className="w-[800px] h-[850px] absolute top-1/3 left-8 rounded-lg border">
+    <div className="w-full max-w-[997px] h-auto md:h-[856px] ml-4 sm:ml-8 md:ml-14 mt-5 border border-gray-200 rounded-lg pb-6 sm:pb-10 pt-2 pl-2 sm:pl-4">
       {/* Header Tabs */}
-      <div className="border-b border-gray-200">
-        <nav className="flex space-x-8">
-          <button className="border-b-2 border-blue-500 pb-4 px-1 text-sm font-medium text-blue-600">
+      <div className="border-b border-gray-200 overflow-x-auto">
+        <nav className="flex space-x-2 sm:space-x-6 md:space-x-8 overflow-x-auto whitespace-nowrap">
+          <button className="border-b-2 border-blue-500 pb-2 sm:pb-3 md:pb-4 px-1 sm:px-2 text-xs sm:text-sm font-medium text-blue-600">
             New(16.0M)
           </button>
-          <button className="text-gray-500 pb-4 px-1 text-sm font-medium hover:text-gray-700">
+          <button className="text-gray-500 pb-2 sm:pb-3 md:pb-4 px-1 sm:px-2 text-xs sm:text-sm font-medium hover:text-gray-700">
             Saved (0)
           </button>
-          <button className="text-gray-500 pb-4 px-1 text-sm font-medium hover:text-gray-700">
+          <button className="text-gray-500 pb-2 sm:pb-3 md:pb-4 px-1 sm:px-2 text-xs sm:text-sm font-medium hover:text-gray-700">
             Total(16.0M)
           </button>
         </nav>
       </div>
 
       {/* Table */}
-      <div className="mt-6">
-        <table className="min-w-full divide-y divide-gray-200">
+      <div className="mt-4 sm:mt-6 overflow-x-auto">
+        <table className="min-w-full divide-y divide-gray-200 text-xs sm:text-sm">
           <thead>
             <tr>
-              <th className="py-3 px-3 text-left">
-                <input 
-                  type="checkbox" 
-                  className="h-4 w-4 rounded border-gray-300 text-blue-600 focus:ring-blue-500"
-                />
+              <th className="py-2 sm:py-3 px-2 sm:px-3 text-left">
+                <input type="checkbox" className="h-4 w-4 rounded border-gray-300 text-blue-600 focus:ring-blue-500" />
               </th>
-              <th className="py-3 px-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                Company
-              </th>
-              <th className="py-3 px-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                Members
-              </th>
-              <th className="py-3 px-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                Contact
-              </th>
-              <th className="py-3 px-3"></th>
+              <th className="py-2 sm:py-3 px-2 sm:px-3 text-left font-medium text-gray-500 uppercase">Company</th>
+              <th className="py-2 sm:py-3 px-2 sm:px-3 text-left font-medium text-gray-500 uppercase">Members</th>
+              <th className="py-2 sm:py-3 px-2 sm:px-3 text-left font-medium text-gray-500 uppercase">Contact</th>
+              <th className="py-2 sm:py-3 px-2 sm:px-3"></th>
             </tr>
           </thead>
-          <tbody className="bg-white divide-y divide-gray-200">
+          <tbody className="divide-y divide-gray-200">
             {currentCompanies.map((company) => (
               <tr key={company.id} className="hover:bg-gray-50">
-                <td className="py-4 px-3">
-                  <input 
-                    type="checkbox" 
-                    className="h-4 w-4 rounded border-gray-300 text-blue-600 focus:ring-blue-500"
-                  />
+                <td className="py-3 px-2 sm:py-4 sm:px-3">
+                  <input type="checkbox" className="h-4 w-4 rounded border-gray-300 text-blue-600 focus:ring-blue-500" />
                 </td>
-                <td className="py-4 px-3">
+                <td className="py-3 px-2 sm:py-4 sm:px-3">
                   <div className="flex items-center">
-                    <img
-                      src={company.logo}
-                      alt={company.name}
-                      className="h-8 w-8 rounded-full"
-                    />
-                    <div className="ml-4">
-                      <div className="text-sm font-medium text-gray-900">{company.name}</div>
-                      <div className="text-sm text-gray-500">{company.website}</div>
+                    <img src={company.logo} alt={company.name} className="h-6 w-6 sm:h-8 sm:w-8 rounded-full" />
+                    <div className="ml-2 sm:ml-4">
+                      <div className="font-medium text-gray-900">{company.name}</div>
+                      <div className="text-gray-500">{company.website}</div>
                     </div>
                   </div>
                 </td>
-                <td className="py-4 px-3">
-                  <div className="text-sm text-gray-900">{company.members}</div>
-                </td>
-                <td className="py-4 px-3">
+                <td className="py-3 px-2 sm:py-4 sm:px-3 text-gray-900">{company.members}</td>
+                <td className="py-3 px-2 sm:py-4 sm:px-3">
                   <div className="flex items-center">
-                    <img
-                      src={company.contact.avatar}
-                      alt={company.contact.name}
-                      className="h-8 w-8 rounded-full"
-                    />
-                    <div className="ml-4">
-                      <div className="text-sm font-medium text-gray-900">
-                        {company.contact.name}
-                      </div>
-                      <div className="text-sm text-gray-500">{company.contact.role}</div>
-                      <div className="text-sm text-gray-500">{company.contact.location}</div>
+                    <img src={company.contact.avatar} alt={company.contact.name} className="h-6 w-6 sm:h-8 sm:w-8 rounded-full" />
+                    <div className="ml-2 sm:ml-4">
+                      <div className="font-medium text-gray-900">{company.contact.name}</div>
+                      <div className="text-gray-500">{company.contact.role}</div>
+                      <div className="text-gray-500">{company.contact.location}</div>
                     </div>
                   </div>
                 </td>
-                <td className="py-4 px-3 text-right">
-                  <button className="px-3 py-1 text-sm text-blue-600 font-medium hover:bg-blue-50 rounded">
+                <td className="py-3 px-2 sm:py-4 sm:px-3 text-right">
+                  <button className="px-2 sm:px-3 py-1 text-blue-600 font-medium hover:bg-blue-50 rounded">
                     Show Mail
                   </button>
                 </td>
@@ -1142,44 +1118,34 @@ function SearchTwo() {
             ))}
           </tbody>
         </table>
-
-        {/* Pagination */}
-        <div className="flex items-center justify-between px-3 py-3 border-t border-gray-200">
-          <button
-            onClick={() => setCurrentPage(prev => Math.max(prev - 1, 1))}
-            disabled={currentPage === 1}
-            className="flex items-center text-sm text-gray-700 font-medium disabled:opacity-50 hover:text-gray-900"
-          >
-            <img 
-              src="https://img.icons8.com/ios-filled/50/000000/chevron-left.png" 
-              alt="Previous" 
-              className="w-4 h-4 mr-1"
-            />
-            Previous
-          </button>
-          <span className="text-sm text-gray-700">
-            Page {currentPage} of {totalPages}
-          </span>
-          <button
-            onClick={() => setCurrentPage(prev => Math.min(prev + 1, totalPages))}
-            disabled={currentPage === totalPages}
-            className="flex items-center text-sm text-gray-700 font-medium disabled:opacity-50 hover:text-gray-900"
-          >
-            Next
-            <img 
-              src="https://img.icons8.com/ios-filled/50/000000/chevron-right.png" 
-              alt="Next" 
-              className="w-4 h-4 ml-1"
-            />
-          </button>
-        </div>
       </div>
-          <br />
-          <br />
-          <br />
-          <br />
+
+      {/* Pagination */}
+      <div className="flex flex-col sm:flex-row items-center justify-between py-6 sm:py-8 border-t">
+        <button
+          onClick={() => setCurrentPage((prev) => Math.max(prev - 1, 1))}
+          disabled={currentPage === 1}
+          className="flex items-center text-gray-700 font-medium disabled:opacity-50 hover:text-gray-900"
+        >
+          <img src="https://img.icons8.com/ios-filled/50/000000/chevron-left.png" alt="Previous" className="w-3 sm:w-4 h-3 sm:h-4 mr-1" />
+          Previous
+        </button>
+        <span className="text-gray-700">
+          Page {currentPage} of {totalPages}
+        </span>
+        <button
+          onClick={() => setCurrentPage((prev) => Math.min(prev + 1, totalPages))}
+          disabled={currentPage === totalPages}
+          className="flex items-center text-gray-700 font-medium disabled:opacity-50 hover:text-gray-900"
+        >
+          Next
+          <img src="https://img.icons8.com/ios-filled/50/000000/chevron-right.png" alt="Next" className="w-3 sm:w-4 h-3 sm:h-4 ml-1" />
+        </button>
+      </div>
     </div>
   );
 }
+
+
 
 export default SearchTwo;

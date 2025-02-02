@@ -1,7 +1,7 @@
 function DashboardFive() {
   return (
     <div>
-      <div className="space-y-3">
+      <div className="space-y-4 relative bottom-3">
         {/* Suggest For You Section */}
         <div className="h-[250px] w-[326px] border rounded-xl shadow-sm p-6 space-y-6">
           <h2 className="text-[#1d2b4e] text-lg font-semibold">

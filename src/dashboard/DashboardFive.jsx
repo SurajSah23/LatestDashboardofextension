@@ -1,12 +1,12 @@
 function DashboardFive() {
-    return (
+  return (
+    <div>
       <div className="h-auto max-w-[326px] w-full border rounded-xl shadow-sm p-6 space-y-6 mx-auto lg:relative lg:left-96 lg:translate-x-24 lg:mt-5">
         {/* Suggest For You Section */}
         <div className="space-y-3">
           <h2 className="text-[#1d2b4e] text-lg font-semibold">
             Suggest For You
           </h2>
-  
           {/* Chrome Extension Items */}
           <div className="space-y-2">
             <div className="flex items-center justify-between p-3 hover:bg-gray-50 rounded-lg cursor-pointer">
@@ -29,7 +29,7 @@ function DashboardFive() {
                 className="w-5 h-5 text-gray-400"
               />
             </div>
-  
+
             <div className="flex items-center justify-between p-3 hover:bg-gray-50 rounded-lg cursor-pointer">
               <div className="flex items-center gap-3">
                 <img
@@ -52,7 +52,9 @@ function DashboardFive() {
             </div>
           </div>
         </div>
-  
+      </div>
+
+      <div className="h-auto max-w-[326px] w-full border rounded-xl shadow-sm p-6 space-y-6 mx-auto lg:relative lg:left-96 lg:translate-x-24 lg:mt-5">
         {/* Team Section */}
         <div className="space-y-3">
           <div className="flex items-center justify-between">
@@ -62,11 +64,13 @@ function DashboardFive() {
             </button>
           </div>
         </div>
-  
+      </div>
+
+      <div className="h-auto max-w-[326px] w-full border rounded-xl shadow-sm p-6 space-y-6 mx-auto lg:relative lg:left-96 lg:translate-x-24 lg:mt-5">
         {/* Integrations Section */}
         <div className="space-y-3">
           <h2 className="text-[#1d2b4e] text-lg font-semibold">Integrations</h2>
-  
+
           {/* Google Sheets Items */}
           <div className="space-y-2">
             {[1, 2, 3].map((index) => (
@@ -95,7 +99,8 @@ function DashboardFive() {
           </div>
         </div>
       </div>
-    );
-  }
-  
-  export default DashboardFive;
+    </div>
+  );
+}
+
+export default DashboardFive;

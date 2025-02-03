@@ -37,12 +37,12 @@ function EnrichOne() {
         );
       case "company":
         return (
-          <div className="mb-6 w-full sm:w-[350px]">
+          <div className="mb-6 w-full sm:w-[350px] ml-2">
             <label className="block text-gray-600 mb-2">Enter Domain</label>
             <input
               type="text"
               placeholder="Enter Domain"
-              className="w-full p-3 border border-gray-200 rounded-lg focus:outline-none focus:border-blue-400"
+              className="w-[700px] p-3 border border-gray-200 rounded-lg focus:outline-none focus:border-blue-400"
             />
           </div>
         );

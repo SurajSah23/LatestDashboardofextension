@@ -49,22 +49,22 @@ function EnrichOne() {
       case "linkedin":
         return (
           <div className="mb-6 w-full sm:w-[350px]">
-            <label className="block text-gray-600 mb-2">LinkedIn url</label>
+            <label className="block text-gray-600 mb-2 ml-2">LinkedIn url</label>
             <input
               type="text"
               placeholder="Enter LinkedIn url"
-              className="w-full p-3 border border-gray-200 rounded-lg focus:outline-none focus:border-blue-400"
+              className="w-[700px] p-3 border border-gray-200 rounded-lg focus:outline-none focus:border-blue-400"
             />
           </div>
         );
       case "email":
         return (
           <div className="mb-6 w-full sm:w-[350px]">
-            <label className="block text-gray-600 mb-2">Enter Email</label>
+            <label className="block text-gray-600 mb-2 ml-2">Enter Email</label>
             <input
               type="email"
               placeholder="Enter Email"
-              className="w-full p-3 border border-gray-200 rounded-lg focus:outline-none focus:border-blue-400"
+              className="w-[700px] p-3 border border-gray-200 rounded-lg focus:outline-none focus:border-blue-400"
             />
           </div>
         );

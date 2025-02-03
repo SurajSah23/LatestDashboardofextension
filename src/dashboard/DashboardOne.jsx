@@ -4,10 +4,10 @@ function DashboardOne() {
   const [activeTab, setActiveTab] = useState("recent");
 
   return (
-    <div className="w-[585px] h-[390px] rounded-[20px] border-[1px] mt-4 shadow-lg ml-4 relative left-2 mr-9">
-      <div className="w-[249px] h-[42px] gap-[18]">
+    <div className="sm:h-auto sm:w-full md:w-3/4 lg:w-[585px]  lg:h-[390px] xl:w-1/3 lg:ml-6 rounded-[20px] border-[1px] mt-4 shadow-lg p-4 lg:translate-x-4">
+      <div className="w-full">
         {/* Tabs */}
-        <div className="flex space-x-6 border-gray-100 mb-8 p-[20px] whitespace-nowrap">
+        <div className="flex flex-wrap justify-between mb-8 p-4 sm:p-6">
           <button
             onClick={() => setActiveTab("recent")}
             className={`pb-4 px-2 text-sm font-medium transition-colors duration-200 ${
@@ -31,23 +31,20 @@ function DashboardOne() {
         </div>
 
         {/* Empty State */}
-        <div className="absolute left-[120px] text-center">
+        <div className="text-center">
           <div className="inline-flex justify-center pt-1">
             <img
               src="https://i.ibb.co/Ns17HnS/Illustration.png"
-              alt=""
-              className="h-1/2 w-32 ml-9 mb-3 translate-y-[-30px]"
+              alt="No Search"
+              className="w-full sm:w-32 h-auto mb-3 translate-y-[-30px]"
             />
           </div>
-          <br />
-          <br />
-
           <h3 className="text-lg font-semibold text-gray-900 mb-2 translate-y-[-40px]">
             No Recent Search
           </h3>
           <p className="text-sm text-gray-500 mb-6 max-w-xs mx-auto translate-y-[-40px]">
             Your search &quot; Landing page design &quot; did not match any
-            projects. try again.
+            projects. Try again.
           </p>
 
           <button className="inline-flex items-center px-4 py-2 text-black border rounded-lg transition-colors duration-200 translate-y-[-40px]">

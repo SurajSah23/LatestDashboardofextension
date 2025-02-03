@@ -17,6 +17,7 @@ import CompaniesOne from "./companies/CompaniesOne";
 import CompaniesTwo from "./companies/CompaniesTwo";
 import CompaniesThree from "./companies/CompaniesThree";
 import EnrichOne from "./enrich/EnrichOne";
+import DashboardFive from "./dashboard/DashboardFive";
 
 function App() {
   return (
@@ -26,16 +27,19 @@ function App() {
         <Route
           path="/dashboard"
           element={
-            <div>
+            <div className="max-h-screen">
               {/* Dashboard section with responsiveness */}
-              <div className="flex">
+              <div className="flex flex-col gap-4 lg:flex lg:flex-row space-x-10">
                 <DashboardOne />
                 <DashboardTwo />
                 <DashboardThree />
+                <br />
               </div>
               <div>
-                <DashboardFour/>
+                <DashboardFive />
+                <br />
               </div>
+                <DashboardFour />
             </div>
           }
         />
@@ -51,7 +55,6 @@ function App() {
                 <SearchTwo />
                 <SearchThree />
               </div>
-
             </div>
           }
         />

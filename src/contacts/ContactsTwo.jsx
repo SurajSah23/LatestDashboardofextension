@@ -76,7 +76,7 @@ function ContactsTwo() {
                   <td className="px-2 py-2 sm:px-4 sm:py-3 border-r border-gray-300">
                     <div className="flex items-center gap-2 sm:gap-3">
                       <img src={user.avatar} alt="Avatar" className="h-6 w-6 sm:h-8 sm:w-8 rounded-full object-cover" />
-                      <span className="text-gray-900 font-medium whitespace-nowrap">{user.name}</span>
+                      <span className="text-gray-900 font-medium whitespace-nowrap mr-6">{user.name}</span>
                     </div>
                   </td>
                   <td className="px-2 py-2 sm:px-4 sm:py-3 border-r border-gray-300">
@@ -89,16 +89,16 @@ function ContactsTwo() {
                       <span className={`${user.email === "Not found" ? "text-gray-500" : "text-gray-900"}`}>{user.email}</span>
                     </div>
                   </td>
-                  <td className="px-2 py-2 sm:px-4 sm:py-3 border-r border-gray-300">{user.jobTitle}</td>
+                  <td className="px-2 py-2 sm:px-4 sm:py-3 border-r border-gray-300 whitespace-nowrap">{user.jobTitle}</td>
                   <td className="px-2 py-2 sm:px-4 sm:py-3 border-r border-gray-300">
-                    <div className="flex items-center gap-2">
+                    <div className="flex items-center gap-2 whitespace-nowrap mr-4">
                       {companyLogos[user.company] && (
                         <img src={companyLogos[user.company]} alt={user.company} className="h-3 w-3 sm:h-4 sm:w-4" />
                       )}
                       <span>{user.company}</span>
                     </div>
                   </td>
-                  <td className="px-2 py-2 sm:px-4 sm:py-3 border-r border-gray-300">{user.createdAt}</td>
+                  <td className="px-2 py-2 sm:px-4 sm:py-3 border-r border-gray-300 whitespace-nowrap">{user.createdAt}</td>
                   <td className="px-2 py-2 sm:px-4 sm:py-3 whitespace-nowrap">{user.source}</td>
                 </tr>
               ))}

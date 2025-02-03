@@ -53,14 +53,9 @@ function DashboardFour() {
         color: '#EEF2FF',
       },
       {
-        name: 'Direct',
+        name: 'Organic search',
         data: monthlyData.map(data => data.organic),
         color: '#C7D2FE',
-      },
-      {
-        name: 'Organic search',
-        data: monthlyData.map(data => data.direct),
-        color: '#6366F1',
       },
       {
         name: 'Referral',
@@ -71,7 +66,7 @@ function DashboardFour() {
   };
 
   return (
-    <div className="shadow-xl border border-gray-200 w-full sm:w-[640px] md:w-[768px] lg:w-[920px] rounded-lg ml-4 sm:ml-6 md:ml-8 lg:ml-9 mt-5 sm:mt-8 md:mt-12 lg:-mt-40">
+    <div className="shadow-xl border border-gray-200 sm:w-[590px] md:w-[768px] lg:w-[920px] rounded-lg ml-4 sm:ml-6 sm:mt-8 md:mt-12 lg:relative lg:bottom-96 lg:-translate-y-96 lg:shadow-lg">
       <div className="max-w-full mx-auto bg-white rounded-lg p-4 sm:p-6 md:p-8">
         <h2 className="mb-4 sm:mb-6 md:mb-8 ml-2 sm:ml-4 md:ml-5 text-base sm:text-lg md:text-xl font-medium text-gray-900 mt-3 sm:mt-5 md:mt-7">Usage</h2>
         <HighchartsReact highcharts={Highcharts} options={options} />

@@ -115,6 +115,14 @@ function App() {
           path="/verify"
           element={<div className="mt-4 sm:mt-8">Verify</div>}
         />
+        <Route
+          path="/notifications"
+          element={<div className="mt-4 sm:mt-8">notifications</div>}
+        />
+        <Route
+          path="/settings"
+          element={<div className="mt-4 sm:mt-8">Settings</div>}
+        />
       </Routes>
     </Router>
   );

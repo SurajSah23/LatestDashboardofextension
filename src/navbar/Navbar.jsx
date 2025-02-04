@@ -57,22 +57,22 @@ const Navbar = () => {
         </div>
 
         {/* Settings Button */}
-        <button className="mr-4">
+        <NavLink to="/settings" className="mr-4">
           <img
             className="w-6 h-6"
             src="https://i.ibb.co/4t3c3JS/settings-01.png"
             alt="Settings"
           />
-        </button>
+        </NavLink>
 
         {/* Notifications */}
-        <div className="rounded-full w-10 h-10 flex items-center justify-center mr-4">
+        <NavLink to="/notifications" className="rounded-full w-10 h-10 flex items-center justify-center mr-4">
           <img
             src="https://i.ibb.co/Tc8hLSF/bell-01.png"
             alt="Notifications"
             className="w-6 h-6"
           />
-        </div>
+        </NavLink>
 
         {/* User Avatar */}
         <div className="rounded-full bg-gray-300 w-10 h-10 flex items-center justify-center">

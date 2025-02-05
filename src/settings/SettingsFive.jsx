@@ -1,21 +1,21 @@
 
 function SettingsFive() {
   return (
-    <div className="bg-white p-6">
-      <form className="max-w-3xl mx-auto space-y-6">
+    <div className="bg-red-500 p-6 lg:-translate-y-36 lg:rounded-lg">
+      <form className="max-w-3xl space-y-6">
         {/* Name Fields */}
         <div className="space-y-2">
           <label className="block text-sm text-gray-600">Name</label>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-52">
             <input
               type="text"
               placeholder="Oliva"
-              className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none"
+              className="w-[440px] px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none"
             />
             <input
               type="text"
               placeholder="Rhye"
-              className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none"
+              className="w-[440px] px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none"
             />
           </div>
         </div>
@@ -30,7 +30,7 @@ function SettingsFive() {
             <input
               type="email"
               placeholder="olivia@untitledui.com"
-              className="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none"
+              className="w-[935px] pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none"
             />
           </div>
         </div>
@@ -38,7 +38,7 @@ function SettingsFive() {
         {/* Country Selector */}
         <div className="space-y-2">
           <label className="block text-sm text-gray-600">Country</label>
-          <div className="relative">
+          <div className="relative w-[935px]">
             <select className="w-full px-4 py-2 border border-gray-300 rounded-lg appearance-none bg-white focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none">
               <option value="australia">🇦🇺 Australia</option>
               <option value="us">🇺🇸 United States</option>
@@ -54,8 +54,8 @@ function SettingsFive() {
         {/* Timezone Selector */}
         <div className="space-y-2">
           <label className="block text-sm text-gray-600">Timezone</label>
-          <div className="relative">
-            <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+          <div className="relative w-[935px]">
+            <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none ">
               <img src="https://i.ibb.co/gbgvMZ60/Icon-6.png" alt="Clock" className="h-5 w-5 text-gray-400" />
             </div>
             <select className="w-full pl-10 pr-10 py-2 border border-gray-300 rounded-lg appearance-none bg-white focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none">

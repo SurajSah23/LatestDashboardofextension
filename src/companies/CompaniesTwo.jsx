@@ -41,7 +41,7 @@ const companies = [
 
 function CompaniesTwo() {
   return (
-    <div className="">
+    <div className="-translate-x-4">
       <div className="w-full sm:w-[640px] md:w-[768px] lg:w-[970px] bg-white rounded-xl shadow-sm border border-gray-200 overflow-hidden ml-3">
         {/* Scrollable container on small screens */}
         <div className="overflow-x-auto">

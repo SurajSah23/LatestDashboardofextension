@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import PropTypes from 'prop-types';
+import SettingsThree from './SettingsThree';
 
 const NavItem = ({ to, children, badge, onClick, isActive }) => {
   return (
@@ -27,11 +28,9 @@ NavItem.propTypes = {
   isActive: PropTypes.bool.isRequired, // Added isActive to prop validation
 };
 
-const BasicInfo = ({ isActive }) => (
+const BasicInfo = () => (
   <div>
-    <h1 className="text-2xl font-bold">Basic Info</h1>
-    <p className="mt-4">Basic information content goes here.</p>
-    {isActive && <hr className="mt-4 border-t-2 border-gray-600" />}
+    <SettingsThree />
   </div>
 );
 
@@ -106,7 +105,7 @@ function SettingsTwo() {
   const [activePage, setActivePage] = useState('basic-info');
 
   return (
-    <div className="bg-red-500 -translate-y-20 lg:w-[1300px] lg:h-[801px] lg:translate-x-6">
+    <div className="-translate-y-20 lg:w-[1300px] lg:h-[801px] lg:translate-x-6 lg:rounded-xl">
       <nav className="border-b border-gray-200">
         <div className="container mx-auto px-4">
           {/* Responsive navigation */}

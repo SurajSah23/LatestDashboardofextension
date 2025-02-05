@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import PropTypes from 'prop-types'; 
+import PropTypes from 'prop-types';
 
 const NavItem = ({ to, children, badge, onClick }) => {
   return (
@@ -18,10 +18,10 @@ const NavItem = ({ to, children, badge, onClick }) => {
 };
 
 NavItem.propTypes = {
-  to: PropTypes.string.isRequired, 
-  children: PropTypes.node.isRequired, 
-  badge: PropTypes.oneOfType([PropTypes.string, PropTypes.number]), 
-  onClick: PropTypes.func.isRequired, 
+  to: PropTypes.string.isRequired,
+  children: PropTypes.node.isRequired,
+  badge: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+  onClick: PropTypes.func.isRequired,
 };
 
 const BasicInfo = () => (
@@ -95,13 +95,14 @@ const API = () => (
 );
 
 function SettingsTwo() {
-  const [activePage, setActivePage] = useState('basic-info'); 
+  const [activePage, setActivePage] = useState('basic-info');
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="bg-white">
       <nav className="border-b border-gray-200">
         <div className="container mx-auto px-4">
-          <div className="flex overflow-x-auto">
+          {/* Responsive navigation */}
+          <div className="flex overflow-x-auto sm:flex-col lg:flex-row sm:space-y-4 lg:space-y-0 lg:space-x-4">
             <NavItem to="basic-info" onClick={setActivePage}>
               Basic Info
             </NavItem>

@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import PropTypes from 'prop-types';
 import SettingsThree from './SettingsThree';
+import SettingsFour from './SettingsFour';
 
 const NavItem = ({ to, children, badge, onClick, isActive }) => {
   return (
@@ -31,6 +32,7 @@ NavItem.propTypes = {
 const BasicInfo = () => (
   <div>
     <SettingsThree />
+    <SettingsFour />
   </div>
 );
 

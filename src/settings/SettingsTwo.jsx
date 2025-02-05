@@ -98,57 +98,58 @@ function SettingsTwo() {
   const [activePage, setActivePage] = useState('basic-info');
 
   return (
-    <div className="bg-white">
-      <nav className="border-b border-gray-200">
-        <div className="container mx-auto px-4">
-          {/* Responsive navigation */}
-          <div className="flex overflow-x-auto sm:flex-col lg:flex-row sm:space-y-4 lg:space-y-0 lg:space-x-4">
-            <NavItem to="basic-info" onClick={setActivePage}>
-              Basic Info
-            </NavItem>
-            <NavItem to="plan-and-billing" onClick={setActivePage}>
-              Plan and billing
-            </NavItem>
-            <NavItem to="usage" onClick={setActivePage}>
-              Usage
-            </NavItem>
-            <NavItem to="team" badge={4} onClick={setActivePage}>
-              Team
-            </NavItem>
-            <NavItem to="plan" onClick={setActivePage}>
-              Plan
-            </NavItem>
-            <NavItem to="billing" badge={2} onClick={setActivePage}>
-              Billing
-            </NavItem>
-            <NavItem to="email" onClick={setActivePage}>
-              Email
-            </NavItem>
-            <NavItem to="notifications" badge={2} onClick={setActivePage}>
-              Notifications
-            </NavItem>
-            <NavItem to="integrations" onClick={setActivePage}>
-              Integrations
-            </NavItem>
-            <NavItem to="api" onClick={setActivePage}>
-              API
-            </NavItem>
-          </div>
-        </div>
-      </nav>
-      <div className="container mx-auto px-4 py-8">
-        {activePage === 'basic-info' && <BasicInfo />}
-        {activePage === 'plan-and-billing' && <PlanAndBilling />}
-        {activePage === 'usage' && <Usage />}
-        {activePage === 'team' && <Team />}
-        {activePage === 'plan' && <Plan />}
-        {activePage === 'billing' && <Billing />}
-        {activePage === 'email' && <Email />}
-        {activePage === 'notifications' && <Notifications />}
-        {activePage === 'integrations' && <Integrations />}
-        {activePage === 'api' && <API />}
+    <div className="bg-red-500 -translate-y-20 lg:w-[1300px] lg:h-[801px] lg:translate-x-6">
+  <nav className="border-b border-gray-200">
+    <div className="container mx-auto px-4">
+      {/* Responsive navigation */}
+      <div className="flex flex-col sm:flex-col lg:flex-row sm:space-y-4 lg:space-y-0 lg:space-x-4">
+        <NavItem to="basic-info" onClick={setActivePage}>
+          Basic Info
+        </NavItem>
+        <NavItem to="plan-and-billing" onClick={setActivePage}>
+          Plan and billing
+        </NavItem>
+        <NavItem to="usage" onClick={setActivePage}>
+          Usage
+        </NavItem>
+        <NavItem to="team" badge={4} onClick={setActivePage}>
+          Team
+        </NavItem>
+        <NavItem to="plan" onClick={setActivePage}>
+          Plan
+        </NavItem>
+        <NavItem to="billing" badge={2} onClick={setActivePage}>
+          Billing
+        </NavItem>
+        <NavItem to="email" onClick={setActivePage}>
+          Email
+        </NavItem>
+        <NavItem to="notifications" badge={2} onClick={setActivePage}>
+          Notifications
+        </NavItem>
+        <NavItem to="integrations" onClick={setActivePage}>
+          Integrations
+        </NavItem>
+        <NavItem to="api" onClick={setActivePage}>
+          API
+        </NavItem>
       </div>
     </div>
+  </nav>
+  <div className="container mx-auto px-4 py-8">
+    {activePage === 'basic-info' && <BasicInfo />}
+    {activePage === 'plan-and-billing' && <PlanAndBilling />}
+    {activePage === 'usage' && <Usage />}
+    {activePage === 'team' && <Team />}
+    {activePage === 'plan' && <Plan />}
+    {activePage === 'billing' && <Billing />}
+    {activePage === 'email' && <Email />}
+    {activePage === 'notifications' && <Notifications />}
+    {activePage === 'integrations' && <Integrations />}
+    {activePage === 'api' && <API />}
+  </div>
+</div>
+
   );
 }
 

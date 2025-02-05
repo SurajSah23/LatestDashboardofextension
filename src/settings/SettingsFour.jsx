@@ -56,14 +56,14 @@ const PhotoUpload = ({ onPhotoSelect }) => {
   };
 
   return (
-    <div className="w-full max-w-3xl mx-auto p-4">
-      <div className="border border-blue-300 rounded-lg overflow-hidden">
-        <div className="p-4">
-          <h2 className="text-gray-600 text-sm mb-1">Your photo</h2>
+    <div className="w-[4000px] mx-auto p-4 lg:rounded-lg">
+      <div className="rounded-lg overflow-hidden">
+        <div className="p-4 lg:-translate-x-3">
+          <h2 className="text-gray-600 text-sm font-bold mb-1">Your photo</h2>
           <p className="text-gray-500 text-sm">This will be displayed on your profile.</p>
         </div>
 
-        <div className="flex items-center gap-8 p-4 border-t border-blue-300">
+        <div className="flex items-center p-4 lg:translate-x-72 lg:-translate-y-20">
           {preview ? (
             <div className="w-16 h-16 rounded-full overflow-hidden">
               <img 
@@ -73,11 +73,13 @@ const PhotoUpload = ({ onPhotoSelect }) => {
               />
             </div>
           ) : (
-            <div className="w-16 h-16 rounded-full bg-gray-100"></div>
+            <div className="w-16 h-16 rounded-full lg:-translate-y-8">
+                <img src="https://i.ibb.co/j9wx7c47/Avatar-35.png" alt="image" />
+            </div>
           )}
 
           <div 
-            className={`flex-1 border-2 border-dashed rounded-lg p-6 flex flex-col items-center justify-center cursor-pointer transition-colors
+            className={`translate-x-6 border-2 lg:w-[500px] rounded-lg p-6 flex flex-col items-center justify-center cursor-pointer transition-colors
               ${isDragging ? 'border-blue-500 bg-blue-50' : 'border-gray-300 hover:border-blue-500'}`}
             onDragOver={handleDragOver}
             onDragLeave={handleDragLeave}
@@ -116,7 +118,7 @@ const SettingsFour = () => {
   };
 
   return (
-    <div className="bg-gray-50 flex items-center justify-center p-4">
+    <div className="flex items-center justify-center p-4 lg:-translate-y-10">
       <PhotoUpload onPhotoSelect={handlePhotoSelect} />
     </div>
   );

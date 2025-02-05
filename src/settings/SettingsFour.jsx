@@ -1,6 +1,5 @@
 import { useState, useRef } from 'react';
 import PropTypes from 'prop-types';
-import { Upload } from 'lucide-react';
 
 const PhotoUpload = ({ onPhotoSelect }) => {
   const [preview, setPreview] = useState(null);
@@ -86,7 +85,7 @@ const PhotoUpload = ({ onPhotoSelect }) => {
             onDrop={handleDrop}
             onClick={handleClick}
           >
-            <Upload className="w-6 h-6 text-gray-400 mb-2" />
+            <img src="https://i.ibb.co/bjJBHGYG/upload-cloud-02.png" alt="clock" className="w-6 h-6 text-gray-400 mb-2"/>
             <div className="text-sm text-center">
               <span className="text-blue-500 font-medium">Click to upload</span>
               <span className="text-gray-500"> or drag and drop</span>

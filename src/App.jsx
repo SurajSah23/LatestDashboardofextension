@@ -18,6 +18,8 @@ import CompaniesTwo from "./companies/CompaniesTwo";
 import CompaniesThree from "./companies/CompaniesThree";
 import EnrichOne from "./enrich/EnrichOne";
 import DashboardFive from "./dashboard/DashboardFive";
+import SettingsOne from "./settings/SettingsOne";
+import SettingsTwo from "./settings/SettingsTwo";
 
 function App() {
   return (
@@ -39,7 +41,7 @@ function App() {
                 <DashboardFive />
                 <br />
               </div>
-                <DashboardFour />
+              <DashboardFour />
             </div>
           }
         />
@@ -121,7 +123,16 @@ function App() {
         />
         <Route
           path="/settings"
-          element={<div className="mt-4 sm:mt-8">Settings</div>}
+          element={
+            <div className="mt-4 sm:mt-8">
+              <div>
+                <SettingsOne />
+              </div>
+              <div>
+                <SettingsTwo />
+              </div>
+            </div>
+          }
         />
       </Routes>
     </Router>

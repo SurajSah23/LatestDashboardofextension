@@ -1,11 +1,13 @@
 import { useState } from 'react';
 import PropTypes from 'prop-types';
 
-const NavItem = ({ to, children, badge, onClick }) => {
+const NavItem = ({ to, children, badge, onClick, isActive }) => {
   return (
     <button
       onClick={() => onClick(to)}
-      className="px-4 py-2 text-sm font-medium text-gray-600 hover:text-gray-900 relative"
+      className={`px-4 py-2 text-sm font-medium text-gray-600 hover:text-gray-900 relative ${
+        isActive ? 'border-b-2 border-blue-500' : ''
+      }`} // Add border when active
     >
       {children}
       {badge && (
@@ -22,14 +24,20 @@ NavItem.propTypes = {
   children: PropTypes.node.isRequired,
   badge: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   onClick: PropTypes.func.isRequired,
+  isActive: PropTypes.bool.isRequired, // Added isActive to prop validation
 };
 
-const BasicInfo = () => (
+const BasicInfo = ({ isActive }) => (
   <div>
     <h1 className="text-2xl font-bold">Basic Info</h1>
     <p className="mt-4">Basic information content goes here.</p>
+    {isActive && <hr className="mt-4 border-t-2 border-gray-600" />}
   </div>
 );
+
+BasicInfo.propTypes = {
+  isActive: PropTypes.bool.isRequired,
+};
 
 const PlanAndBilling = () => (
   <div>
@@ -99,57 +107,56 @@ function SettingsTwo() {
 
   return (
     <div className="bg-red-500 -translate-y-20 lg:w-[1300px] lg:h-[801px] lg:translate-x-6">
-  <nav className="border-b border-gray-200">
-    <div className="container mx-auto px-4">
-      {/* Responsive navigation */}
-      <div className="flex flex-col sm:flex-col lg:flex-row sm:space-y-4 lg:space-y-0 lg:space-x-4">
-        <NavItem to="basic-info" onClick={setActivePage}>
-          Basic Info
-        </NavItem>
-        <NavItem to="plan-and-billing" onClick={setActivePage}>
-          Plan and billing
-        </NavItem>
-        <NavItem to="usage" onClick={setActivePage}>
-          Usage
-        </NavItem>
-        <NavItem to="team" badge={4} onClick={setActivePage}>
-          Team
-        </NavItem>
-        <NavItem to="plan" onClick={setActivePage}>
-          Plan
-        </NavItem>
-        <NavItem to="billing" badge={2} onClick={setActivePage}>
-          Billing
-        </NavItem>
-        <NavItem to="email" onClick={setActivePage}>
-          Email
-        </NavItem>
-        <NavItem to="notifications" badge={2} onClick={setActivePage}>
-          Notifications
-        </NavItem>
-        <NavItem to="integrations" onClick={setActivePage}>
-          Integrations
-        </NavItem>
-        <NavItem to="api" onClick={setActivePage}>
-          API
-        </NavItem>
+      <nav className="border-b border-gray-200">
+        <div className="container mx-auto px-4">
+          {/* Responsive navigation */}
+          <div className="flex flex-col sm:flex-col lg:flex-row sm:space-y-4 lg:space-y-0 lg:space-x-4">
+            <NavItem to="basic-info" isActive={activePage === 'basic-info'} onClick={setActivePage}>
+              Basic Info
+            </NavItem>
+            <NavItem to="plan-and-billing" isActive={activePage === 'plan-and-billing'} onClick={setActivePage}>
+              Plan and billing
+            </NavItem>
+            <NavItem to="usage" isActive={activePage === 'usage'} onClick={setActivePage}>
+              Usage
+            </NavItem>
+            <NavItem to="team" badge={4} isActive={activePage === 'team'} onClick={setActivePage}>
+              Team
+            </NavItem>
+            <NavItem to="plan" isActive={activePage === 'plan'} onClick={setActivePage}>
+              Plan
+            </NavItem>
+            <NavItem to="billing" badge={2} isActive={activePage === 'billing'} onClick={setActivePage}>
+              Billing
+            </NavItem>
+            <NavItem to="email" isActive={activePage === 'email'} onClick={setActivePage}>
+              Email
+            </NavItem>
+            <NavItem to="notifications" badge={2} isActive={activePage === 'notifications'} onClick={setActivePage}>
+              Notifications
+            </NavItem>
+            <NavItem to="integrations" isActive={activePage === 'integrations'} onClick={setActivePage}>
+              Integrations
+            </NavItem>
+            <NavItem to="api" isActive={activePage === 'api'} onClick={setActivePage}>
+              API
+            </NavItem>
+          </div>
+        </div>
+      </nav>
+      <div className="container mx-auto px-4 py-8">
+        {activePage === 'basic-info' && <BasicInfo isActive={true} />}
+        {activePage === 'plan-and-billing' && <PlanAndBilling />}
+        {activePage === 'usage' && <Usage />}
+        {activePage === 'team' && <Team />}
+        {activePage === 'plan' && <Plan />}
+        {activePage === 'billing' && <Billing />}
+        {activePage === 'email' && <Email />}
+        {activePage === 'notifications' && <Notifications />}
+        {activePage === 'integrations' && <Integrations />}
+        {activePage === 'api' && <API />}
       </div>
     </div>
-  </nav>
-  <div className="container mx-auto px-4 py-8">
-    {activePage === 'basic-info' && <BasicInfo />}
-    {activePage === 'plan-and-billing' && <PlanAndBilling />}
-    {activePage === 'usage' && <Usage />}
-    {activePage === 'team' && <Team />}
-    {activePage === 'plan' && <Plan />}
-    {activePage === 'billing' && <Billing />}
-    {activePage === 'email' && <Email />}
-    {activePage === 'notifications' && <Notifications />}
-    {activePage === 'integrations' && <Integrations />}
-    {activePage === 'api' && <API />}
-  </div>
-</div>
-
   );
 }
 

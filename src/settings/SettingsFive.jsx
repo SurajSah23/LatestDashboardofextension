@@ -1,7 +1,7 @@
 
 function SettingsFive() {
   return (
-    <div className="bg-red-500 p-6 lg:-translate-y-36 lg:rounded-lg">
+    <div className="p-6 lg:-translate-y-36 lg:rounded-lg">
       <form className="max-w-3xl space-y-6">
         {/* Name Fields */}
         <div className="space-y-2">

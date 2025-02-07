@@ -20,6 +20,8 @@ import EnrichOne from "./enrich/EnrichOne";
 import DashboardFive from "./dashboard/DashboardFive";
 import SettingsOne from "./settings/SettingsOne";
 import SettingsTwo from "./settings/SettingsTwo";
+import VerifyOne from "./verify/VerifyOne";
+import VerifyTwo from "./verify/VerifyTwo";
 
 function App() {
   return (
@@ -115,7 +117,10 @@ function App() {
         />
         <Route
           path="/verify"
-          element={<div className="mt-4 sm:mt-8">Verify</div>}
+          element={<div className="mt-4 sm:mt-8">
+            <VerifyOne />
+            <VerifyTwo />
+          </div>}
         />
         <Route
           path="/notifications"

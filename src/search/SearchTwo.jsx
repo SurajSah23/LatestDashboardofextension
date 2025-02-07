@@ -1098,7 +1098,7 @@ function SearchTwo() {
                     </div>
                   </div>
                 </td>
-                <td className="py-3 px-2 sm:py-4 sm:px-3 text-gray-900">{company.members}</td>
+                <td className="flex py-3 px-2 sm:py-4 sm:px-3 text-gray-900 gap-3"><img src="https://i.ibb.co/S4kLQmVf/tdesign-member-filled.png" alt="member" />{company.members}</td>
                 <td className="py-3 px-2 sm:py-4 sm:px-3">
                   <div className="flex items-center">
                     <img src={company.contact.avatar} alt={company.contact.name} className="h-6 w-6 sm:h-8 sm:w-8 rounded-full" />

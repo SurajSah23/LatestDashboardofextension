@@ -30,6 +30,7 @@ NavItem.propTypes = {
   isActive: PropTypes.bool.isRequired, // Added isActive to prop validation
 };
 
+
 const BasicInfo = () => (
   <div>
     <SettingsThree />
@@ -113,36 +114,48 @@ function SettingsTwo() {
       <nav className="border-b border-gray-200">
         <div className="container mx-auto px-4">
           {/* Responsive navigation */}
-          <div className="flex flex-col sm:flex-col lg:flex-row sm:space-y-4 lg:space-y-0 lg:space-x-4">
+          <div className="flex flex-col sm:flex-col lg:flex-row sm:space-y-4 lg:space-y-0 lg:space-x-4 ">
             <NavItem to="basic-info" isActive={activePage === 'basic-info'} onClick={setActivePage}>
-              Basic Info
+             <p className='font-light' >Basic Info</p>
             </NavItem>
             <NavItem to="plan-and-billing" isActive={activePage === 'plan-and-billing'} onClick={setActivePage}>
-              Plan and billing
+              <p className='font-light'>Plan and billing</p>
             </NavItem>
             <NavItem to="usage" isActive={activePage === 'usage'} onClick={setActivePage}>
-              Usage
+              <p className='font-light'>Usage</p>
             </NavItem>
-            <NavItem to="team" badge={4} isActive={activePage === 'team'} onClick={setActivePage}>
-              Team
+            <div className='flex'>
+            <NavItem to="team" isActive={activePage === 'team'} onClick={setActivePage}>
+            <div className='flex gap-2'>
+             <p className='font-light'>Team</p>
+             <p className='bg-[#F2F4F7] h-5 w-5 rounded-full'>4</p>
+            </div>
             </NavItem>
+            </div>
             <NavItem to="plan" isActive={activePage === 'plan'} onClick={setActivePage}>
-              Plan
+              <p className='font-light'>Plan</p>
             </NavItem>
-            <NavItem to="billing" badge={2} isActive={activePage === 'billing'} onClick={setActivePage}>
-              Billing
+            <NavItem to="billing" isActive={activePage === 'billing'} onClick={setActivePage}>
+            <div className='flex gap-2'>
+             <p className='font-light'>Billing</p>
+             <p className='bg-[#F2F4F7] h-5 w-5 rounded-full'>2</p>
+            </div>
+              
             </NavItem>
             <NavItem to="email" isActive={activePage === 'email'} onClick={setActivePage}>
-              Email
+              <p className='font-light'>Email</p>
             </NavItem>
-            <NavItem to="notifications" badge={2} isActive={activePage === 'notifications'} onClick={setActivePage}>
-              Notifications
+            <NavItem to="notifications" isActive={activePage === 'notifications'} onClick={setActivePage}>
+            <div className='flex gap-2'>
+              <p className='font-light'>Notifications</p>
+              <p className='bg-[#F2F4F7] h-5 w-5 rounded-full'>2</p>
+            </div>
             </NavItem>
             <NavItem to="integrations" isActive={activePage === 'integrations'} onClick={setActivePage}>
-              Integrations
+              <p className='font-light'>Integrations</p>
             </NavItem>
             <NavItem to="api" isActive={activePage === 'api'} onClick={setActivePage}>
-              API
+              <p className='font-light'>API</p>
             </NavItem>
           </div>
         </div>

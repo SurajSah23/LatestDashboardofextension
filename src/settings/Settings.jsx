@@ -13,7 +13,7 @@ function Settings() {
         <div className="w-full max-w-[1335px] bg-white rounded-lg shadow-sm">
           <Navigation />
           <Routes>
-            <Route path="/" element={<BasicInfo />} />
+            <Route path="/" element={<BasicInfo/>} />
             <Route path="/plan-billing" element={<PlanBilling />} />
             <Route path="/usage" element={<Usage />} />
             <Route path="/team" element={<Team />} />

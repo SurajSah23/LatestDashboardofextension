@@ -44,7 +44,7 @@ BasicInfo.propTypes = {
 
 const PlanAndBilling = () => (
   <div>
-    <h1 className="text-2xl font-bold">Plan and Billing</h1>
+    <h1 className="text-xl font-bold">Plan and Billing</h1>
     <p className="mt-4">Plan and billing information content goes here.</p>
   </div>
 );

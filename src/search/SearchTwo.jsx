@@ -1053,7 +1053,7 @@ function SearchTwo() {
   const currentCompanies = companiesData.slice(startIndex, endIndex);
 
   return (
-    <div className="w-full max-w-[997px] h-auto md:h-[856px] sm:ml-8 md:ml-14 mt-5 border border-gray-200 rounded-lg pb-6 sm:pb-10 pt-2 pl-2 sm:pl-4 lg:shadow-lg">
+    <div className="lg:w-[7900PX] h-auto md:h-[856px] sm:ml-8 md:ml-14 mt-5 border border-gray-200 rounded-lg pb-6 sm:pb-10 pt-2 pl-2 sm:pl-4 lg:shadow-lg lg:-translate-y-2">
       {/* Header Tabs */}
       <div className="border-b border-gray-200 overflow-x-auto">
         <nav className="flex space-x-2 sm:space-x-6 md:space-x-8 overflow-x-auto whitespace-nowrap">

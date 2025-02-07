@@ -55,7 +55,7 @@ function App() {
               <div className="mt-4 sm:mt-8">
                 <SearchOne />
               </div>
-              <div className="flex flex-col sm:flex-row gap-40 mt-4">
+              <div className="flex flex-col sm:flex-row gap-3 mt-4">
                 <SearchTwo />
                 <SearchThree />
               </div>

@@ -1,28 +1,29 @@
 import { useState } from 'react';
+import { Users, ChevronLeft, ChevronRight } from 'lucide-react';
 
-const companiesData = [
+const companies = [
   {
     id: 1,
     name: 'Catalog',
     website: 'catalogapp.io',
     logo: 'https://i.ibb.co/yYbRRGs/Avatar-9.png',
-    members: 22,
+    employeeCount: 22,
     contact: {
       name: 'Phoenix Baker',
       role: 'Co-Founder',
-      location: 'United States',
+      location: 'United State',
       avatar: 'https://i.ibb.co/zXpvP7n/Avatar-15.png'
     }
   },
   {
     id: 2,
     name: 'Circooles',
-    website: 'getcircooles.com',
+    website: 'getcirooles.com',
     logo: 'https://i.ibb.co/NVdthvs/Avatar-10.png',
-    members: 22,
+    employeeCount: 22,
     contact: {
       name: 'Lana Steiner',
-      role: 'Founder',
+      role: 'Co-Founder',
       location: 'UK',
       avatar: 'https://i.ibb.co/D8h1ns4/Avatar-16.png'
     }
@@ -32,11 +33,11 @@ const companiesData = [
     name: 'Command+R',
     website: 'cmdr.ai',
     logo: 'https://i.ibb.co/Z6GQFCr/Avatar-11.png',
-    members: 22,
+    employeeCount: 22,
     contact: {
       name: 'Demi Wilkinson',
-      role: 'Founder',
-      location: 'US',
+      role: 'Co-Founder',
+      location: 'India',
       avatar: 'https://i.ibb.co/bBr7Cnb/Avatar-17.png'
     }
   },
@@ -45,10 +46,10 @@ const companiesData = [
     name: 'Hourglass',
     website: 'hourglass.app',
     logo: 'https://i.ibb.co/7WBVbKs/Avatar-12.png',
-    members: 22,
+    employeeCount: 22,
     contact: {
       name: 'Candice Wu',
-      role: 'Lead Designer',
+      role: 'Co-Founder',
       location: 'India',
       avatar: 'https://i.ibb.co/3YTXpbz/Avatar-18.png'
     }
@@ -58,11 +59,11 @@ const companiesData = [
     name: 'Layers',
     website: 'getlayers.io',
     logo: 'https://i.ibb.co/T8VMBVQ/Avatar-13.png',
-    members: 22,
+    employeeCount: 22,
     contact: {
       name: 'Natali Craig',
-      role: 'Lead Designer',
-      location: 'United States',
+      role: 'Co-Founder',
+      location: 'US',
       avatar: 'https://i.ibb.co/0X0RBbJ/Avatar-19.png'
     }
   },
@@ -71,7 +72,7 @@ const companiesData = [
     name: 'Quotient',
     website: 'quotient.co',
     logo: 'https://i.ibb.co/CB3skXt/Avatar-22.png',
-    members: 22,
+    employeeCount: 22,
     contact: {
       name: 'Drew Cano',
       role: 'Co-Founder',
@@ -84,1068 +85,193 @@ const companiesData = [
     name: 'Sisyphus',
     website: 'sisyphus.com',
     logo: 'https://i.ibb.co/L5NXSMJ/Avatar-14.png',
-    members: 22,
+    employeeCount: 22,
     contact: {
       name: 'Orlando Diggs',
       role: 'Co-Founder',
       location: 'India',
-      avatar: 'https://i.ibb.co/5579dVd/Avatar-20.png'
-    }
-  },
-  {
-    id: 8, // Fixed duplicate ID
-    name: 'Sisyphus',
-    website: 'sisyphus.com',
-    logo: 'https://i.ibb.co/L5NXSMJ/Avatar-14.png',
-    members: 22,
-    contact: {
-      name: 'Orlando Diggs',
-      role: 'Co-Founder',
-      location: 'India',
-      avatar: 'https://i.ibb.co/5579dVd/Avatar-20.png'
-    }
-  },
-  {
-    id: 9, // Fixed duplicate ID
-    name: 'Sisyphus',
-    website: 'sisyphus.com',
-    logo: 'https://i.ibb.co/L5NXSMJ/Avatar-14.png',
-    members: 22,
-    contact: {
-      name: 'Orlando Diggs',
-      role: 'Co-Founder',
-      location: 'India',
-      avatar: 'https://i.ibb.co/5579dVd/Avatar-20.png'
-    }
-  },
-  {
-    id: 9, // Fixed duplicate ID
-    name: 'Sisyphus',
-    website: 'sisyphus.com',
-    logo: 'https://i.ibb.co/L5NXSMJ/Avatar-14.png',
-    members: 22,
-    contact: {
-      name: 'Orlando Diggs',
-      role: 'Co-Founder',
-      location: 'India',
-      avatar: 'https://i.ibb.co/5579dVd/Avatar-20.png'
-    }
-  },
-  {
-    id: 9, // Fixed duplicate ID
-    name: 'Sisyphus',
-    website: 'sisyphus.com',
-    logo: 'https://i.ibb.co/L5NXSMJ/Avatar-14.png',
-    members: 22,
-    contact: {
-      name: 'Orlando Diggs',
-      role: 'Co-Founder',
-      location: 'India',
-      avatar: 'https://i.ibb.co/5579dVd/Avatar-20.png'
-    }
-  },
-  {
-    id: 9, // Fixed duplicate ID
-    name: 'Sisyphus',
-    website: 'sisyphus.com',
-    logo: 'https://i.ibb.co/L5NXSMJ/Avatar-14.png',
-    members: 22,
-    contact: {
-      name: 'Orlando Diggs',
-      role: 'Co-Founder',
-      location: 'India',
-      avatar: 'https://i.ibb.co/5579dVd/Avatar-20.png'
-    }
-  },
-  {
-    id: 9, // Fixed duplicate ID
-    name: 'Sisyphus',
-    website: 'sisyphus.com',
-    logo: 'https://i.ibb.co/L5NXSMJ/Avatar-14.png',
-    members: 22,
-    contact: {
-      name: 'Orlando Diggs',
-      role: 'Co-Founder',
-      location: 'India',
-      avatar: 'https://i.ibb.co/5579dVd/Avatar-20.png'
-    }
-  },
-  {
-    id: 9, // Fixed duplicate ID
-    name: 'Sisyphus',
-    website: 'sisyphus.com',
-    logo: 'https://i.ibb.co/L5NXSMJ/Avatar-14.png',
-    members: 22,
-    contact: {
-      name: 'Orlando Diggs',
-      role: 'Co-Founder',
-      location: 'India',
-      avatar: 'https://i.ibb.co/5579dVd/Avatar-20.png'
-    }
-  },
-  {
-    id: 9, // Fixed duplicate ID
-    name: 'Sisyphus',
-    website: 'sisyphus.com',
-    logo: 'https://i.ibb.co/L5NXSMJ/Avatar-14.png',
-    members: 22,
-    contact: {
-      name: 'Orlando Diggs',
-      role: 'Co-Founder',
-      location: 'India',
-      avatar: 'https://i.ibb.co/5579dVd/Avatar-20.png'
-    }
-  },
-  {
-    id: 9, // Fixed duplicate ID
-    name: 'Sisyphus',
-    website: 'sisyphus.com',
-    logo: 'https://i.ibb.co/L5NXSMJ/Avatar-14.png',
-    members: 22,
-    contact: {
-      name: 'Orlando Diggs',
-      role: 'Co-Founder',
-      location: 'India',
-      avatar: 'https://i.ibb.co/5579dVd/Avatar-20.png'
-    }
-  },
-  {
-    id: 9, // Fixed duplicate ID
-    name: 'Sisyphus',
-    website: 'sisyphus.com',
-    logo: 'https://i.ibb.co/L5NXSMJ/Avatar-14.png',
-    members: 22,
-    contact: {
-      name: 'Orlando Diggs',
-      role: 'Co-Founder',
-      location: 'India',
-      avatar: 'https://i.ibb.co/5579dVd/Avatar-20.png'
-    }
-  },
-  {
-    id: 9, // Fixed duplicate ID
-    name: 'Sisyphus',
-    website: 'sisyphus.com',
-    logo: 'https://i.ibb.co/L5NXSMJ/Avatar-14.png',
-    members: 22,
-    contact: {
-      name: 'Orlando Diggs',
-      role: 'Co-Founder',
-      location: 'India',
-      avatar: 'https://i.ibb.co/5579dVd/Avatar-20.png'
-    }
-  },
-  {
-    id: 9, // Fixed duplicate ID
-    name: 'Sisyphus',
-    website: 'sisyphus.com',
-    logo: 'https://i.ibb.co/L5NXSMJ/Avatar-14.png',
-    members: 22,
-    contact: {
-      name: 'Orlando Diggs',
-      role: 'Co-Founder',
-      location: 'India',
-      avatar: 'https://i.ibb.co/5579dVd/Avatar-20.png'
-    }
-  },
-  {
-    id: 9, // Fixed duplicate ID
-    name: 'Sisyphus',
-    website: 'sisyphus.com',
-    logo: 'https://i.ibb.co/L5NXSMJ/Avatar-14.png',
-    members: 22,
-    contact: {
-      name: 'Orlando Diggs',
-      role: 'Co-Founder',
-      location: 'India',
-      avatar: 'https://i.ibb.co/5579dVd/Avatar-20.png'
-    }
-  },
-  {
-    id: 9, // Fixed duplicate ID
-    name: 'Sisyphus',
-    website: 'sisyphus.com',
-    logo: 'https://i.ibb.co/L5NXSMJ/Avatar-14.png',
-    members: 22,
-    contact: {
-      name: 'Orlando Diggs',
-      role: 'Co-Founder',
-      location: 'India',
-      avatar: 'https://i.ibb.co/5579dVd/Avatar-20.png'
-    }
-  },
-  {
-    id: 9, // Fixed duplicate ID
-    name: 'Sisyphus',
-    website: 'sisyphus.com',
-    logo: 'https://i.ibb.co/L5NXSMJ/Avatar-14.png',
-    members: 22,
-    contact: {
-      name: 'Orlando Diggs',
-      role: 'Co-Founder',
-      location: 'India',
-      avatar: 'https://i.ibb.co/5579dVd/Avatar-20.png'
-    }
-  },
-  {
-    id: 9, // Fixed duplicate ID
-    name: 'Sisyphus',
-    website: 'sisyphus.com',
-    logo: 'https://i.ibb.co/L5NXSMJ/Avatar-14.png',
-    members: 22,
-    contact: {
-      name: 'Orlando Diggs',
-      role: 'Co-Founder',
-      location: 'India',
-      avatar: 'https://i.ibb.co/5579dVd/Avatar-20.png'
-    }
-  },
-  {
-    id: 9, // Fixed duplicate ID
-    name: 'Sisyphus',
-    website: 'sisyphus.com',
-    logo: 'https://i.ibb.co/L5NXSMJ/Avatar-14.png',
-    members: 22,
-    contact: {
-      name: 'Orlando Diggs',
-      role: 'Co-Founder',
-      location: 'India',
-      avatar: 'https://i.ibb.co/5579dVd/Avatar-20.png'
-    }
-  },
-  {
-    id: 9, // Fixed duplicate ID
-    name: 'Sisyphus',
-    website: 'sisyphus.com',
-    logo: 'https://i.ibb.co/L5NXSMJ/Avatar-14.png',
-    members: 22,
-    contact: {
-      name: 'Orlando Diggs',
-      role: 'Co-Founder',
-      location: 'India',
-      avatar: 'https://i.ibb.co/5579dVd/Avatar-20.png'
-    }
-  },
-  {
-    id: 9, // Fixed duplicate ID
-    name: 'Sisyphus',
-    website: 'sisyphus.com',
-    logo: 'https://i.ibb.co/L5NXSMJ/Avatar-14.png',
-    members: 22,
-    contact: {
-      name: 'Orlando Diggs',
-      role: 'Co-Founder',
-      location: 'India',
-      avatar: 'https://i.ibb.co/5579dVd/Avatar-20.png'
-    }
-  },
-  {
-    id: 9, // Fixed duplicate ID
-    name: 'Sisyphus',
-    website: 'sisyphus.com',
-    logo: 'https://i.ibb.co/L5NXSMJ/Avatar-14.png',
-    members: 22,
-    contact: {
-      name: 'Orlando Diggs',
-      role: 'Co-Founder',
-      location: 'India',
-      avatar: 'https://i.ibb.co/5579dVd/Avatar-20.png'
-    }
-  },
-  {
-    id: 9, // Fixed duplicate ID
-    name: 'Sisyphus',
-    website: 'sisyphus.com',
-    logo: 'https://i.ibb.co/L5NXSMJ/Avatar-14.png',
-    members: 22,
-    contact: {
-      name: 'Orlando Diggs',
-      role: 'Co-Founder',
-      location: 'India',
-      avatar: 'https://i.ibb.co/5579dVd/Avatar-20.png'
-    }
-  },
-  {
-    id: 9, // Fixed duplicate ID
-    name: 'Sisyphus',
-    website: 'sisyphus.com',
-    logo: 'https://i.ibb.co/L5NXSMJ/Avatar-14.png',
-    members: 22,
-    contact: {
-      name: 'Orlando Diggs',
-      role: 'Co-Founder',
-      location: 'India',
-      avatar: 'https://i.ibb.co/5579dVd/Avatar-20.png'
-    }
-  },
-  {
-    id: 9, // Fixed duplicate ID
-    name: 'Sisyphus',
-    website: 'sisyphus.com',
-    logo: 'https://i.ibb.co/L5NXSMJ/Avatar-14.png',
-    members: 22,
-    contact: {
-      name: 'Orlando Diggs',
-      role: 'Co-Founder',
-      location: 'India',
-      avatar: 'https://i.ibb.co/5579dVd/Avatar-20.png'
-    }
-  },
-  {
-    id: 9, // Fixed duplicate ID
-    name: 'Sisyphus',
-    website: 'sisyphus.com',
-    logo: 'https://i.ibb.co/L5NXSMJ/Avatar-14.png',
-    members: 22,
-    contact: {
-      name: 'Orlando Diggs',
-      role: 'Co-Founder',
-      location: 'India',
-      avatar: 'https://i.ibb.co/5579dVd/Avatar-20.png'
-    }
-  },
-  {
-    id: 9, // Fixed duplicate ID
-    name: 'Sisyphus',
-    website: 'sisyphus.com',
-    logo: 'https://i.ibb.co/L5NXSMJ/Avatar-14.png',
-    members: 22,
-    contact: {
-      name: 'Orlando Diggs',
-      role: 'Co-Founder',
-      location: 'India',
-      avatar: 'https://i.ibb.co/5579dVd/Avatar-20.png'
-    }
-  },
-  {
-    id: 9, // Fixed duplicate ID
-    name: 'Sisyphus',
-    website: 'sisyphus.com',
-    logo: 'https://i.ibb.co/L5NXSMJ/Avatar-14.png',
-    members: 22,
-    contact: {
-      name: 'Orlando Diggs',
-      role: 'Co-Founder',
-      location: 'India',
-      avatar: 'https://i.ibb.co/5579dVd/Avatar-20.png'
-    }
-  },
-  {
-    id: 9, // Fixed duplicate ID
-    name: 'Sisyphus',
-    website: 'sisyphus.com',
-    logo: 'https://i.ibb.co/L5NXSMJ/Avatar-14.png',
-    members: 22,
-    contact: {
-      name: 'Orlando Diggs',
-      role: 'Co-Founder',
-      location: 'India',
-      avatar: 'https://i.ibb.co/5579dVd/Avatar-20.png'
-    }
-  },
-  {
-    id: 9, // Fixed duplicate ID
-    name: 'Sisyphus',
-    website: 'sisyphus.com',
-    logo: 'https://i.ibb.co/L5NXSMJ/Avatar-14.png',
-    members: 22,
-    contact: {
-      name: 'Orlando Diggs',
-      role: 'Co-Founder',
-      location: 'India',
-      avatar: 'https://i.ibb.co/5579dVd/Avatar-20.png'
-    }
-  },
-  {
-    id: 9, // Fixed duplicate ID
-    name: 'Sisyphus',
-    website: 'sisyphus.com',
-    logo: 'https://i.ibb.co/L5NXSMJ/Avatar-14.png',
-    members: 22,
-    contact: {
-      name: 'Orlando Diggs',
-      role: 'Co-Founder',
-      location: 'India',
-      avatar: 'https://i.ibb.co/5579dVd/Avatar-20.png'
-    }
-  },
-  {
-    id: 9, // Fixed duplicate ID
-    name: 'Sisyphus',
-    website: 'sisyphus.com',
-    logo: 'https://i.ibb.co/L5NXSMJ/Avatar-14.png',
-    members: 22,
-    contact: {
-      name: 'Orlando Diggs',
-      role: 'Co-Founder',
-      location: 'India',
-      avatar: 'https://i.ibb.co/5579dVd/Avatar-20.png'
-    }
-  },
-  {
-    id: 9, // Fixed duplicate ID
-    name: 'Sisyphus',
-    website: 'sisyphus.com',
-    logo: 'https://i.ibb.co/L5NXSMJ/Avatar-14.png',
-    members: 22,
-    contact: {
-      name: 'Orlando Diggs',
-      role: 'Co-Founder',
-      location: 'India',
-      avatar: 'https://i.ibb.co/5579dVd/Avatar-20.png'
-    }
-  },
-  {
-    id: 9, // Fixed duplicate ID
-    name: 'Sisyphus',
-    website: 'sisyphus.com',
-    logo: 'https://i.ibb.co/L5NXSMJ/Avatar-14.png',
-    members: 22,
-    contact: {
-      name: 'Orlando Diggs',
-      role: 'Co-Founder',
-      location: 'India',
-      avatar: 'https://i.ibb.co/5579dVd/Avatar-20.png'
-    }
-  },
-  {
-    id: 9, // Fixed duplicate ID
-    name: 'Sisyphus',
-    website: 'sisyphus.com',
-    logo: 'https://i.ibb.co/L5NXSMJ/Avatar-14.png',
-    members: 22,
-    contact: {
-      name: 'Orlando Diggs',
-      role: 'Co-Founder',
-      location: 'India',
-      avatar: 'https://i.ibb.co/5579dVd/Avatar-20.png'
-    }
-  },
-  {
-    id: 9, // Fixed duplicate ID
-    name: 'Sisyphus',
-    website: 'sisyphus.com',
-    logo: 'https://i.ibb.co/L5NXSMJ/Avatar-14.png',
-    members: 22,
-    contact: {
-      name: 'Orlando Diggs',
-      role: 'Co-Founder',
-      location: 'India',
-      avatar: 'https://i.ibb.co/5579dVd/Avatar-20.png'
-    }
-  },
-  {
-    id: 9, // Fixed duplicate ID
-    name: 'Sisyphus',
-    website: 'sisyphus.com',
-    logo: 'https://i.ibb.co/L5NXSMJ/Avatar-14.png',
-    members: 22,
-    contact: {
-      name: 'Orlando Diggs',
-      role: 'Co-Founder',
-      location: 'India',
-      avatar: 'https://i.ibb.co/5579dVd/Avatar-20.png'
-    }
-  },
-  {
-    id: 9, // Fixed duplicate ID
-    name: 'Sisyphus',
-    website: 'sisyphus.com',
-    logo: 'https://i.ibb.co/L5NXSMJ/Avatar-14.png',
-    members: 22,
-    contact: {
-      name: 'Orlando Diggs',
-      role: 'Co-Founder',
-      location: 'India',
-      avatar: 'https://i.ibb.co/5579dVd/Avatar-20.png'
-    }
-  },
-  {
-    id: 9, // Fixed duplicate ID
-    name: 'Sisyphus',
-    website: 'sisyphus.com',
-    logo: 'https://i.ibb.co/L5NXSMJ/Avatar-14.png',
-    members: 22,
-    contact: {
-      name: 'Orlando Diggs',
-      role: 'Co-Founder',
-      location: 'India',
-      avatar: 'https://i.ibb.co/5579dVd/Avatar-20.png'
-    }
-  },
-  {
-    id: 9, // Fixed duplicate ID
-    name: 'Sisyphus',
-    website: 'sisyphus.com',
-    logo: 'https://i.ibb.co/L5NXSMJ/Avatar-14.png',
-    members: 22,
-    contact: {
-      name: 'Orlando Diggs',
-      role: 'Co-Founder',
-      location: 'India',
-      avatar: 'https://i.ibb.co/5579dVd/Avatar-20.png'
-    }
-  },
-  {
-    id: 9, // Fixed duplicate ID
-    name: 'Sisyphus',
-    website: 'sisyphus.com',
-    logo: 'https://i.ibb.co/L5NXSMJ/Avatar-14.png',
-    members: 22,
-    contact: {
-      name: 'Orlando Diggs',
-      role: 'Co-Founder',
-      location: 'India',
-      avatar: 'https://i.ibb.co/5579dVd/Avatar-20.png'
-    }
-  },
-  {
-    id: 9, // Fixed duplicate ID
-    name: 'Sisyphus',
-    website: 'sisyphus.com',
-    logo: 'https://i.ibb.co/L5NXSMJ/Avatar-14.png',
-    members: 22,
-    contact: {
-      name: 'Orlando Diggs',
-      role: 'Co-Founder',
-      location: 'India',
-      avatar: 'https://i.ibb.co/5579dVd/Avatar-20.png'
-    }
-  },
-  {
-    id: 9, // Fixed duplicate ID
-    name: 'Sisyphus',
-    website: 'sisyphus.com',
-    logo: 'https://i.ibb.co/L5NXSMJ/Avatar-14.png',
-    members: 22,
-    contact: {
-      name: 'Orlando Diggs',
-      role: 'Co-Founder',
-      location: 'India',
-      avatar: 'https://i.ibb.co/5579dVd/Avatar-20.png'
-    }
-  },
-  {
-    id: 9, // Fixed duplicate ID
-    name: 'Sisyphus',
-    website: 'sisyphus.com',
-    logo: 'https://i.ibb.co/L5NXSMJ/Avatar-14.png',
-    members: 22,
-    contact: {
-      name: 'Orlando Diggs',
-      role: 'Co-Founder',
-      location: 'India',
-      avatar: 'https://i.ibb.co/5579dVd/Avatar-20.png'
-    }
-  },
-  {
-    id: 9, // Fixed duplicate ID
-    name: 'Sisyphus',
-    website: 'sisyphus.com',
-    logo: 'https://i.ibb.co/L5NXSMJ/Avatar-14.png',
-    members: 22,
-    contact: {
-      name: 'Orlando Diggs',
-      role: 'Co-Founder',
-      location: 'India',
-      avatar: 'https://i.ibb.co/5579dVd/Avatar-20.png'
-    }
-  },
-  {
-    id: 9, // Fixed duplicate ID
-    name: 'Sisyphus',
-    website: 'sisyphus.com',
-    logo: 'https://i.ibb.co/L5NXSMJ/Avatar-14.png',
-    members: 22,
-    contact: {
-      name: 'Orlando Diggs',
-      role: 'Co-Founder',
-      location: 'India',
-      avatar: 'https://i.ibb.co/5579dVd/Avatar-20.png'
-    }
-  },
-  {
-    id: 9, // Fixed duplicate ID
-    name: 'Sisyphus',
-    website: 'sisyphus.com',
-    logo: 'https://i.ibb.co/L5NXSMJ/Avatar-14.png',
-    members: 22,
-    contact: {
-      name: 'Orlando Diggs',
-      role: 'Co-Founder',
-      location: 'India',
-      avatar: 'https://i.ibb.co/5579dVd/Avatar-20.png'
-    }
-  },
-  {
-    id: 9, // Fixed duplicate ID
-    name: 'Sisyphus',
-    website: 'sisyphus.com',
-    logo: 'https://i.ibb.co/L5NXSMJ/Avatar-14.png',
-    members: 22,
-    contact: {
-      name: 'Orlando Diggs',
-      role: 'Co-Founder',
-      location: 'India',
-      avatar: 'https://i.ibb.co/5579dVd/Avatar-20.png'
-    }
-  },
-  {
-    id: 9, // Fixed duplicate ID
-    name: 'Sisyphus',
-    website: 'sisyphus.com',
-    logo: 'https://i.ibb.co/L5NXSMJ/Avatar-14.png',
-    members: 22,
-    contact: {
-      name: 'Orlando Diggs',
-      role: 'Co-Founder',
-      location: 'India',
-      avatar: 'https://i.ibb.co/5579dVd/Avatar-20.png'
-    }
-  },
-  {
-    id: 9, // Fixed duplicate ID
-    name: 'Sisyphus',
-    website: 'sisyphus.com',
-    logo: 'https://i.ibb.co/L5NXSMJ/Avatar-14.png',
-    members: 22,
-    contact: {
-      name: 'Orlando Diggs',
-      role: 'Co-Founder',
-      location: 'India',
-      avatar: 'https://i.ibb.co/5579dVd/Avatar-20.png'
-    }
-  },
-  {
-    id: 9, // Fixed duplicate ID
-    name: 'Sisyphus',
-    website: 'sisyphus.com',
-    logo: 'https://i.ibb.co/L5NXSMJ/Avatar-14.png',
-    members: 22,
-    contact: {
-      name: 'Orlando Diggs',
-      role: 'Co-Founder',
-      location: 'India',
-      avatar: 'https://i.ibb.co/5579dVd/Avatar-20.png'
-    }
-  },
-  {
-    id: 9, // Fixed duplicate ID
-    name: 'Sisyphus',
-    website: 'sisyphus.com',
-    logo: 'https://i.ibb.co/L5NXSMJ/Avatar-14.png',
-    members: 22,
-    contact: {
-      name: 'Orlando Diggs',
-      role: 'Co-Founder',
-      location: 'India',
-      avatar: 'https://i.ibb.co/5579dVd/Avatar-20.png'
-    }
-  },
-  {
-    id: 9, // Fixed duplicate ID
-    name: 'Sisyphus',
-    website: 'sisyphus.com',
-    logo: 'https://i.ibb.co/L5NXSMJ/Avatar-14.png',
-    members: 22,
-    contact: {
-      name: 'Orlando Diggs',
-      role: 'Co-Founder',
-      location: 'India',
-      avatar: 'https://i.ibb.co/5579dVd/Avatar-20.png'
-    }
-  },
-  {
-    id: 9, // Fixed duplicate ID
-    name: 'Sisyphus',
-    website: 'sisyphus.com',
-    logo: 'https://i.ibb.co/L5NXSMJ/Avatar-14.png',
-    members: 22,
-    contact: {
-      name: 'Orlando Diggs',
-      role: 'Co-Founder',
-      location: 'India',
-      avatar: 'https://i.ibb.co/5579dVd/Avatar-20.png'
-    }
-  },
-  {
-    id: 9, // Fixed duplicate ID
-    name: 'Sisyphus',
-    website: 'sisyphus.com',
-    logo: 'https://i.ibb.co/L5NXSMJ/Avatar-14.png',
-    members: 22,
-    contact: {
-      name: 'Orlando Diggs',
-      role: 'Co-Founder',
-      location: 'India',
-      avatar: 'https://i.ibb.co/5579dVd/Avatar-20.png'
-    }
-  },
-  {
-    id: 9, // Fixed duplicate ID
-    name: 'Sisyphus',
-    website: 'sisyphus.com',
-    logo: 'https://i.ibb.co/L5NXSMJ/Avatar-14.png',
-    members: 22,
-    contact: {
-      name: 'Orlando Diggs',
-      role: 'Co-Founder',
-      location: 'India',
-      avatar: 'https://i.ibb.co/5579dVd/Avatar-20.png'
-    }
-  },
-  {
-    id: 9, // Fixed duplicate ID
-    name: 'Sisyphus',
-    website: 'sisyphus.com',
-    logo: 'https://i.ibb.co/L5NXSMJ/Avatar-14.png',
-    members: 22,
-    contact: {
-      name: 'Orlando Diggs',
-      role: 'Co-Founder',
-      location: 'India',
-      avatar: 'https://i.ibb.co/5579dVd/Avatar-20.png'
-    }
-  },
-  {
-    id: 9, // Fixed duplicate ID
-    name: 'Sisyphus',
-    website: 'sisyphus.com',
-    logo: 'https://i.ibb.co/L5NXSMJ/Avatar-14.png',
-    members: 22,
-    contact: {
-      name: 'Orlando Diggs',
-      role: 'Co-Founder',
-      location: 'India',
-      avatar: 'https://i.ibb.co/5579dVd/Avatar-20.png'
-    }
-  },
-  {
-    id: 9, // Fixed duplicate ID
-    name: 'Sisyphus',
-    website: 'sisyphus.com',
-    logo: 'https://i.ibb.co/L5NXSMJ/Avatar-14.png',
-    members: 22,
-    contact: {
-      name: 'Orlando Diggs',
-      role: 'Co-Founder',
-      location: 'India',
-      avatar: 'https://i.ibb.co/5579dVd/Avatar-20.png'
-    }
-  },
-  {
-    id: 9, // Fixed duplicate ID
-    name: 'Sisyphus',
-    website: 'sisyphus.com',
-    logo: 'https://i.ibb.co/L5NXSMJ/Avatar-14.png',
-    members: 22,
-    contact: {
-      name: 'Orlando Diggs',
-      role: 'Co-Founder',
-      location: 'India',
-      avatar: 'https://i.ibb.co/5579dVd/Avatar-20.png'
-    }
-  },
-  {
-    id: 9, // Fixed duplicate ID
-    name: 'Sisyphus',
-    website: 'sisyphus.com',
-    logo: 'https://i.ibb.co/L5NXSMJ/Avatar-14.png',
-    members: 22,
-    contact: {
-      name: 'Orlando Diggs',
-      role: 'Co-Founder',
-      location: 'India',
-      avatar: 'https://i.ibb.co/5579dVd/Avatar-20.png'
-    }
-  },
-  {
-    id: 9, // Fixed duplicate ID
-    name: 'Sisyphus',
-    website: 'sisyphus.com',
-    logo: 'https://i.ibb.co/L5NXSMJ/Avatar-14.png',
-    members: 22,
-    contact: {
-      name: 'Orlando Diggs',
-      role: 'Co-Founder',
-      location: 'India',
-      avatar: 'https://i.ibb.co/5579dVd/Avatar-20.png'
-    }
-  },
-  {
-    id: 9, // Fixed duplicate ID
-    name: 'Sisyphus',
-    website: 'sisyphus.com',
-    logo: 'https://i.ibb.co/L5NXSMJ/Avatar-14.png',
-    members: 22,
-    contact: {
-      name: 'Orlando Diggs',
-      role: 'Co-Founder',
-      location: 'India',
-      avatar: 'https://i.ibb.co/5579dVd/Avatar-20.png'
-    }
-  },
-  {
-    id: 9, // Fixed duplicate ID
-    name: 'Sisyphus',
-    website: 'sisyphus.com',
-    logo: 'https://i.ibb.co/L5NXSMJ/Avatar-14.png',
-    members: 22,
-    contact: {
-      name: 'Orlando Diggs',
-      role: 'Co-Founder',
-      location: 'India',
-      avatar: 'https://i.ibb.co/5579dVd/Avatar-20.png'
-    }
-  },
-  {
-    id: 9, // Fixed duplicate ID
-    name: 'Sisyphus',
-    website: 'sisyphus.com',
-    logo: 'https://i.ibb.co/L5NXSMJ/Avatar-14.png',
-    members: 22,
-    contact: {
-      name: 'Orlando Diggs',
-      role: 'Co-Founder',
-      location: 'India',
-      avatar: 'https://i.ibb.co/5579dVd/Avatar-20.png'
-    }
-  },
-  {
-    id: 9, // Fixed duplicate ID
-    name: 'Sisyphus',
-    website: 'sisyphus.com',
-    logo: 'https://i.ibb.co/L5NXSMJ/Avatar-14.png',
-    members: 22,
-    contact: {
-      name: 'Orlando Diggs',
-      role: 'Co-Founder',
-      location: 'India',
-      avatar: 'https://i.ibb.co/5579dVd/Avatar-20.png'
-    }
-  },
-  {
-    id: 9, // Fixed duplicate ID
-    name: 'Sisyphus',
-    website: 'sisyphus.com',
-    logo: 'https://i.ibb.co/L5NXSMJ/Avatar-14.png',
-    members: 22,
-    contact: {
-      name: 'Orlando Diggs',
-      role: 'Co-Founder',
-      location: 'India',
-      avatar: 'https://i.ibb.co/5579dVd/Avatar-20.png'
-    }
-  },
-  {
-    id: 9, // Fixed duplicate ID
-    name: 'Sisyphus',
-    website: 'sisyphus.com',
-    logo: 'https://i.ibb.co/L5NXSMJ/Avatar-14.png',
-    members: 22,
-    contact: {
-      name: 'Orlando Diggs',
-      role: 'Co-Founder',
-      location: 'India',
-      avatar: 'https://i.ibb.co/5579dVd/Avatar-20.png'
-    }
-  },
-  {
-    id: 9, // Fixed duplicate ID
-    name: 'Sisyphus',
-    website: 'sisyphus.com',
-    logo: 'https://i.ibb.co/L5NXSMJ/Avatar-14.png',
-    members: 22,
-    contact: {
-      name: 'Orlando Diggs',
-      role: 'Co-Founder',
-      location: 'India',
-      avatar: 'https://i.ibb.co/5579dVd/Avatar-20.png'
-    }
-  },
-  {
-    id: 9, // Fixed duplicate ID
-    name: 'Sisyphus',
-    website: 'sisyphus.com',
-    logo: 'https://i.ibb.co/L5NXSMJ/Avatar-14.png',
-    members: 22,
-    contact: {
-      name: 'Orlando Diggs',
-      role: 'Co-Founder',
-      location: 'India',
-      avatar: 'https://i.ibb.co/5579dVd/Avatar-20.png'
-    }
-  },
-  {
-    id: 9, // Fixed duplicate ID
-    name: 'Sisyphus',
-    website: 'sisyphus.com',
-    logo: 'https://i.ibb.co/L5NXSMJ/Avatar-14.png',
-    members: 22,
-    contact: {
-      name: 'Orlando Diggs',
-      role: 'Co-Founder',
-      location: 'India',
-      avatar: 'https://i.ibb.co/5579dVd/Avatar-20.png'
+      avatar: 'https://i.ibb.co/5579dVd/Avatar-20.pngp'
     }
   },
   {
-    id: 9, // Fixed duplicate ID
-    name: 'Sisyphus',
-    website: 'sisyphus.com',
+    id: 8,
+    name: 'Hourglass Pro',
+    website: 'hourglasspro.app',
     logo: 'https://i.ibb.co/L5NXSMJ/Avatar-14.png',
-    members: 22,
+    employeeCount: 22,
     contact: {
-      name: 'Orlando Diggs',
+      name: 'Drew Baker',
       role: 'Co-Founder',
-      location: 'India',
+      location: 'UK',
       avatar: 'https://i.ibb.co/5579dVd/Avatar-20.png'
     }
   },
   {
-    id: 9, // Fixed duplicate ID
-    name: 'Sisyphus',
-    website: 'sisyphus.com',
+    id: 9,
+    name: 'Quotient Plus',
+    website: 'quotientplus.co',
     logo: 'https://i.ibb.co/L5NXSMJ/Avatar-14.png',
-    members: 22,
+    employeeCount: 22,
     contact: {
-      name: 'Orlando Diggs',
+      name: 'Kate Morrison',
       role: 'Co-Founder',
       location: 'India',
       avatar: 'https://i.ibb.co/5579dVd/Avatar-20.png'
     }
   },
   {
-    id: 9, // Fixed duplicate ID
-    name: 'Sisyphus',
-    website: 'sisyphus.com',
-    logo: 'https://i.ibb.co/L5NXSMJ/Avatar-14.png',
-    members: 22,
+    id: 9,
+    name: 'Quotient Plus',
+    website: 'quotientplus.co',
+    logo: 'https://images.unsplash.com/photo-1633409361618-c73427e4e206?w=40&h=40&fit=crop',
+    employeeCount: 22,
     contact: {
-      name: 'Orlando Diggs',
+      name: 'Kate Morrison',
       role: 'Co-Founder',
       location: 'India',
-      avatar: 'https://i.ibb.co/5579dVd/Avatar-20.png'
+      avatar: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=40&h=40&fit=crop'
     }
   },
   {
-    id: 9, // Fixed duplicate ID
-    name: 'Sisyphus',
-    website: 'sisyphus.com',
-    logo: 'https://i.ibb.co/L5NXSMJ/Avatar-14.png',
-    members: 22,
+    id: 9,
+    name: 'Quotient Plus',
+    website: 'quotientplus.co',
+    logo: 'https://images.unsplash.com/photo-1633409361618-c73427e4e206?w=40&h=40&fit=crop',
+    employeeCount: 22,
     contact: {
-      name: 'Orlando Diggs',
+      name: 'Kate Morrison',
       role: 'Co-Founder',
       location: 'India',
-      avatar: 'https://i.ibb.co/5579dVd/Avatar-20.png'
+      avatar: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=40&h=40&fit=crop'
     }
   },
 ];
 
+// // Generate more companies to fill 90 items (10 pages * 9 items)
+// companies.push(...Array.from({ length: 81 }, (_, i) => ({
+//   id: i + 10,
+//   name: `Company ${i + 10}`,
+//   website: `company${i + 10}.com`,
+//   logo: 'https://images.unsplash.com/photo-1633409361618-c73427e4e206?w=40&h=40&fit=crop',
+//   employeeCount: 22,
+//   contact: {
+//     name: `Contact ${i + 10}`,
+//     role: 'Co-Founder',
+//     location: ['US', 'UK', 'India'][Math.floor(Math.random() * 3)],
+//     avatar: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=40&h=40&fit=crop'
+//   }
+// })));
+
 function SearchTwo() {
   const [currentPage, setCurrentPage] = useState(1);
-  const itemsPerPage = 8;
-  const totalPages = Math.ceil(companiesData.length / itemsPerPage);
+  const itemsPerPage = 9;
+  const totalPages = Math.ceil(companies.length / itemsPerPage);
 
   const startIndex = (currentPage - 1) * itemsPerPage;
   const endIndex = startIndex + itemsPerPage;
-  const currentCompanies = companiesData.slice(startIndex, endIndex);
+  const currentCompanies = companies.slice(startIndex, endIndex);
+
+  const handlePreviousPage = () => {
+    if (currentPage > 1) {
+      setCurrentPage(currentPage - 1);
+    }
+  };
+
+  const handleNextPage = () => {
+    if (currentPage < totalPages) {
+      setCurrentPage(currentPage + 1);
+    }
+  };
 
   return (
-    <div className="lg:w-[7900PX] h-auto md:h-[856px] sm:ml-8 md:ml-14 mt-5 border border-gray-200 rounded-lg pb-6 sm:pb-10 pt-2 pl-2 sm:pl-4 lg:shadow-lg lg:-translate-y-2">
-      {/* Header Tabs */}
-      <div className="border-b border-gray-200 overflow-x-auto">
-        <nav className="flex space-x-2 sm:space-x-6 md:space-x-8 overflow-x-auto whitespace-nowrap">
-          <button className="border-b-2 border-blue-500 pb-2 sm:pb-3 md:pb-4 px-1 sm:px-2 text-xs sm:text-sm font-medium text-blue-600">
-            New(16.0M)
-          </button>
-          <button className="text-gray-500 pb-2 sm:pb-3 md:pb-4 px-1 sm:px-2 text-xs sm:text-sm font-medium hover:text-gray-700">
-            Saved (0)
-          </button>
-          <button className="text-gray-500 pb-2 sm:pb-3 md:pb-4 px-1 sm:px-2 text-xs sm:text-sm font-medium hover:text-gray-700">
-            Total(16.0M)
-          </button>
-        </nav>
-      </div>
+    <div className="min-h-screen bg-gray-50 p-8">
+      <div className="max-w-6xl mx-auto">
+        {/* Header */}
+        <div className="flex items-center space-x-6 mb-6 border-b border-gray-200 pb-4">
+          <div className="text-blue-500 font-medium">New(16.0M)</div>
+          <div className="text-gray-500">Saved (0)</div>
+          <div className="text-gray-500">Total(16.0M)</div>
+        </div>
 
-      {/* Table */}
-      <div className="mt-4 sm:mt-6 overflow-x-auto">
-        <table className="min-w-full divide-y divide-gray-200 text-xs sm:text-sm">
-          <thead>
-            <tr>
-              <th className="py-2 sm:py-3 px-2 sm:px-3 text-left">
-                <input type="checkbox" className="h-4 w-4 rounded border-gray-300 text-blue-600 focus:ring-blue-500" />
-              </th>
-              <th className="py-2 sm:py-3 px-2 sm:px-3 text-left font-medium text-gray-500 uppercase">Company</th>
-              <th className="py-2 sm:py-3 px-2 sm:px-3 text-left font-medium text-gray-500 uppercase">Members</th>
-              <th className="py-2 sm:py-3 px-2 sm:px-3 text-left font-medium text-gray-500 uppercase">Contact</th>
-              <th className="py-2 sm:py-3 px-2 sm:px-3"></th>
-            </tr>
-          </thead>
-          <tbody className="divide-y divide-gray-200">
+        {/* Table */}
+        <div className="bg-white rounded-lg shadow">
+          {/* Table Header */}
+          <div className="grid grid-cols-2 px-6 py-4 border-b border-gray-200">
+            <div className="text-sm text-gray-500">Company</div>
+            <div className="text-sm text-gray-500 border-l border-gray-200 pl-6">Contact</div>
+          </div>
+
+          {/* Table Body */}
+          <div className="divide-y divide-gray-200">
             {currentCompanies.map((company) => (
-              <tr key={company.id} className="hover:bg-gray-50">
-                <td className="py-3 px-2 sm:py-4 sm:px-3">
-                  <input type="checkbox" className="h-4 w-4 rounded border-gray-300 text-blue-600 focus:ring-blue-500" />
-                </td>
-                <td className="py-3 px-2 sm:py-4 sm:px-3">
-                  <div className="flex items-center">
-                    <img src={company.logo} alt={company.name} className="h-6 w-6 sm:h-8 sm:w-8 rounded-full" />
-                    <div className="ml-2 sm:ml-4">
-                      <div className="font-medium text-gray-900">{company.name}</div>
-                      <div className="text-gray-500">{company.website}</div>
+              <div key={company.id} className="grid grid-cols-2 divide-x divide-gray-200">
+                <div className="flex items-center space-x-4 px-6 py-4">
+                  <input type="checkbox" className="rounded border-gray-300" />
+                  <img
+                    src={company.logo}
+                    alt={company.name}
+                    className="w-10 h-10 rounded-lg"
+                  />
+                  <div>
+                    <div className="font-medium text-gray-900">{company.name}</div>
+                    <div className="text-sm text-gray-500">{company.website}</div>
+                  </div>
+                  <div className="flex items-center text-gray-500 ml-4">
+                    <Users size={16} className="mr-1" />
+                    <span className="text-sm">{company.employeeCount}</span>
+                  </div>
+                </div>
+                <div className="flex items-center justify-between px-6 py-4">
+                  <div className="flex items-center space-x-3">
+                    <img
+                      src={company.contact.avatar}
+                      alt={company.contact.name}
+                      className="w-10 h-10 rounded-full"
+                    />
+                    <div>
+                      <div className="font-medium text-gray-900">
+                        {company.contact.name}
+                      </div>
+                      <div className="text-sm text-gray-500">
+                        {company.contact.role}
+                      </div>
+                      <div className="text-sm text-gray-500">
+                        {company.contact.location}
+                      </div>
                     </div>
                   </div>
-                </td>
-                <td className="flex py-3 px-2 sm:py-4 sm:px-3 text-gray-900 gap-3"><img src="https://i.ibb.co/S4kLQmVf/tdesign-member-filled.png" alt="member" />{company.members}</td>
-                <td className="py-3 px-2 sm:py-4 sm:px-3">
-                  <div className="flex items-center">
-                    <img src={company.contact.avatar} alt={company.contact.name} className="h-6 w-6 sm:h-8 sm:w-8 rounded-full" />
-                    <div className="ml-2 sm:ml-4">
-                      <div className="font-medium text-gray-900">{company.contact.name}</div>
-                      <div className="text-gray-500">{company.contact.role}</div>
-                      <div className="text-gray-500">{company.contact.location}</div>
-                    </div>
-                  </div>
-                </td>
-                <td className="py-3 px-2 sm:py-4 sm:px-3 text-right">
-                  <button className="px-2 sm:px-3 py-1 text-blue-600 font-medium hover:bg-blue-50 rounded">
+                  <button className="px-4 py-2 text-blue-500 hover:bg-blue-50 rounded-lg text-sm">
                     Show Mail
                   </button>
-                </td>
-              </tr>
+                </div>
+              </div>
             ))}
-          </tbody>
-        </table>
-      </div>
+          </div>
+        </div>
 
-      {/* Pagination */}
-      <div className="flex flex-col sm:flex-row items-center justify-between py-6 sm:py-8 border-t">
-        <button
-          onClick={() => setCurrentPage((prev) => Math.max(prev - 1, 1))}
-          disabled={currentPage === 1}
-          className="flex items-center text-gray-700 font-medium disabled:opacity-50 hover:text-gray-900"
-        >
-          <img src="https://img.icons8.com/ios-filled/50/000000/chevron-left.png" alt="Previous" className="w-3 sm:w-4 h-3 sm:h-4 mr-1" />
-          Previous
-        </button>
-        <span className="text-gray-700">
-          Page {currentPage} of {totalPages}
-        </span>
-        <button
-          onClick={() => setCurrentPage((prev) => Math.min(prev + 1, totalPages))}
-          disabled={currentPage === totalPages}
-          className="flex items-center text-gray-700 font-medium disabled:opacity-50 hover:text-gray-900"
-        >
-          Next
-          <img src="https://img.icons8.com/ios-filled/50/000000/chevron-right.png" alt="Next" className="w-3 sm:w-4 h-3 sm:h-4 ml-1" />
-        </button>
+        {/* Pagination */}
+        <div className="flex items-center justify-between mt-4 px-6 py-4">
+          <button 
+            className="flex items-center px-4 py-2 text-sm text-gray-600 bg-white rounded-lg border border-gray-300 hover:bg-gray-50 disabled:opacity-50 disabled:cursor-not-allowed"
+            onClick={handlePreviousPage}
+            disabled={currentPage === 1}
+          >
+            <ChevronLeft size={16} className="mr-2" />
+            Previous
+          </button>
+          <div className="text-sm text-gray-600">Page {currentPage} of {totalPages}</div>
+          <button 
+            className="flex items-center px-4 py-2 text-sm text-gray-600 bg-white rounded-lg border border-gray-300 hover:bg-gray-50 disabled:opacity-50 disabled:cursor-not-allowed"
+            onClick={handleNextPage}
+            disabled={currentPage === totalPages}
+          >
+            Next
+            <ChevronRight size={16} className="ml-2" />
+          </button>
+        </div>
       </div>
     </div>
   );
 }
-
-
 
 export default SearchTwo;

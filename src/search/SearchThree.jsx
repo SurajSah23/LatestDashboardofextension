@@ -5,7 +5,7 @@ function SearchThree() {
   const jobTitles = Array(13).fill('Job Title'); // Creates an array of 13 'Job Title' items
 
   return (
-      <div className="lg:w-[3100px] bg-white border rounded-xl shadow-sm mr-12 lg:translate-y-2">
+      <div className="lg:w-[300px] bg-white border rounded-xl shadow-sm mr-12 lg:translate-y-2 lg:translate-x-96">
         {/* Tab Navigation */}
         <div className="flex border-b">
           <button

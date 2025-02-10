@@ -17,7 +17,7 @@ function DashboardFive() {
                   className="w-6 h-6"
                 />
                 <div>
-                  <p className="text-[#1d2b4e] font-medium">
+                  <p className="text-[#1d2b4e] font-medium text-xs">
                     Install chrome extension
                   </p>
                   <p className="text-gray-400 text-sm">Work across the web</p>
@@ -38,7 +38,7 @@ function DashboardFive() {
                   className="w-6 h-6 text-[#0F9D58]"
                 />
                 <div>
-                  <p className="text-[#1d2b4e] font-medium">
+                  <p className="text-[#1d2b4e] font-medium text-xs">
                     Install chrome extension
                   </p>
                   <p className="text-gray-400 text-sm">Work across the web</p>

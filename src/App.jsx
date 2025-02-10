@@ -33,7 +33,7 @@ function App() {
           element={
             <div className="max-h-screen">
               {/* Dashboard section with responsiveness */}
-              <div className="flex flex-col gap-4 lg:flex lg:flex-row space-x-10">
+              <div className="flex flex-col lg:flex lg:flex-row space-x-10">
                 <DashboardOne />
                 <DashboardTwo />
                 <DashboardThree />

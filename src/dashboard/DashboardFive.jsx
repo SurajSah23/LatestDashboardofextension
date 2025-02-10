@@ -1,7 +1,7 @@
 function DashboardFive() {
   return (
-    <div>
-      <div className="h-auto max-w-[326px] w-full border rounded-xl shadow-sm p-6 space-y-6 mx-auto lg:relative lg:left-96 lg:translate-x-24 lg:mt-5">
+    <div className="lg:-translate-x-10">
+      <div className="h-auto max-w-[290px] w-full border rounded-xl shadow-sm p-6 space-y-6 mx-auto lg:relative lg:left-96 lg:translate-x-24 lg:mt-5">
         {/* Suggest For You Section */}
         <div className="space-y-3">
           <h2 className="text-[#1d2b4e] text-lg font-semibold">
@@ -54,7 +54,7 @@ function DashboardFive() {
         </div>
       </div>
 
-      <div className="h-auto max-w-[326px] w-full border rounded-xl shadow-sm p-6 space-y-6 mx-auto lg:relative lg:left-96 lg:translate-x-24 lg:mt-5">
+      <div className="h-auto max-w-[290px] w-full border rounded-xl shadow-sm p-6 space-y-6 mx-auto lg:relative lg:left-96 lg:translate-x-24 lg:mt-5">
         {/* Team Section */}
         <div className="space-y-3">
           <div className="flex items-center justify-between">
@@ -66,7 +66,7 @@ function DashboardFive() {
         </div>
       </div>
 
-      <div className="h-auto max-w-[326px] w-full border rounded-xl shadow-sm p-6 space-y-6 mx-auto lg:relative lg:left-96 lg:translate-x-24 lg:mt-5">
+      <div className="h-auto max-w-[290px] w-full border rounded-xl shadow-sm p-6 space-y-6 mx-auto lg:relative lg:left-96 lg:translate-x-24 lg:mt-5">
         {/* Integrations Section */}
         <div className="space-y-3">
           <h2 className="text-[#1d2b4e] text-lg font-semibold">Integrations</h2>

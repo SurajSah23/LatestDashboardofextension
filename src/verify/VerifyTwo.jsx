@@ -16,7 +16,7 @@ function VerifyTwo() {
           <h1 className="text-xl text-gray-900 mb-2 font-avenir">
             Single Email Verifier
           </h1>
-          <p className="text-gray-600 mb-6 font-avenir">
+          <p className="text-gray-600 mb-6 font-avenir text-sm">
             Enter email to verify. One verified email costs one <br /> email
             verification credit. Enter up to 20 emails, <br /> separated by delimiters
             (space, commas, semicolon, or <br /> line break).
@@ -50,7 +50,7 @@ function VerifyTwo() {
           <h2 className="text-xl text-gray-900 mb-2 font-avenir">
             No verified emails
           </h2>
-          <p className="text-gray-600 font-avenir">
+          <p className="text-gray-600 text-sm font-avenir">
             Paste at least 1 email in the form to verify and<br />
             get an instant result
           </p>

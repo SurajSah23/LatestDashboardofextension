@@ -7,24 +7,24 @@ const countries = [
     flagUrl:
       "https://i.ibb.co/B5KqXtw6/AU.png",
   },
-  {
-    name: "United States",
-    code: "US",
-    flagUrl:
-      "https://i.ibb.co/B5KqXtw6/AU.pngp",
-  },
-  {
-    name: "United Kingdom",
-    code: "GB",
-    flagUrl:
-      "https://i.ibb.co/B5KqXtw6/AU.png",
-  },
-  {
-    name: "Canada",
-    code: "CA",
-    flagUrl:
-      "https://i.ibb.co/B5KqXtw6/AU.png",
-  },
+  // {
+  //   name: "United States",
+  //   code: "US",
+  //   flagUrl:
+  //     "https://i.ibb.co/B5KqXtw6/AU.pngp",
+  // },
+  // {
+  //   name: "United Kingdom",
+  //   code: "GB",
+  //   flagUrl:
+  //     "https://i.ibb.co/B5KqXtw6/AU.png",
+  // },
+  // {
+  //   name: "Canada",
+  //   code: "CA",
+  //   flagUrl:
+  //     "https://i.ibb.co/B5KqXtw6/AU.png",
+  // },
   {
     name: "India",
     code: "IN",

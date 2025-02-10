@@ -92,7 +92,7 @@ function SettingsFive() {
         <div className="space-y-2">
           <label className="block text-sm text-gray-600">Country</label>
           <div
-            className="relative lg:w-[1200px] border border-gray-200 rounded-lg"
+            className="relative lg:w-[945px] border border-gray-200 rounded-lg"
             ref={dropdownRef}
           >
             <button
@@ -101,7 +101,7 @@ function SettingsFive() {
                 e.preventDefault();
                 setIsOpen(!isOpen);
               }}
-              className="w-full px-4 py-3 bg-white border border-purple-100 rounded-lg flex items-center justify-between hover:border-purple-200 transition-colors duration-200"
+              className="w-full lg:h-[40px] px-4 py-3 border border-purple-100 rounded-lg flex items-center justify-between hover:border-purple-200 transition-colors duration-200"
               aria-expanded={isOpen}
             >
               <div className="flex items-center gap-2">

@@ -4,7 +4,7 @@ function CompaniesThree() {
   const [activeSection, setActiveSection] = useState('all-companies');
 
   return (
-    <div className="flex flex-col sm:flex-row sm:w-[260px]">
+    <div className="flex flex-col sm:flex-row sm:w-[260px] lg:translate-x-2 lg:w-[210px]">
       {/* Sidebar */}
       <div className="w-full sm:w-[265px] p-4 h-auto sm:h-[800px] border border-gray-200 rounded-xl">
         <nav className="space-y-2">

@@ -32,7 +32,7 @@ NavItem.propTypes = {
 
 
 const BasicInfo = () => (
-  <div>
+  <div className='rounded-lg '>
     <SettingsThree />
     <SettingsFour />
     <SettingsFive />
@@ -110,7 +110,7 @@ function SettingsTwo() {
   const [activePage, setActivePage] = useState('basic-info');
 
   return (
-    <div className="-translate-y-20 lg:w-[1300px] lg:h-[801px] lg:translate-x-6 lg:rounded-xl">
+    <div className="-translate-y-20 lg:w-[1100px] lg:h-[801px] lg:translate-x-6 lg:rounded-xl border border-gray-200">
       <nav className="border-b border-gray-200">
         <div className="container mx-auto px-4">
           {/* Responsive navigation */}

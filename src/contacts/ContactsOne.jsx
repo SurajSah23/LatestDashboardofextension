@@ -1,6 +1,6 @@
 function ContactsOne() {
   return (
-    <div className="h-auto bg-white shadow-lg mb-4">
+    <div className="h-auto shadow-lg mb-4 lg:-translate-y-8">
       {/* Navigation */}
       <nav className="border-b border-gray-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

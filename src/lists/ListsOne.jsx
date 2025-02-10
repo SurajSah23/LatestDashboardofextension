@@ -1,6 +1,6 @@
 function ListsOne() {
   return (
-    <div className="bg-white border-b border-gray-200 h-auto sm:h-[140px]">
+    <div className="border-b border-gray-200 h-auto sm:h-[140px] lg:-translate-y-8">
       {/* Navigation */}
       <nav>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

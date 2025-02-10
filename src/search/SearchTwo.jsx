@@ -185,7 +185,7 @@ function SearchTwo() {
   };
 
   return (
-    <div className="rounded-lg border border-gray-200 p-8 lg:translate-x-6 w-[1000px]">
+    <div className="rounded-lg border border-gray-200 p-8 lg:translate-x-6 w-[1000px] lg:-translate-y-6">
       <div className="max-w-6xl mx-auto">
         {/* Header */}
         <div className="flex items-center space-x-6 mb-6 border-b border-gray-200 pb-4">

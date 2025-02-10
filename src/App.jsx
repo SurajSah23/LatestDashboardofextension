@@ -22,6 +22,7 @@ import SettingsOne from "./settings/SettingsOne";
 import SettingsTwo from "./settings/SettingsTwo";
 import VerifyOne from "./verify/VerifyOne";
 import VerifyTwo from "./verify/VerifyTwo";
+import VerifyThree from "./verify/VerifyThree";
 
 function App() {
   return (
@@ -120,6 +121,7 @@ function App() {
           element={<div className="mt-4 sm:mt-8">
             <VerifyOne />
             <VerifyTwo />
+            <VerifyThree />
           </div>}
         />
         <Route

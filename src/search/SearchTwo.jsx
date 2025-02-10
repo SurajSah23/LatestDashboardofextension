@@ -118,50 +118,23 @@ const companies = [
       avatar: "https://i.ibb.co/5579dVd/Avatar-20.png",
     },
   },
-  {
-    id: 9,
-    name: "Quotient Plus",
-    website: "quotientplus.co",
-    logo: "https://images.unsplash.com/photo-1633409361618-c73427e4e206?w=40&h=40&fit=crop",
-    employeeCount: 22,
-    contact: {
-      name: "Kate Morrison",
-      role: "Co-Founder",
-      location: "India",
-      avatar:
-        "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=40&h=40&fit=crop",
-    },
-  },
-  {
-    id: 9,
-    name: "Quotient Plus",
-    website: "quotientplus.co",
-    logo: "https://images.unsplash.com/photo-1633409361618-c73427e4e206?w=40&h=40&fit=crop",
-    employeeCount: 22,
-    contact: {
-      name: "Kate Morrison",
-      role: "Co-Founder",
-      location: "India",
-      avatar:
-        "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=40&h=40&fit=crop",
-    },
-  },
+  
 ];
 
-// // Generate more companies to fill 90 items (10 pages * 9 items)
-// companies.push(...Array.from({ length: 81 }, (_, i) => ({
-//   id: i + 10,
-//   name: `Company ${i + 10}`,
-//   website: `company${i + 10}.com`,
-//   logo: 'https://images.unsplash.com/photo-1633409361618-c73427e4e206?w=40&h=40&fit=crop',
-//   employeeCount: 22,
-//   contact: {
-//     name: `Contact ${i + 10}`,
-//     role: 'Co-Founder',
-//     location: ['US', 'UK', 'India'][Math.floor(Math.random() * 3)],
-//     avatar: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=40&h=40&fit=crop'
-//   }
-// })));
+// Generate more companies to fill 90 items (10 pages * 9 items)
+companies.push(...Array.from({ length: 81 }, (_, i) => ({
+  id: i + 10,
+  name: `Company ${i + 10}`,
+  website: `company${i + 10}.com`,
+  logo: 'https://images.unsplash.com/photo-1633409361618-c73427e4e206?w=40&h=40&fit=crop',
+  employeeCount: 22,
+  contact: {
+    name: `Contact ${i + 10}`,
+    role: 'Co-Founder',
+    location: ['US', 'UK', 'India'][Math.floor(Math.random() * 3)],
+    avatar: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=40&h=40&fit=crop'
+  }
+})));
 
 function SearchTwo() {
   const [currentPage, setCurrentPage] = useState(1);
@@ -226,7 +199,7 @@ function SearchTwo() {
                       {company.website}
                     </div>
                   </div>
-                  <div className="flex items-center text-gray-500 relative right-5 lg:translate-x-40">
+                  <div className="flex items-center text-gray-500 relative right-8 lg:translate-x-40">
                     <img
                       src="https://i.ibb.co/rGHWJ9Cw/tdesign-member-filled-1.png"
                       alt=""

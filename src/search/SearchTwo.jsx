@@ -1,149 +1,150 @@
-import { useState } from 'react';
-import { Users, ChevronLeft, ChevronRight } from 'lucide-react';
+import { useState } from "react";
 
 const companies = [
   {
     id: 1,
-    name: 'Catalog',
-    website: 'catalogapp.io',
-    logo: 'https://i.ibb.co/yYbRRGs/Avatar-9.png',
+    name: "Catalog",
+    website: "catalogapp.io",
+    logo: "https://i.ibb.co/yYbRRGs/Avatar-9.png",
     employeeCount: 22,
     contact: {
-      name: 'Phoenix Baker',
-      role: 'Co-Founder',
-      location: 'United State',
-      avatar: 'https://i.ibb.co/zXpvP7n/Avatar-15.png'
-    }
+      name: "Phoenix Baker",
+      role: "Co-Founder",
+      location: "United State",
+      avatar: "https://i.ibb.co/zXpvP7n/Avatar-15.png",
+    },
   },
   {
     id: 2,
-    name: 'Circooles',
-    website: 'getcirooles.com',
-    logo: 'https://i.ibb.co/NVdthvs/Avatar-10.png',
+    name: "Circooles",
+    website: "getcirooles.com",
+    logo: "https://i.ibb.co/NVdthvs/Avatar-10.png",
     employeeCount: 22,
     contact: {
-      name: 'Lana Steiner',
-      role: 'Co-Founder',
-      location: 'UK',
-      avatar: 'https://i.ibb.co/D8h1ns4/Avatar-16.png'
-    }
+      name: "Lana Steiner",
+      role: "Co-Founder",
+      location: "UK",
+      avatar: "https://i.ibb.co/D8h1ns4/Avatar-16.png",
+    },
   },
   {
     id: 3,
-    name: 'Command+R',
-    website: 'cmdr.ai',
-    logo: 'https://i.ibb.co/Z6GQFCr/Avatar-11.png',
+    name: "Command+R",
+    website: "cmdr.ai",
+    logo: "https://i.ibb.co/Z6GQFCr/Avatar-11.png",
     employeeCount: 22,
     contact: {
-      name: 'Demi Wilkinson',
-      role: 'Co-Founder',
-      location: 'India',
-      avatar: 'https://i.ibb.co/bBr7Cnb/Avatar-17.png'
-    }
+      name: "Demi Wilkinson",
+      role: "Co-Founder",
+      location: "India",
+      avatar: "https://i.ibb.co/bBr7Cnb/Avatar-17.png",
+    },
   },
   {
     id: 4,
-    name: 'Hourglass',
-    website: 'hourglass.app',
-    logo: 'https://i.ibb.co/7WBVbKs/Avatar-12.png',
+    name: "Hourglass",
+    website: "hourglass.app",
+    logo: "https://i.ibb.co/7WBVbKs/Avatar-12.png",
     employeeCount: 22,
     contact: {
-      name: 'Candice Wu',
-      role: 'Co-Founder',
-      location: 'India',
-      avatar: 'https://i.ibb.co/3YTXpbz/Avatar-18.png'
-    }
+      name: "Candice Wu",
+      role: "Co-Founder",
+      location: "India",
+      avatar: "https://i.ibb.co/3YTXpbz/Avatar-18.png",
+    },
   },
   {
     id: 5,
-    name: 'Layers',
-    website: 'getlayers.io',
-    logo: 'https://i.ibb.co/T8VMBVQ/Avatar-13.png',
+    name: "Layers",
+    website: "getlayers.io",
+    logo: "https://i.ibb.co/T8VMBVQ/Avatar-13.png",
     employeeCount: 22,
     contact: {
-      name: 'Natali Craig',
-      role: 'Co-Founder',
-      location: 'US',
-      avatar: 'https://i.ibb.co/0X0RBbJ/Avatar-19.png'
-    }
+      name: "Natali Craig",
+      role: "Co-Founder",
+      location: "US",
+      avatar: "https://i.ibb.co/0X0RBbJ/Avatar-19.png",
+    },
   },
   {
     id: 6,
-    name: 'Quotient',
-    website: 'quotient.co',
-    logo: 'https://i.ibb.co/CB3skXt/Avatar-22.png',
+    name: "Quotient",
+    website: "quotient.co",
+    logo: "https://i.ibb.co/CB3skXt/Avatar-22.png",
     employeeCount: 22,
     contact: {
-      name: 'Drew Cano',
-      role: 'Co-Founder',
-      location: 'New York, US',
-      avatar: 'https://i.ibb.co/Sf33rjp/Avatar-21.png'
-    }
+      name: "Drew Cano",
+      role: "Co-Founder",
+      location: "New York, US",
+      avatar: "https://i.ibb.co/Sf33rjp/Avatar-21.png",
+    },
   },
   {
     id: 7,
-    name: 'Sisyphus',
-    website: 'sisyphus.com',
-    logo: 'https://i.ibb.co/L5NXSMJ/Avatar-14.png',
+    name: "Sisyphus",
+    website: "sisyphus.com",
+    logo: "https://i.ibb.co/L5NXSMJ/Avatar-14.png",
     employeeCount: 22,
     contact: {
-      name: 'Orlando Diggs',
-      role: 'Co-Founder',
-      location: 'India',
-      avatar: 'https://i.ibb.co/5579dVd/Avatar-20.pngp'
-    }
+      name: "Orlando Diggs",
+      role: "Co-Founder",
+      location: "India",
+      avatar: "https://i.ibb.co/5579dVd/Avatar-20.pngp",
+    },
   },
   {
     id: 8,
-    name: 'Hourglass Pro',
-    website: 'hourglasspro.app',
-    logo: 'https://i.ibb.co/L5NXSMJ/Avatar-14.png',
+    name: "Hourglass Pro",
+    website: "hourglasspro.app",
+    logo: "https://i.ibb.co/L5NXSMJ/Avatar-14.png",
     employeeCount: 22,
     contact: {
-      name: 'Drew Baker',
-      role: 'Co-Founder',
-      location: 'UK',
-      avatar: 'https://i.ibb.co/5579dVd/Avatar-20.png'
-    }
+      name: "Drew Baker",
+      role: "Co-Founder",
+      location: "UK",
+      avatar: "https://i.ibb.co/5579dVd/Avatar-20.png",
+    },
   },
   {
     id: 9,
-    name: 'Quotient Plus',
-    website: 'quotientplus.co',
-    logo: 'https://i.ibb.co/L5NXSMJ/Avatar-14.png',
+    name: "Quotient Plus",
+    website: "quotientplus.co",
+    logo: "https://i.ibb.co/L5NXSMJ/Avatar-14.png",
     employeeCount: 22,
     contact: {
-      name: 'Kate Morrison',
-      role: 'Co-Founder',
-      location: 'India',
-      avatar: 'https://i.ibb.co/5579dVd/Avatar-20.png'
-    }
+      name: "Kate Morrison",
+      role: "Co-Founder",
+      location: "India",
+      avatar: "https://i.ibb.co/5579dVd/Avatar-20.png",
+    },
   },
   {
     id: 9,
-    name: 'Quotient Plus',
-    website: 'quotientplus.co',
-    logo: 'https://images.unsplash.com/photo-1633409361618-c73427e4e206?w=40&h=40&fit=crop',
+    name: "Quotient Plus",
+    website: "quotientplus.co",
+    logo: "https://images.unsplash.com/photo-1633409361618-c73427e4e206?w=40&h=40&fit=crop",
     employeeCount: 22,
     contact: {
-      name: 'Kate Morrison',
-      role: 'Co-Founder',
-      location: 'India',
-      avatar: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=40&h=40&fit=crop'
-    }
+      name: "Kate Morrison",
+      role: "Co-Founder",
+      location: "India",
+      avatar:
+        "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=40&h=40&fit=crop",
+    },
   },
   {
     id: 9,
-    name: 'Quotient Plus',
-    website: 'quotientplus.co',
-    logo: 'https://images.unsplash.com/photo-1633409361618-c73427e4e206?w=40&h=40&fit=crop',
+    name: "Quotient Plus",
+    website: "quotientplus.co",
+    logo: "https://images.unsplash.com/photo-1633409361618-c73427e4e206?w=40&h=40&fit=crop",
     employeeCount: 22,
     contact: {
-      name: 'Kate Morrison',
-      role: 'Co-Founder',
-      location: 'India',
-      avatar: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=40&h=40&fit=crop'
-    }
+      name: "Kate Morrison",
+      role: "Co-Founder",
+      location: "India",
+      avatar:
+        "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=40&h=40&fit=crop",
+    },
   },
 ];
 
@@ -184,7 +185,7 @@ function SearchTwo() {
   };
 
   return (
-    <div className="min-h-screen bg-gray-50 p-8">
+    <div className="rounded-lg border border-gray-200 p-8 lg:translate-x-6 w-[1000px]">
       <div className="max-w-6xl mx-auto">
         {/* Header */}
         <div className="flex items-center space-x-6 mb-6 border-b border-gray-200 pb-4">
@@ -198,13 +199,18 @@ function SearchTwo() {
           {/* Table Header */}
           <div className="grid grid-cols-2 px-6 py-4 border-b border-gray-200">
             <div className="text-sm text-gray-500">Company</div>
-            <div className="text-sm text-gray-500 border-l border-gray-200 pl-6">Contact</div>
+            <div className="text-sm text-gray-500 border-l border-gray-200 pl-6">
+              Contact
+            </div>
           </div>
 
           {/* Table Body */}
           <div className="divide-y divide-gray-200">
             {currentCompanies.map((company) => (
-              <div key={company.id} className="grid grid-cols-2 divide-x divide-gray-200">
+              <div
+                key={company.id}
+                className="grid grid-cols-2 divide-x divide-gray-200"
+              >
                 <div className="flex items-center space-x-4 px-6 py-4">
                   <input type="checkbox" className="rounded border-gray-300" />
                   <img
@@ -213,12 +219,19 @@ function SearchTwo() {
                     className="w-10 h-10 rounded-lg"
                   />
                   <div>
-                    <div className="font-medium text-gray-900">{company.name}</div>
-                    <div className="text-sm text-gray-500">{company.website}</div>
+                    <div className="font-medium text-gray-900 w-[100px] whitespace-nowrap">
+                      {company.name}
+                    </div>
+                    <div className="text-sm text-gray-500">
+                      {company.website}
+                    </div>
                   </div>
-                  <div className="flex items-center text-gray-500 ml-4">
-                    <Users size={16} className="mr-1" />
-                    <span className="text-sm">{company.employeeCount}</span>
+                  <div className="flex items-center text-gray-500 relative right-5 lg:translate-x-40">
+                    <img
+                      src="https://i.ibb.co/rGHWJ9Cw/tdesign-member-filled-1.png"
+                      alt=""
+                    />
+                    <span className="text-sm ml-4">{company.employeeCount}</span>
                   </div>
                 </div>
                 <div className="flex items-center justify-between px-6 py-4">
@@ -240,7 +253,7 @@ function SearchTwo() {
                       </div>
                     </div>
                   </div>
-                  <button className="px-4 py-2 text-blue-500 hover:bg-blue-50 rounded-lg text-sm">
+                  <button className="px-4 py-2 border border-blue-200 hover:bg-blue-500 text-blue-400 rounded-lg text-sm">
                     Show Mail
                   </button>
                 </div>
@@ -251,22 +264,22 @@ function SearchTwo() {
 
         {/* Pagination */}
         <div className="flex items-center justify-between mt-4 px-6 py-4">
-          <button 
+          <button
             className="flex items-center px-4 py-2 text-sm text-gray-600 bg-white rounded-lg border border-gray-300 hover:bg-gray-50 disabled:opacity-50 disabled:cursor-not-allowed"
             onClick={handlePreviousPage}
             disabled={currentPage === 1}
           >
-            <ChevronLeft size={16} className="mr-2" />
             Previous
           </button>
-          <div className="text-sm text-gray-600">Page {currentPage} of {totalPages}</div>
-          <button 
+          <div className="text-sm text-gray-600">
+            Page {currentPage} of {totalPages}
+          </div>
+          <button
             className="flex items-center px-4 py-2 text-sm text-gray-600 bg-white rounded-lg border border-gray-300 hover:bg-gray-50 disabled:opacity-50 disabled:cursor-not-allowed"
             onClick={handleNextPage}
             disabled={currentPage === totalPages}
           >
             Next
-            <ChevronRight size={16} className="ml-2" />
           </button>
         </div>
       </div>

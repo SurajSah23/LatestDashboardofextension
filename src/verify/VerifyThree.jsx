@@ -33,7 +33,7 @@ function VerifyThree() {
 
   return (
     <div className="bg-gray-50 flex items-center justify-center p-4">
-      <div className="w-full max-w-4xl rounded-lg shadow-lg p-8">
+      <div className="w-full max-w-4xl rounded-lg shadow-lg p-8 bg-white">
         <h1 className="text-2xl font-semibold text-gray-800 mb-6">Bulk Email Verifier</h1>
         
         <div className="mb-6 lg:border lg:border-gray-200 lg:w-[350px] lg:h-[450px]">

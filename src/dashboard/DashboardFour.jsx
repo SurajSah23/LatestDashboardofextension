@@ -23,18 +23,21 @@ function DashboardFour() {
       height: 400,
     },
     title: {
-      text: 'Monthly Usage Data',
+      text: '',
     },
     xAxis: {
       categories: monthlyData.map(data => data.month),
       title: {
-        text: 'Month',
+        text: '',
       },
     },
     yAxis: {
       min: 0,
       title: {
-        text: 'Usage Count',
+        text: '',
+      },
+      labels: {
+        enabled: false, 
       },
     },
     tooltip: {

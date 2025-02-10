@@ -97,7 +97,7 @@ function EnrichOne() {
 
           <button
             type="submit"
-            className="w-full bg-blue-500 text-white py-3 rounded-lg hover:bg-blue-600 transition-colors"
+            className="lg:w-[400px] lg:h-[40px] bg-blue-500 text-white py-3 rounded-lg hover:bg-blue-600 transition-colors lg:translate-x-28"
           >
             Find Lead
           </button>

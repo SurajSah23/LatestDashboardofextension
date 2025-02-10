@@ -1,7 +1,7 @@
 
 function DashboardThree() {
   return (
-    <div className="sm:w-[326px] sm:h-[586px] sm:mr-64 mt-4 mr-2 rounded-[20px] border border-gray-200 space-y-6 lg:-translate-x-6 shadow-lg">
+    <div className="sm:w-[326px] sm:h-[506px] lg:w-[390px] lg:h-[606px] sm:mr-64 mt-4 mr-2 rounded-[20px] border border-gray-200 space-y-6 lg:-translate-x-6 shadow-lg">
       {/* Profile Section */}
       <div className="text-center mt-4">
         <img
@@ -23,8 +23,8 @@ function DashboardThree() {
             alt="Monitor"
             className="h-10 sm:h-12"
           />
-          <span className="ml-3 text-blue-500 flex-1">Current Plan</span>
-          <span className="text-blue-500">Free Plan</span>
+          <span className="ml-3 text-blue-500 flex-1 whitespace-nowrap text-sm">Current Plan</span>
+          <span className="text-blue-500 whitespace-nowrap text-sm">Free Plan</span>
         </div>
 
         {/* Credit */}
@@ -36,12 +36,12 @@ function DashboardThree() {
           />
           <div className="flex-1">
             <div className="flex items-center justify-between mb-2 relative bottom-2">
-              <span className="p-4 -ml-2 text-blue-500">Credit</span>
-              <span className="text-sm text-blue-500 relative right-10 -mr-5">
+              <span className="p-4 -ml-2 text-blue-500 text-sm">Credit</span>
+              <span className="text-sm text-blue-500 relative right-10 -mr-2">
                 2/50
               </span>
             </div>
-            <div className="w-full sm:w-[213px] bg-gray-100 rounded-full h-1.5 relative right-3 bottom-6 ml-5">
+            <div className="w-[160px] bg-gray-100 rounded-full h-1.5 relative right-3 bottom-6 ml-5">
               <div className="bg-pink-500 h-1.5 rounded-full w-[75%]"></div>
             </div>
           </div>
@@ -56,12 +56,12 @@ function DashboardThree() {
           />
           <div className="flex-1">
             <div className="flex items-center justify-between mb-2 relative bottom-2">
-              <span className="p-4 -ml-2 text-blue-500">Verification</span>
+              <span className="p-4 -ml-2 text-blue-500 text-sm">Verification</span>
               <span className="text-sm text-blue-500 relative right-10 -mr-5">
                 2/100
               </span>
             </div>
-            <div className="w-full sm:w-[213px] bg-gray-100 rounded-full h-1.5 relative right-3 bottom-6 ml-5">
+            <div className="w-[160px] bg-gray-100 rounded-full h-1.5 relative right-3 bottom-6 ml-5">
               <div className="bg-blue-500 h-1.5 rounded-full w-[75%]"></div>
             </div>
           </div>
@@ -74,8 +74,8 @@ function DashboardThree() {
             alt="Renewal"
             className="h-10 sm:h-12"
           />
-          <span className="ml-3 text-green-500 flex-1">Next Renewal</span>
-          <span className="text-green-500">Jan 21, 2025</span>
+          <span className="ml-1 text-green-500 flex-1 text-sm whitespace-nowrap">Next Renewal</span>
+          <span className="text-green-500 text-sm whitespace-nowrap">Jan 21, 2025</span>
         </div>
       </div>
     </div>

@@ -7,7 +7,7 @@ function DashboardOne() {
     <div className="lg:w-[600px] lg:h-[390px] lg:ml-6 rounded-[20px] border-[1px] mt-4 shadow-lg p-4 lg:translate-x-1">
       <div className="">
         {/* Tabs */}
-        <div className="flex flex-wrap justify-between mb-8 p-4 sm:p-6">
+        <div className="flex flex-wrap space-x-5 mb-8 p-4 sm:p-6">
           <button
             onClick={() => setActiveTab("recent")}
             className={`pb-4 px-2 text-sm font-medium transition-colors duration-200 ${

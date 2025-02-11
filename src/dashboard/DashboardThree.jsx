@@ -1,7 +1,7 @@
 
 function DashboardThree() {
   return (
-    <div className="sm:w-[326px] sm:h-[506px] lg:w-[390px] lg:h-[606px] sm:mr-64 mt-4 mr-2 rounded-[20px] border border-gray-200 space-y-6 lg:-translate-x-6 shadow-lg">
+    <div className="sm:w-[326px] sm:h-[506px] lg:w-[360px] lg:h-[606px] sm:mr-64 mt-4 mr-2 rounded-[20px] border border-gray-200 space-y-6 lg:-translate-x-6 shadow-lg">
       {/* Profile Section */}
       <div className="text-center mt-4">
         <img

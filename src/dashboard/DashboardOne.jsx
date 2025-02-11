@@ -4,8 +4,8 @@ function DashboardOne() {
   const [activeTab, setActiveTab] = useState("recent");
 
   return (
-    <div className="sm:h-auto sm:w-full md:w-3/4 lg:w-[585px]  lg:h-[390px] xl:w-1/3 lg:ml-6 rounded-[20px] border-[1px] mt-4 shadow-lg p-4 lg:translate-x-1">
-      <div className="w-full">
+    <div className="lg:w-[600px] lg:h-[390px] lg:ml-6 rounded-[20px] border-[1px] mt-4 shadow-lg p-4 lg:translate-x-1">
+      <div className="">
         {/* Tabs */}
         <div className="flex flex-wrap justify-between mb-8 p-4 sm:p-6">
           <button

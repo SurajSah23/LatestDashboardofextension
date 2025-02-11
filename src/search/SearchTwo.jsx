@@ -171,7 +171,7 @@ function SearchTwo() {
         <div className="bg-white rounded-lg shadow">
           {/* Table Header */}
           <div className="grid grid-cols-2 px-6 py-4 border-b border-gray-200">
-            <div className="text-sm text-gray-500">Company</div>
+            <div className="text-sm text-gray-500 flex gap-4"><img src="https://i.ibb.co/DPcLRcSt/Checkbox-base.png" alt="" />Company</div>
             <div className="text-sm text-gray-500 border-l border-gray-200 pl-6">
               Contact
             </div>

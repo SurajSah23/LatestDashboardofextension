@@ -55,7 +55,7 @@ const PhotoUpload = ({ onPhotoSelect }) => {
   };
 
   return (
-    <div className="w-[4000px] mx-auto p-4 lg:rounded-lg">
+    <div className="w-[4000px] mx-auto p-4 lg:rounded-lg lg:-translate-x-8">
       <div className="rounded-lg overflow-hidden">
         <div className="p-4 lg:-translate-x-3">
           <h2 className="text-gray-600 text-sm font-bold mb-1">Your photo</h2>

@@ -19,7 +19,7 @@ function ListsOne() {
       {/* Main Content */}
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 sm:py-8">
         <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center space-y-3 sm:space-y-0 mb-4 sm:mb-6">
-          <h1 className="text-xl sm:text-2xl font-semibold text-gray-900">All List</h1>
+          <h1 className="text-xl sm:text-2xl font-semibold text-gray-900">Lists</h1>
           <div className="flex space-x-3">
             <button className="px-4 py-2 text-white text-sm bg-blue-500 rounded-md hover:bg-blue-600 flex items-center">
               Create List

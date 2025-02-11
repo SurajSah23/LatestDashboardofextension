@@ -12,7 +12,7 @@ function DashboardOne() {
             onClick={() => setActiveTab("recent")}
             className={`pb-4 px-2 text-sm font-medium transition-colors duration-200 ${
               activeTab === "recent"
-                ? "text-blue-500 border-b-2 border-blue-500"
+                ? "text-[#039FFE] border-b-2 border-blue-500"
                 : "text-gray-500 hover:text-gray-700"
             }`}
           >
@@ -22,7 +22,7 @@ function DashboardOne() {
             onClick={() => setActiveTab("saved")}
             className={`pb-4 px-2 text-sm font-medium transition-colors duration-200 ${
               activeTab === "saved"
-                ? "text-blue-500 border-b-2 border-blue-500"
+                ? "text-[#039FFE] border-b-2 border-blue-500"
                 : "text-gray-500 hover:text-gray-700"
             }`}
           >

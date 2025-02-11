@@ -38,7 +38,7 @@ function DashboardThree() {
             <div className="flex items-center justify-between mb-2 relative bottom-2">
               <span className="p-4 -ml-2 text-blue-500 text-sm">Credit</span>
               <span className="text-sm text-blue-500 relative right-10 -mr-2">
-                2/50
+                3/50
               </span>
             </div>
             <div className="w-[160px] bg-gray-100 rounded-full h-1.5 relative right-3 bottom-6 ml-5">

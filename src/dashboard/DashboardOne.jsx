@@ -47,7 +47,7 @@ function DashboardOne() {
             projects. Try again.
           </p>
 
-          <button className="inline-flex items-center px-4 py-2 text-black border rounded-lg transition-colors duration-200 translate-y-[-40px]">
+          <button className="inline-flex items-center px-4 py-2 text-black border rounded-lg transition-colors duration-200 translate-y-[-40px] font-semibold">
             New Search
           </button>
         </div>

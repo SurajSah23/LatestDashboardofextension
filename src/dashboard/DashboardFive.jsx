@@ -1,6 +1,6 @@
 function DashboardFive() {
   return (
-    <div className="lg:translate-x-2 lg:w-[1330px] ml-4">
+    <div className="lg:translate-x-2 lg:w-[1320px] ml-4">
       <div className="h-auto max-w-[290px] w-full border rounded-xl shadow-sm p-6 space-y-6 mx-auto lg:relative lg:left-96 lg:translate-x-24 lg:mt-5">
         {/* Suggest For You Section */}
         <div className="space-y-3">

@@ -66,7 +66,7 @@ function VerifyThree() {
             </div>
           </div>
           <button
-          className="lg:w-[300px] lg:h-[30px] lg:translate-y-14 lg:translate-x-4 bg-gray-100 text-gray-800 rounded-md hover:bg-gray-200 transition-colors font-avenir"
+          className="lg:w-[300px] lg:h-[30px] lg:translate-y-14 lg:translate-x-4 bg-gray-100 text-gray-800 rounded-md hover:bg-gray-200 transition-colors font-avenir font-semibold"
           onClick={() => {
             if (file) {
               console.log('Uploading file:', file.name);

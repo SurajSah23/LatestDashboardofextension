@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes, Navigate } from "react-router-dom";
 import Navbar from "./navbar/Navbar";
 import DashboardOne from "./dashboard/DashboardOne";
 import DashboardTwo from "./dashboard/DashboardTwo";
@@ -23,17 +23,20 @@ import SettingsTwo from "./settings/SettingsTwo";
 import VerifyOne from "./verify/VerifyOne";
 import VerifyTwo from "./verify/VerifyTwo";
 import VerifyThree from "./verify/VerifyThree";
+import Notifications from "./notifications/Notifications";
 
 function App() {
   return (
     <Router>
       <Navbar />
       <Routes>
+        {/* Redirect the root path to "/dashboard" */}
+        <Route path="/" element={<Navigate to="/dashboard" />} />
+
         <Route
           path="/dashboard"
           element={
             <div className="max-h-screen">
-              {/* Dashboard section with responsiveness */}
               <div className="flex flex-col lg:flex lg:flex-row space-x-10">
                 <DashboardOne />
                 <DashboardTwo />
@@ -52,7 +55,6 @@ function App() {
           path="/search"
           element={
             <div>
-              {/* Search section with responsiveness */}
               <div className="mt-4 sm:mt-8">
                 <SearchOne />
               </div>
@@ -67,7 +69,6 @@ function App() {
           path="/contacts"
           element={
             <div>
-              {/* Contacts section with responsiveness */}
               <div className="mt-4 sm:mt-8">
                 <ContactsOne />
               </div>
@@ -82,7 +83,6 @@ function App() {
           path="/lists"
           element={
             <div>
-              {/* Lists section with responsiveness */}
               <div className="mt-4 sm:mt-8">
                 <ListsOne />
               </div>
@@ -99,7 +99,6 @@ function App() {
           path="/companies"
           element={
             <div>
-              {/* Companies section with responsiveness */}
               <CompaniesOne />
               <div className="flex flex-col sm:flex-row gap-2 mt-4">
                 <CompaniesTwo />
@@ -118,15 +117,21 @@ function App() {
         />
         <Route
           path="/verify"
-          element={<div className="mt-4 sm:mt-8">
-            <VerifyOne />
-            <VerifyTwo />
-            <VerifyThree />
-          </div>}
+          element={
+            <div className="mt-4 sm:mt-8">
+              <VerifyOne />
+              <VerifyTwo />
+              <VerifyThree />
+            </div>
+          }
         />
         <Route
           path="/notifications"
-          element={<div className="mt-4 sm:mt-8">notifications</div>}
+          element={
+            <div className="mt-4 sm:mt-8">
+              <Notifications />
+            </div>
+          }
         />
         <Route
           path="/settings"

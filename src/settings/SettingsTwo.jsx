@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import SettingsThree from './SettingsThree';
 import SettingsFour from './SettingsFour';
 import SettingsFive from './SettingsFive';
+import PlanAndBillingPage from './planandbilling/PlanAndBillingPage';
 
 const NavItem = ({ to, children, badge, onClick, isActive }) => {
   return (
@@ -45,8 +46,9 @@ BasicInfo.propTypes = {
 
 const PlanAndBilling = () => (
   <div>
-    <h1 className="text-xl font-bold">Plan and Billing</h1>
-    <p className="mt-4">Plan and billing information content goes here.</p>
+    {/* <h1 className="text-xl font-bold">Plan and Billing</h1>
+    <p className="mt-4">Plan and billing information content goes here.</p> */}
+    <PlanAndBillingPage />
   </div>
 );
 
@@ -64,12 +66,12 @@ const Team = () => (
   </div>
 );
 
-const Plan = () => (
-  <div>
-    <h1 className="text-2xl font-bold">Plan</h1>
-    <p className="mt-4">Plan details content goes here.</p>
-  </div>
-);
+// const Plan = () => (
+//   <div>
+//     <h1 className="text-2xl font-bold">Plan</h1>
+//     <p className="mt-4">Plan details content goes here.</p>
+//   </div>
+// );
 
 const Billing = () => (
   <div>
@@ -132,9 +134,9 @@ function SettingsTwo() {
             </div>
             </NavItem>
             </div>
-            <NavItem to="plan" isActive={activePage === 'plan'} onClick={setActivePage}>
+            {/* <NavItem to="plan" isActive={activePage === 'plan'} onClick={setActivePage}>
               <p className='font-light'>Plan</p>
-            </NavItem>
+            </NavItem> */}
             <NavItem to="billing" isActive={activePage === 'billing'} onClick={setActivePage}>
             <div className='flex gap-2'>
              <p className='font-light'>Billing</p>
@@ -165,7 +167,7 @@ function SettingsTwo() {
         {activePage === 'plan-and-billing' && <PlanAndBilling />}
         {activePage === 'usage' && <Usage />}
         {activePage === 'team' && <Team />}
-        {activePage === 'plan' && <Plan />}
+        {/* {activePage === 'plan' && <Plan />} */}
         {activePage === 'billing' && <Billing />}
         {activePage === 'email' && <Email />}
         {activePage === 'notifications' && <Notifications />}

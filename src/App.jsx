@@ -24,6 +24,7 @@ import VerifyOne from "./verify/VerifyOne";
 import VerifyTwo from "./verify/VerifyTwo";
 import VerifyThree from "./verify/VerifyThree";
 import Notifications from "./notifications/Notifications";
+import Messages from "./messages/Messages";
 
 function App() {
   return (
@@ -48,6 +49,7 @@ function App() {
                 <br />
               </div>
               <DashboardFour />
+              <Messages />
             </div>
           }
         />
@@ -62,6 +64,7 @@ function App() {
                 <SearchTwo />
                 <SearchThree />
               </div>
+              <Messages />
             </div>
           }
         />
@@ -76,6 +79,7 @@ function App() {
                 <ContactTwo />
                 <ContactsThree />
               </div>
+              <Messages />
             </div>
           }
         />
@@ -92,6 +96,7 @@ function App() {
                   <ListsThree />
                 </div>
               </div>
+              <Messages />
             </div>
           }
         />
@@ -104,6 +109,7 @@ function App() {
                 <CompaniesTwo />
                 <CompaniesThree />
               </div>
+              <Messages />
             </div>
           }
         />
@@ -112,6 +118,7 @@ function App() {
           element={
             <div className="mt-4 sm:mt-8">
               <EnrichOne />
+              <Messages />
             </div>
           }
         />
@@ -122,6 +129,7 @@ function App() {
               <VerifyOne />
               <VerifyTwo />
               <VerifyThree />
+              <Messages />
             </div>
           }
         />
@@ -130,6 +138,7 @@ function App() {
           element={
             <div className="mt-4 sm:mt-8">
               <Notifications />
+              <Messages />
             </div>
           }
         />
@@ -143,6 +152,7 @@ function App() {
               <div>
                 <SettingsTwo />
               </div>
+              <Messages />
             </div>
           }
         />

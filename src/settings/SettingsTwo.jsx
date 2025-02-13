@@ -4,6 +4,8 @@ import SettingsThree from './SettingsThree';
 import SettingsFour from './SettingsFour';
 import SettingsFive from './SettingsFive';
 import PlanAndBillingPage from './planandbilling/PlanAndBillingPage';
+import PlanAndBillingPageTwo from './planandbilling/PlanAndBillingPageTwo';
+import PlanAndBillingPageThree from './planandbilling/PlanAndBillingPageThree';
 
 const NavItem = ({ to, children, badge, onClick, isActive }) => {
   return (
@@ -49,6 +51,14 @@ const PlanAndBilling = () => (
     {/* <h1 className="text-xl font-bold">Plan and Billing</h1>
     <p className="mt-4">Plan and billing information content goes here.</p> */}
     <PlanAndBillingPage />
+    <br />
+    <br />
+    <hr />
+    <PlanAndBillingPageTwo />
+    <br />
+    <br />
+    <hr />
+    <PlanAndBillingPageThree />
   </div>
 );
 
@@ -129,7 +139,7 @@ function SettingsTwo() {
             <div className='flex'>
             <NavItem to="team" isActive={activePage === 'team'} onClick={setActivePage}>
             <div className='flex gap-2'>
-             <p className='font-light'>Team</p>
+             <p className='font-light'>Workspaces & teams</p>
              <p className='bg-[#F2F4F7] h-5 w-5 rounded-full'>4</p>
             </div>
             </NavItem>

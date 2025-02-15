@@ -6,6 +6,12 @@ import SettingsFive from './SettingsFive';
 import PlanAndBillingPage from './planandbilling/PlanAndBillingPage';
 import PlanAndBillingPageTwo from './planandbilling/PlanAndBillingPageTwo';
 import PlanAndBillingPageThree from './planandbilling/PlanAndBillingPageThree';
+import UsageOne from './usage/UsageOne';
+import Teams from './workspaces/Teams';
+import Notification from './notifications/Notification';
+import EmailOne from './email/EmailOne';
+import IntegrationsOne from './integrations/IntegrationsOne';
+import ApiSection from './apisection/ApiSection';
 
 const NavItem = ({ to, children, badge, onClick, isActive }) => {
   return (
@@ -64,15 +70,13 @@ const PlanAndBilling = () => (
 
 const Usage = () => (
   <div>
-    <h1 className="text-2xl font-bold">Usage</h1>
-    <p className="mt-4">Usage information content goes here.</p>
+    <UsageOne />
   </div>
 );
 
 const Team = () => (
   <div>
-    <h1 className="text-2xl font-bold">Team</h1>
-    <p className="mt-4">Team management content goes here.</p>
+    <Teams />
   </div>
 );
 
@@ -83,38 +87,29 @@ const Team = () => (
 //   </div>
 // );
 
-const Billing = () => (
-  <div>
-    <h1 className="text-2xl font-bold">Billing</h1>
-    <p className="mt-4">Billing information content goes here.</p>
-  </div>
-);
+
 
 const Email = () => (
   <div>
-    <h1 className="text-2xl font-bold">Email</h1>
-    <p className="mt-4">Email settings content goes here.</p>
+    <EmailOne />
   </div>
 );
 
 const Notifications = () => (
   <div>
-    <h1 className="text-2xl font-bold">Notifications</h1>
-    <p className="mt-4">Notification settings content goes here.</p>
+    <Notification />
   </div>
 );
 
 const Integrations = () => (
   <div>
-    <h1 className="text-2xl font-bold">Integrations</h1>
-    <p className="mt-4">Integrations content goes here.</p>
+    <IntegrationsOne />
   </div>
 );
 
 const API = () => (
   <div>
-    <h1 className="text-2xl font-bold">API</h1>
-    <p className="mt-4">API documentation and settings content goes here.</p>
+    <ApiSection />
   </div>
 );
 
@@ -147,13 +142,6 @@ function SettingsTwo() {
             {/* <NavItem to="plan" isActive={activePage === 'plan'} onClick={setActivePage}>
               <p className='font-light'>Plan</p>
             </NavItem> */}
-            <NavItem to="billing" isActive={activePage === 'billing'} onClick={setActivePage}>
-            <div className='flex gap-2'>
-             <p className='font-light'>Billing</p>
-             <p className='bg-[#F2F4F7] h-5 w-5 rounded-full'>2</p>
-            </div>
-              
-            </NavItem>
             <NavItem to="email" isActive={activePage === 'email'} onClick={setActivePage}>
               <p className='font-light'>Email</p>
             </NavItem>
@@ -178,7 +166,6 @@ function SettingsTwo() {
         {activePage === 'usage' && <Usage />}
         {activePage === 'team' && <Team />}
         {/* {activePage === 'plan' && <Plan />} */}
-        {activePage === 'billing' && <Billing />}
         {activePage === 'email' && <Email />}
         {activePage === 'notifications' && <Notifications />}
         {activePage === 'integrations' && <Integrations />}

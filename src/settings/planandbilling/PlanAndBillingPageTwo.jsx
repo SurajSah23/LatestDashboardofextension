@@ -9,9 +9,9 @@ const features = [
         <div className="max-w-5xl mx-auto">
           {/* Flexbox ka use karke left aur right section bana rahe hain */}
           <div className="flex justify-between items-start">
-            <h1 className="text-2xl font-semibold text-gray-900 mb-4 lg:translate-y-10">See All Features</h1>
+            <h1 className="text-2xl font-semibold text-gray-900 mb-4 lg:translate-y-10 lg:-translate-x-20">See All Features</h1>
   
-            <div className="bg-white rounded-lg shadow overflow-hidden w-2/3">
+            <div className="rounded-lg shadow overflow-hidden w-[850px] lg:translate-x-2">
               <div className="px-4 py-2 bg-gray-50">
                 <h3 className="text-md font-medium text-gray-900">All plans include</h3>
               </div>

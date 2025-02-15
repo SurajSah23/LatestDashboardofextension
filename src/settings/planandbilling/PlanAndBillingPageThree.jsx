@@ -38,7 +38,7 @@ function PlanAndBillingPageThree() {
     <div className="py-6 px-4 flex">
       {/* Left Side: Help & Support */}
       <div className="w-1/4">
-        <h1 className="text-2xl font-semibold mb-4 lg:translate-y-16">Help & Support</h1>
+        <h1 className="text-2xl font-semibold mb-4 lg:translate-y-16 lg:translate-x-6">Help & Support</h1>
       </div>
 
       {/* Right Side: FAQs in Grid */}
@@ -47,7 +47,7 @@ function PlanAndBillingPageThree() {
           {faqsData.map((faq, index) => (
             <div
               key={index}
-              className="border p-3 rounded-lg shadow-sm bg-gray-100 overflow-hidden"
+              className="border p-3 rounded-lg shadow-sm border-gray-200 overflow-hidden"
             >
               <button
                 className="w-full flex justify-between items-center text-left text-sm font-medium"

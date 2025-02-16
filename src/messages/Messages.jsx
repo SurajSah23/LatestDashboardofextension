@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { ArrowLeft, Send, MessageCircle, Smile } from "lucide-react";
+import { RiArrowLeftLine, RiSendPlane2Fill, RiChat3Fill, RiEmotionHappyLine } from "react-icons/ri";
 import Picker from "emoji-picker-react";
 
 function Messages() {
@@ -26,7 +26,7 @@ function Messages() {
           {/* Header */}
           <div className="bg-black text-white p-3 flex items-center">
             <button className="p-1" onClick={() => setIsOpen(false)}>
-              <ArrowLeft className="w-5 h-5" />
+              <RiArrowLeftLine className="w-5 h-5" />
             </button>
             <div className="ml-3 text-sm font-semibold">Chat Support</div>
           </div>
@@ -59,7 +59,7 @@ function Messages() {
               className="p-2"
               onClick={() => setShowEmojiPicker(!showEmojiPicker)}
             >
-              <Smile className="w-5 h-5 text-gray-500" />
+              <RiEmotionHappyLine className="w-5 h-5 text-gray-500" />
             </button>
             <input
               type="text"
@@ -72,7 +72,7 @@ function Messages() {
               onClick={sendMessage}
               className="p-2 ml-2 bg-blue-500 hover:bg-blue-600 text-white rounded-md"
             >
-              <Send className="w-5 h-5" />
+              <RiSendPlane2Fill className="w-5 h-5" />
             </button>
           </div>
         </div>
@@ -83,7 +83,7 @@ function Messages() {
         onClick={() => setIsOpen(!isOpen)}
         className="fixed bottom-4 right-4 w-12 h-12 bg-blue-600 hover:bg-blue-700 text-white rounded-full flex items-center justify-center shadow-lg transition-all"
       >
-        <MessageCircle className="w-6 h-6" />
+        <RiChat3Fill className="w-6 h-6" />
       </button>
     </div>
   );

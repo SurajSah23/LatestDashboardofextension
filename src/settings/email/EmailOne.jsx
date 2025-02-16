@@ -1,7 +1,6 @@
 import { useState } from 'react';
 
 function EmailOne() {
-  const [activeTab, setActiveTab] = useState('email');
   const [notifications, setNotifications] = useState({
     export: true,
     search: true,
@@ -17,32 +16,11 @@ function EmailOne() {
   };
 
   return (
-    <div className="min-h-screen bg-gray-50 p-6">
-      <div className="max-w-3xl mx-auto bg-white rounded-lg shadow-sm border border-gray-200">
-        <h2 className="text-xl font-semibold text-gray-800 p-6 border-b border-gray-200">
-          Notifications
-        </h2>
-
-        <div className="border-b border-gray-200">
-          <div className="flex">
-            <button
-              className={`px-6 py-3 font-medium text-sm ${
-                activeTab === 'notifications' ? 'text-blue-500 border-b-2 border-blue-500' : 'text-gray-500 hover:text-gray-700'
-              }`}
-              onClick={() => setActiveTab('notifications')}
-            >
-              Notifications
-            </button>
-            <button
-              className={`px-6 py-3 font-medium text-sm ${
-                activeTab === 'email' ? 'text-blue-500 border-b-2 border-blue-500' : 'text-gray-500 hover:text-gray-700'
-              }`}
-              onClick={() => setActiveTab('email')}
-            >
-              Email
-            </button>
-          </div>
-        </div>
+    <div className="bg-gray-50 p-6">
+      <div className="max-w-6xl mx-auto bg-white rounded-lg shadow-sm border border-gray-200">
+        <h1 className="text-3xl font-semibold text-gray-800 p-6 border-b border-gray-200">
+          Email Settings
+        </h1>
 
         <div className="p-6">
           <h3 className="text-base font-medium text-gray-900 mb-1">How you get notified</h3>

@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import { Bell, MessageSquare } from 'lucide-react';
 
 function Notification() {
   const [bellEnabled, setBellEnabled] = useState(true);
@@ -15,8 +14,6 @@ function Notification() {
           <h2 className="text-2xl font-semibold text-gray-800">Notification Settings</h2>
         </div>
 
-
-
         {/* Settings */}
         <div className="p-6">
           <div className="space-y-6">
@@ -24,7 +21,7 @@ function Notification() {
             <div className="flex items-center justify-between py-4 border-b border-gray-100">
               <div className="flex items-center gap-4">
                 <div className="p-2 rounded-full bg-blue-100">
-                  <Bell className="w-6 h-6 text-blue-600" />
+                  <img src="/path/to/bell.png" alt="Bell" className="w-6 h-6" />
                 </div>
                 <div>
                   <h4 className="text-md font-semibold text-gray-800">Bell Notifications</h4>
@@ -53,7 +50,7 @@ function Notification() {
             <div className="flex items-center justify-between py-4 border-b border-gray-100">
               <div className="flex items-center gap-4">
                 <div className="p-2 rounded-full bg-blue-100">
-                  <MessageSquare className="w-6 h-6 text-blue-600" />
+                  <img src="/path/to/message.png" alt="Message" className="w-6 h-6" />
                 </div>
                 <div>
                   <h4 className="text-md font-semibold text-gray-800">Pop-up Notifications</h4>

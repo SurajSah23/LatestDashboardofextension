@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import { Search } from 'lucide-react';
 
 function Teams() {
   const [workspaceName, setWorkspaceName] = useState('');
@@ -64,7 +63,7 @@ function Teams() {
           {team.length === 0 ? (
             <div className="text-center py-12">
               <div className="flex justify-center mb-4">
-                <Search className="w-16 h-16 text-gray-300" />
+              <img src="" alt="" />
               </div>
               <p className="text-lg text-gray-500">No team members added yet. Start by adding one!</p>
             </div>

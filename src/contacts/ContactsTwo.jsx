@@ -3,8 +3,8 @@ function ContactsTwo() {
     {
       id: 1,
       name: "Phoenix Baker",
-      email: "meeta.bhagwani@genixbit.com",
-      jobTitle: "HR Manager",
+      email: "",
+      jobTitle: "",
       company: "Catalog",
       createdAt: "Dec 27, 2024",
       source: "LinkedIn plugin",
@@ -12,8 +12,8 @@ function ContactsTwo() {
     },
     {
       id: 2,
-      name: "Lana Steiner",
-      email: "praveer@figma.com",
+      name: "",
+      email: "",
       jobTitle: "CFO",
       company: "Hourglass",
       createdAt: "Dec 27, 2024",
@@ -33,7 +33,7 @@ function ContactsTwo() {
     {
       id: 4,
       name: "Candice Wu",
-      email: "ken@adrizer.com",
+      email: "",
       jobTitle: "Content Manager",
       company: "Circooles",
       createdAt: "Dec 27, 2024",

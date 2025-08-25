@@ -377,6 +377,28 @@ a {
   .gap-6 {
     gap: 1.5rem;
   }
+  
+  /* Mobile-specific table styles */
+  .table-responsive {
+    font-size: 0.875rem;
+  }
+  
+  .table-responsive th,
+  .table-responsive td {
+    padding: 0.5rem;
+  }
+  
+  /* Mobile-specific button styles */
+  button {
+    padding: 0.75rem 1rem;
+    font-size: 0.875rem;
+  }
+  
+  /* Mobile-specific input styles */
+  input, select, textarea {
+    padding: 0.75rem;
+    font-size: 1rem;
+  }
 }
 
 /* Ensure proper spacing for tablet */
@@ -385,6 +407,11 @@ a {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
   }
+  
+  /* Tablet-specific grid adjustments */
+  .grid-cols-1.sm\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }
 
 /* Ensure proper spacing for desktop */
@@ -392,6 +419,163 @@ a {
   .container {
     padding-left: 2rem;
     padding-right: 2rem;
+  }
+  
+  /* Desktop-specific optimizations */
+  .hover\:bg-gray-50:hover {
+    background-color: #f9fafb;
+  }
+  
+  .hover\:bg-blue-50:hover {
+    background-color: #eff6ff;
+  }
+}
+
+/* Ensure proper spacing for large desktop */
+@media (min-width: 1440px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+/* Ensure proper spacing for extra large desktop */
+@media (min-width: 1920px) {
+  .container {
+    max-width: 1536px;
+  }
+}
+
+/* Fix for any remaining responsive issues */
+* {
+  box-sizing: border-box;
+}
+
+/* Ensure proper text wrapping */
+.text-wrap {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+/* Ensure proper image scaling */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Ensure proper form element scaling */
+input, select, textarea, button {
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+/* Ensure proper table responsiveness */
+.table-responsive {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Ensure proper modal responsiveness */
+.modal-responsive {
+  padding: 1rem;
+}
+
+@media (min-width: 640px) {
+  .modal-responsive {
+    padding: 1.5rem;
+  }
+}
+
+/* Ensure proper navigation responsiveness */
+.nav-responsive {
+  flex-wrap: wrap;
+}
+
+@media (min-width: 1024px) {
+  .nav-responsive {
+    flex-wrap: nowrap;
+  }
+}
+
+/* Ensure proper card responsiveness */
+.card-responsive {
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 640px) {
+  .card-responsive {
+    margin-bottom: 1.5rem;
+  }
+}
+
+/* Ensure proper button responsiveness */
+.btn-responsive {
+  width: 100%;
+}
+
+@media (min-width: 640px) {
+  .btn-responsive {
+    width: auto;
+  }
+}
+
+/* Ensure proper input responsiveness */
+.input-responsive {
+  width: 100%;
+}
+
+/* Ensure proper grid responsiveness */
+.grid-responsive {
+  display: grid;
+  gap: 1rem;
+}
+
+@media (min-width: 640px) {
+  .grid-responsive {
+    gap: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .grid-responsive {
+    gap: 2rem;
+  }
+}
+
+/* Ensure proper spacing responsiveness */
+.space-responsive > * + * {
+  margin-top: 1rem;
+}
+
+@media (min-width: 640px) {
+  .space-responsive > * + * {
+    margin-top: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .space-responsive > * + * {
+    margin-top: 2rem;
+  }
+}
+
+/* Ensure proper typography responsiveness */
+.text-responsive {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+@media (min-width: 640px) {
+  .text-responsive {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .text-responsive {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
   }
 }
 

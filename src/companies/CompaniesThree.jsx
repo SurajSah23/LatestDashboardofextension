@@ -4,32 +4,36 @@ function CompaniesThree() {
   const [activeSection, setActiveSection] = useState('all-companies');
 
   return (
-    <div className="flex flex-col sm:flex-row sm:w-[260px] lg:translate-x-2 lg:w-[210px]">
+    <div className="w-full bg-white border border-gray-200 rounded-2xl shadow-lg p-6">
       {/* Sidebar */}
-      <div className="w-full sm:w-[265px] p-4 h-auto sm:h-[800px] border border-gray-200 rounded-xl">
+      <div className="w-full">
         <nav className="space-y-2">
           <div
-            className={`block text-sm ${
-              activeSection === 'all-companies' ? 'text-blue-600' : 'text-gray-600'
-            } hover:bg-blue-50 rounded px-2 py-1.5 transition-colors cursor-pointer`}
+            className={`block text-sm font-medium p-3 rounded-lg transition-colors cursor-pointer ${
+              activeSection === 'all-companies' 
+                ? 'text-blue-600 bg-blue-50' 
+                : 'text-gray-600 hover:bg-gray-50'
+            }`}
             onClick={() => setActiveSection('all-companies')}
           >
             All Companies
           </div>
           <div
-            className={`block text-sm ${
-              activeSection === 'my-companies' ? 'text-blue-600' : 'text-gray-600'
-            } hover:bg-blue-50 rounded px-2 py-1.5 transition-colors cursor-pointer`}
+            className={`block text-sm font-medium p-3 rounded-lg transition-colors cursor-pointer ${
+              activeSection === 'my-companies' 
+                ? 'text-blue-600 bg-blue-50' 
+                : 'text-gray-600 hover:bg-gray-50'
+            }`}
             onClick={() => setActiveSection('my-companies')}
           >
             My Companies
           </div>
           <div
-            className="flex items-center justify-between text-sm text-gray-600 hover:bg-gray-50 rounded px-2 py-1.5 cursor-pointer transition-colors"
+            className="flex items-center justify-between text-sm font-medium text-gray-600 hover:bg-gray-50 rounded-lg p-3 cursor-pointer transition-colors"
             onClick={() => setActiveSection('saved-views')}
           >
             <span>All Saved Views</span>
-            <img src="https://i.ibb.co/MxLS7qQv/ooui-next-ltr-1.png" className="w-3 h-3 mr-10"/>
+            <img src="https://i.ibb.co/MxLS7qQv/ooui-next-ltr-1.png" className="w-4 h-4"/>
           </div>
         </nav>
       </div>

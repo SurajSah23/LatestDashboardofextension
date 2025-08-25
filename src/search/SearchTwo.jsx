@@ -118,7 +118,6 @@ const companies = [
       avatar: "https://i.ibb.co/5579dVd/Avatar-20.png",
     },
   },
-  
 ];
 
 // Generate more companies to fill 90 items (10 pages * 9 items)
@@ -158,103 +157,110 @@ function SearchTwo() {
   };
 
   return (
-    <div className="rounded-lg border border-gray-200 p-8 lg:translate-x-6 w-[1000px] lg:-translate-y-6">
-      <div className="max-w-6xl mx-auto">
-        {/* Header */}
-        <div className="flex items-center space-x-6 mb-6 border-b border-gray-200 pb-4">
-          <div className="text-blue-500 font-medium">New(16.0M)</div>
-          <div className="text-gray-500">Saved (0)</div>
-          <div className="text-gray-500">Total(16.0M)</div>
+    <div className="w-full bg-white border border-gray-200 rounded-2xl shadow-lg p-6">
+      {/* Header */}
+      <div className="flex flex-wrap items-center gap-4 mb-6 border-b border-gray-200 pb-4">
+        <div className="text-blue-600 font-medium">New(16.0M)</div>
+        <div className="text-gray-500">Saved (0)</div>
+        <div className="text-gray-500">Total(16.0M)</div>
+      </div>
+
+      {/* Table */}
+      <div className="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden">
+        {/* Table Header */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 px-4 lg:px-6 py-4 border-b border-gray-200 bg-gray-50">
+          <div className="text-sm text-gray-600 flex items-center gap-3">
+            <img src="https://i.ibb.co/DPcLRcSt/Checkbox-base.png" alt="Select all" className="w-4 h-4" />
+            <span>Company</span>
+          </div>
+          <div className="text-sm text-gray-600 lg:border-l lg:border-gray-200 lg:pl-6 mt-2 lg:mt-0">
+            Contact
+          </div>
         </div>
 
-        {/* Table */}
-        <div className="bg-white rounded-lg shadow">
-          {/* Table Header */}
-          <div className="grid grid-cols-2 px-6 py-4 border-b border-gray-200">
-            <div className="text-sm text-gray-500 flex gap-4"><img src="https://i.ibb.co/DPcLRcSt/Checkbox-base.png" alt="" />Company</div>
-            <div className="text-sm text-gray-500 border-l border-gray-200 pl-6">
-              Contact
-            </div>
-          </div>
-
-          {/* Table Body */}
-          <div className="divide-y divide-gray-200">
-            {currentCompanies.map((company) => (
-              <div
-                key={company.id}
-                className="grid grid-cols-2 divide-x divide-gray-200"
-              >
-                <div className="flex items-center space-x-4 px-6 py-4">
+        {/* Table Body */}
+        <div className="divide-y divide-gray-200">
+          {currentCompanies.map((company) => (
+            <div
+              key={company.id}
+              className="grid grid-cols-1 lg:grid-cols-2 lg:divide-x lg:divide-gray-200 hover:bg-gray-50 transition-colors duration-200"
+            >
+              {/* Company Section */}
+              <div className="flex flex-col sm:flex-row sm:items-center gap-3 px-4 lg:px-6 py-4">
+                <div className="flex items-center gap-3 flex-1">
                   <input type="checkbox" className="rounded border-gray-300" />
                   <img
                     src={company.logo}
                     alt={company.name}
-                    className="w-10 h-10 rounded-lg"
+                    className="w-10 h-10 rounded-lg object-cover"
                   />
-                  <div>
-                    <div className="font-medium text-gray-900 w-[100px] whitespace-nowrap">
+                  <div className="flex-1 min-w-0">
+                    <div className="font-medium text-gray-900 truncate">
                       {company.name}
                     </div>
-                    <div className="text-sm text-gray-500">
+                    <div className="text-sm text-gray-500 truncate">
                       {company.website}
                     </div>
                   </div>
-                  <div className="flex items-center text-gray-500 relative right-8 lg:translate-x-40">
-                    <img
-                      src="https://i.ibb.co/rGHWJ9Cw/tdesign-member-filled-1.png"
-                      alt=""
-                    />
-                    <span className="text-sm ml-4">{company.employeeCount}</span>
-                  </div>
                 </div>
-                <div className="flex items-center justify-between px-6 py-4">
-                  <div className="flex items-center space-x-3">
-                    <img
-                      src={company.contact.avatar}
-                      alt={company.contact.name}
-                      className="w-10 h-10 rounded-full"
-                    />
-                    <div>
-                      <div className="font-medium text-gray-900">
-                        {company.contact.name}
-                      </div>
-                      <div className="text-sm text-gray-500">
-                        {company.contact.role}
-                      </div>
-                      <div className="text-sm text-gray-500">
-                        {company.contact.location}
-                      </div>
-                    </div>
-                  </div>
-                  <button className="px-4 py-2 border border-blue-200 hover:bg-blue-500 text-blue-400 rounded-lg text-sm">
-                    Show Mail
-                  </button>
+                <div className="flex items-center gap-2 text-gray-500">
+                  <img
+                    src="https://i.ibb.co/rGHWJ9Cw/tdesign-member-filled-1.png"
+                    alt="Employees"
+                    className="w-4 h-4"
+                  />
+                  <span className="text-sm">{company.employeeCount}</span>
                 </div>
               </div>
-            ))}
-          </div>
-        </div>
 
-        {/* Pagination */}
-        <div className="flex items-center justify-between mt-4 px-6 py-4">
-          <button
-            className="flex items-center px-4 py-2 text-sm text-gray-600 bg-white rounded-lg border border-gray-300 hover:bg-gray-50 disabled:opacity-50 disabled:cursor-not-allowed"
-            onClick={handlePreviousPage}
-            disabled={currentPage === 1}
-          >
-            Previous
-          </button>
-          <div className="text-sm text-gray-600">
-            Page {currentPage} of {totalPages}
-          </div>
-          <button
-            className="flex items-center px-4 py-2 text-sm text-gray-600 bg-white rounded-lg border border-gray-300 hover:bg-gray-50 disabled:opacity-50 disabled:cursor-not-allowed"
-            onClick={handleNextPage}
-            disabled={currentPage === totalPages}
-          >
-            Next
-          </button>
+              {/* Contact Section */}
+              <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 px-4 lg:px-6 py-4 lg:border-l lg:border-gray-200">
+                <div className="flex items-center gap-3 flex-1">
+                  <img
+                    src={company.contact.avatar}
+                    alt={company.contact.name}
+                    className="w-10 h-10 rounded-full object-cover"
+                  />
+                  <div className="flex-1 min-w-0">
+                    <div className="font-medium text-gray-900 truncate">
+                      {company.contact.name}
+                    </div>
+                    <div className="text-sm text-gray-500 truncate">
+                      {company.contact.role}
+                    </div>
+                    <div className="text-sm text-gray-500 truncate">
+                      {company.contact.location}
+                    </div>
+                  </div>
+                </div>
+                <button className="px-4 py-2 border border-blue-200 hover:bg-blue-50 text-blue-600 rounded-lg text-sm font-medium transition-colors duration-200 whitespace-nowrap">
+                  Show Mail
+                </button>
+              </div>
+            </div>
+          ))}
         </div>
+      </div>
+
+      {/* Pagination */}
+      <div className="flex flex-col sm:flex-row items-center justify-between gap-4 mt-6 px-4 lg:px-6 py-4">
+        <button
+          className="flex items-center px-4 py-2 text-sm text-gray-600 bg-white rounded-lg border border-gray-300 hover:bg-gray-50 disabled:opacity-50 disabled:cursor-not-allowed transition-colors duration-200"
+          onClick={handlePreviousPage}
+          disabled={currentPage === 1}
+        >
+          Previous
+        </button>
+        <div className="text-sm text-gray-600">
+          Page {currentPage} of {totalPages}
+        </div>
+        <button
+          className="flex items-center px-4 py-2 text-sm text-gray-600 bg-white rounded-lg border border-gray-300 hover:bg-gray-50 disabled:opacity-50 disabled:cursor-not-allowed transition-colors duration-200"
+          onClick={handleNextPage}
+          disabled={currentPage === totalPages}
+        >
+          Next
+        </button>
       </div>
     </div>
   );

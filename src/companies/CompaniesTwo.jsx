@@ -41,46 +41,44 @@ const companies = [
 
 function CompaniesTwo() {
   return (
-    <div className="-translate-x-4">
-      <div className="w-full sm:w-[640px] md:w-[768px] lg:w-[970px] bg-white rounded-xl shadow-sm border border-gray-200 overflow-hidden ml-3">
-        {/* Scrollable container on small screens */}
-        <div className="overflow-x-auto">
-          <table className="w-full min-w-[600px] ">
-            <thead>
-              <tr className="border-b border-gray-200 bg-gray-100">
-                <th className="py-3 px-4 text-sm font-medium text-gray-500 text-left border-r">Name</th>
-                <th className="py-3 px-4 text-sm font-medium text-gray-500 text-left border-r">Domain</th>
-                <th className="py-3 px-4 text-sm font-medium text-gray-500 text border-r">Industry</th>
-                <th className="py-3 px-4 text-sm font-medium text-gray-500 text-left border-r">Employees</th>
-                <th className="py-3 px-4 text-sm font-medium text-gray-500 text-left border-r">Location</th>
-                <th className="py-3 px-4 text-sm font-medium text-gray-500 text-left border-r">Created At</th>
-                <th className="py-3 px-4 text-sm font-medium text-gray-500 text-left border-r">Source</th>
+    <div className="w-full bg-white border border-gray-200 rounded-2xl shadow-lg overflow-hidden">
+      {/* Scrollable container on small screens */}
+      <div className="overflow-x-auto">
+        <table className="w-full min-w-[600px]">
+          <thead>
+            <tr className="border-b border-gray-200 bg-gray-50">
+              <th className="py-3 px-4 text-sm font-medium text-gray-600 text-left border-r border-gray-200">Name</th>
+              <th className="py-3 px-4 text-sm font-medium text-gray-600 text-left border-r border-gray-200">Domain</th>
+              <th className="py-3 px-4 text-sm font-medium text-gray-600 text-left border-r border-gray-200">Industry</th>
+              <th className="py-3 px-4 text-sm font-medium text-gray-600 text-left border-r border-gray-200">Employees</th>
+              <th className="py-3 px-4 text-sm font-medium text-gray-600 text-left border-r border-gray-200">Location</th>
+              <th className="py-3 px-4 text-sm font-medium text-gray-600 text-left border-r border-gray-200">Created At</th>
+              <th className="py-3 px-4 text-sm font-medium text-gray-600 text-left">Source</th>
+            </tr>
+          </thead>
+          <tbody>
+            {companies.map((company, index) => (
+              <tr key={index} className="border-b border-gray-200 hover:bg-gray-50 transition-colors duration-200">
+                <td className="py-3 px-4 flex items-center gap-3 border-r border-gray-200">
+                  {company.icon}
+                  <span className="font-medium text-gray-900">{company.name}</span>
+                </td>
+                <td className="py-3 px-4 border-r border-gray-200">
+                  <a href={`https://${company.domain}`} className="text-blue-600 hover:underline">
+                    {company.domain}
+                  </a>
+                </td>
+                <td className="py-3 px-4 text-gray-600 border-r border-gray-200">{company.industry}</td>
+                <td className="py-3 px-4 text-gray-600 border-r border-gray-200">{company.employees}</td>
+                <td className="py-3 px-4 text-gray-600 border-r border-gray-200">{company.location || '-'}</td>
+                <td className="py-3 px-4 text-gray-600 border-r border-gray-200">{company.createdAt}</td>
+                <td className="py-3 px-4 text-blue-600 hover:underline cursor-pointer">
+                  {company.source}
+                </td>
               </tr>
-            </thead>
-            <tbody>
-              {companies.map((company, index) => (
-                <tr key={index} className="border-b border-gray-200 hover:bg-gray-50">
-                  <td className="py-2 px-4 flex items-center gap-2 border-r">
-                    {company.icon}
-                    <span className="font-medium text-gray-900 whitespace-nowrap mr-10">{company.name}</span>
-                  </td>
-                  <td className="py-3 px-4 border-r">
-                    <a href={`https://${company.domain}`} className="text-blue-500 hover:underline">
-                      {company.domain}
-                    </a>
-                  </td>
-                  <td className="py-3 px-4 text-gray-600 border-r whitespace-nowrap">{company.industry}</td>
-                  <td className="py-3 px-4 text-gray-600 border-r">{company.employees}</td>
-                  <td className="py-3 px-4 text-gray-600 border-r whitespace-nowrap">{company.location || ' '}</td>
-                  <td className="py-3 px-4 text-gray-600 whitespace-nowrap border-r">{company.createdAt}</td>
-                  <td className="py-3 px-4 text-blue-600 hover:underline cursor-pointer whitespace-nowrap">
-                    {company.source}
-                  </td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
+            ))}
+          </tbody>
+        </table>
       </div>
     </div>
   );

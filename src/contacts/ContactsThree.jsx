@@ -2,41 +2,62 @@ import { Link } from "react-router-dom";
 
 function ContactsThree() {
   return (
-    <div className="h-[650px] border border-gray-200 rounded-xl bg-white shadow-lg flex flex-col sm:flex-row">
-      <div className="w-full sm:w-64 border-b sm:border-r border-gray-200 px-4 py-6">
+    <div className="w-full bg-white border border-gray-200 rounded-2xl shadow-lg">
+      <div className="w-full border-b border-gray-200 px-4 py-6">
         <nav className="space-y-1">
-          <Link to="/" className="block py-2 text-blue-500 font-medium">
+          <Link 
+            to="/" 
+            className="block py-3 px-3 text-blue-600 font-medium rounded-lg hover:bg-blue-50 transition-colors duration-200"
+          >
             All Contacts
           </Link>
 
-          <Link to="/my-contacts" className="block py-2 text-gray-600">
+          <Link 
+            to="/my-contacts" 
+            className="block py-3 px-3 text-gray-600 rounded-lg hover:bg-gray-50 transition-colors duration-200"
+          >
             My Contacts
           </Link>
 
-          <Link to="/all-emails" className="block py-2 text-gray-600">
+          <Link 
+            to="/all-emails" 
+            className="block py-3 px-3 text-gray-600 rounded-lg hover:bg-gray-50 transition-colors duration-200"
+          >
             All emails
           </Link>
 
-          <Link to="/valid-emails" className="block py-2 text-gray-600">
+          <Link 
+            to="/valid-emails" 
+            className="block py-3 px-3 text-gray-600 rounded-lg hover:bg-gray-50 transition-colors duration-200"
+          >
             Valid emails
           </Link>
 
-          <Link to="/accept-all-emails" className="block py-2 text-gray-600">
+          <Link 
+            to="/accept-all-emails" 
+            className="block py-3 px-3 text-gray-600 rounded-lg hover:bg-gray-50 transition-colors duration-200"
+          >
             Accept all emails
           </Link>
 
-          <Link to="/no-mails" className="block py-2 text-gray-600">
+          <Link 
+            to="/no-mails" 
+            className="block py-3 px-3 text-gray-600 rounded-lg hover:bg-gray-50 transition-colors duration-200"
+          >
             No mails
           </Link>
 
-          <Link to="/no-list" className="block py-2 text-gray-600">
+          <Link 
+            to="/no-list" 
+            className="block py-3 px-3 text-gray-600 rounded-lg hover:bg-gray-50 transition-colors duration-200"
+          >
             No List
           </Link>
 
-          <div className="py-4">
+          <div className="py-4 border-t border-gray-200 mt-4">
             <Link
               to="/all-saved-views"
-              className="flex items-center justify-between py-2 text-blue-500 font-medium"
+              className="flex items-center justify-between py-3 px-3 text-blue-600 font-medium rounded-lg hover:bg-blue-50 transition-colors duration-200"
             >
               All Saved Views
               <img

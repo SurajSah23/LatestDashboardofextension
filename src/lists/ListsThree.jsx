@@ -1,13 +1,13 @@
 function ListsThree() {
   return (
-    <div className="w-full sm:w-64 md:w-80 h-[480px] border rounded-lg mt-4 bg-white shadow-lg">
-      <div className="p-4">
-        <h2 className="bg-custom-blue shadow-lg rounded-md font-medium mb-4 bg-blue-100 text-blue-600 py-2 px-1 text-center sm:text-left">
+    <div className="w-full bg-white border border-gray-200 rounded-2xl shadow-lg p-6">
+      <div className="mb-4">
+        <h2 className="bg-blue-100 text-blue-600 font-medium py-2 px-4 rounded-lg text-center sm:text-left">
           All Lists
         </h2>
-        <div className="flex items-center text-gray-600 hover:bg-blue-100 rounded-md p-2 cursor-pointer">
-          <span>Folder</span>
-        </div>
+      </div>
+      <div className="flex items-center text-gray-600 hover:bg-blue-50 rounded-lg p-3 cursor-pointer transition-colors duration-200">
+        <span className="text-sm font-medium">Folder</span>
       </div>
     </div>
   );

@@ -4,26 +4,26 @@ function DashboardOne() {
   const [activeTab, setActiveTab] = useState("recent");
 
   return (
-    <div className="lg:w-[600px] lg:h-[390px] lg:ml-6 rounded-[20px] border-[1px] mt-4 shadow-lg p-4 lg:translate-x-1">
-      <div className="">
+    <div className="w-full bg-white rounded-2xl border border-gray-200 shadow-lg p-6">
+      <div className="h-full flex flex-col">
         {/* Tabs */}
-        <div className="flex flex-wrap space-x-5 mb-8 p-4 sm:p-6">
+        <div className="flex flex-wrap gap-4 mb-6">
           <button
             onClick={() => setActiveTab("recent")}
-            className={`pb-4 px-2 text-sm font-medium transition-colors duration-200 ${
+            className={`pb-3 px-3 text-sm font-medium transition-colors duration-200 border-b-2 ${
               activeTab === "recent"
-                ? "text-[#039FFE] border-b-2 border-blue-500"
-                : "text-gray-500 hover:text-gray-700"
+                ? "text-blue-500 border-blue-500"
+                : "text-gray-500 border-transparent hover:text-gray-700 hover:border-gray-300"
             }`}
           >
             Recent Search
           </button>
           <button
             onClick={() => setActiveTab("saved")}
-            className={`pb-4 px-2 text-sm font-medium transition-colors duration-200 ${
+            className={`pb-3 px-3 text-sm font-medium transition-colors duration-200 border-b-2 ${
               activeTab === "saved"
-                ? "text-[#039FFE] border-b-2 border-blue-500"
-                : "text-gray-500 hover:text-gray-700"
+                ? "text-blue-500 border-blue-500"
+                : "text-gray-500 border-transparent hover:text-gray-700 hover:border-gray-300"
             }`}
           >
             Saved Search
@@ -31,23 +31,23 @@ function DashboardOne() {
         </div>
 
         {/* Empty State */}
-        <div className="text-center">
-          <div className="inline-flex justify-center pt-1">
+        <div className="flex-1 flex flex-col items-center justify-center text-center">
+          <div className="mb-6">
             <img
               src="https://i.ibb.co/Ns17HnS/Illustration.png"
               alt="No Search"
-              className="w-full sm:w-32 h-auto mb-3 translate-y-[-30px]"
+              className="w-24 h-24 sm:w-32 sm:h-32 mx-auto"
             />
           </div>
-          <h3 className="text-lg font-semibold text-gray-900 mb-2 translate-y-[-40px]">
+          <h3 className="text-lg sm:text-xl font-semibold text-gray-900 mb-3">
             No Recent Search
           </h3>
-          <p className="text-sm text-gray-500 mb-6 max-w-xs mx-auto translate-y-[-40px]">
-            Your search &quot; Landing page design &quot; did not match any
+          <p className="text-sm text-gray-500 mb-6 max-w-sm mx-auto px-4">
+            Your search &quot;Landing page design&quot; did not match any
             projects. Try again.
           </p>
 
-          <button className="inline-flex items-center px-4 py-2 text-black border rounded-lg transition-colors duration-200 translate-y-[-40px] font-semibold">
+          <button className="inline-flex items-center px-6 py-3 text-black border border-gray-300 rounded-lg transition-colors duration-200 font-semibold hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
             New Search
           </button>
         </div>

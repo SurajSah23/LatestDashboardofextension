@@ -29,134 +29,143 @@ import Messages from "./messages/Messages";
 function App() {
   return (
     <Router>
-      <Navbar />
-      <Routes>
-        {/* Redirect the root path to "/dashboard" */}
-        <Route path="/" element={<Navigate to="/dashboard" />} />
+      <div className="min-h-screen bg-gray-50">
+        <Navbar />
+        <main className="container mx-auto px-4 py-6">
+          <Routes>
+            {/* Redirect the root path to "/dashboard" */}
+            <Route path="/" element={<Navigate to="/dashboard" />} />
 
-        <Route
-          path="/dashboard"
-          element={
-            <div className="max-h-screen">
-              <div className="flex flex-col lg:flex lg:flex-row space-x-10">
-                <DashboardOne />
-                <DashboardTwo />
-                <DashboardThree />
-                <br />
-              </div>
-              <div>
-                <DashboardFive />
-                <br />
-              </div>
-              <DashboardFour />
-              <Messages />
-            </div>
-          }
-        />
-        <Route
-          path="/search"
-          element={
-            <div>
-              <div className="mt-4 sm:mt-8">
-                <SearchOne />
-              </div>
-              <div className="flex flex-col sm:flex-row gap-3 mt-4">
-                <SearchTwo />
-                <SearchThree />
-              </div>
-              <Messages />
-            </div>
-          }
-        />
-        <Route
-          path="/contacts"
-          element={
-            <div>
-              <div className="mt-4 sm:mt-8">
-                <ContactsOne />
-              </div>
-              <div className="flex flex-col sm:flex-row gap-6 mt-4">
-                <ContactTwo />
-                <ContactsThree />
-              </div>
-              <Messages />
-            </div>
-          }
-        />
-        <Route
-          path="/lists"
-          element={
-            <div>
-              <div className="mt-4 sm:mt-8">
-                <ListsOne />
-              </div>
-              <div className="flex flex-col sm:flex-row gap-4 ml-12 mt-4">
-                <ListsTwo />
-                <div>
-                  <ListsThree />
+            <Route
+              path="/dashboard"
+              element={
+                <div className="space-y-6">
+                  {/* Top Row - Dashboard Cards */}
+                  <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+                    <DashboardOne />
+                    <DashboardTwo />
+                    <DashboardThree />
+                  </div>
+                  
+                  {/* Middle Row - Dashboard Five */}
+                  <div className="w-full">
+                    <DashboardFive />
+                  </div>
+                  
+                  {/* Bottom Row - Dashboard Four and Messages */}
+                  <div className="grid grid-cols-1 xl:grid-cols-2 gap-6">
+                    <DashboardFour />
+                    <Messages />
+                  </div>
                 </div>
-              </div>
-              <Messages />
-            </div>
-          }
-        />
-        <Route
-          path="/companies"
-          element={
-            <div>
-              <CompaniesOne />
-              <div className="flex flex-col sm:flex-row gap-2 mt-4">
-                <CompaniesTwo />
-                <CompaniesThree />
-              </div>
-              <Messages />
-            </div>
-          }
-        />
-        <Route
-          path="/enrich"
-          element={
-            <div className="mt-4 sm:mt-8">
-              <EnrichOne />
-              <Messages />
-            </div>
-          }
-        />
-        <Route
-          path="/verify"
-          element={
-            <div className="mt-4 sm:mt-8">
-              <VerifyOne />
-              <VerifyTwo />
-              <VerifyThree />
-              <Messages />
-            </div>
-          }
-        />
-        <Route
-          path="/notifications"
-          element={
-            <div className="mt-4 sm:mt-8">
-              <Notifications />
-              <Messages />
-            </div>
-          }
-        />
-        <Route
-          path="/settings"
-          element={
-            <div className="mt-4 sm:mt-8">
-              <div>
-                <SettingsOne />
-              </div>
-              <div>
-                <SettingsTwo />
-              </div>
-              <Messages />
-            </div>
-          }
-        />
-      </Routes>
+              }
+            />
+            
+            <Route
+              path="/search"
+              element={
+                <div className="space-y-6">
+                  <SearchOne />
+                  <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                    <SearchTwo />
+                    <SearchThree />
+                  </div>
+                  <Messages />
+                </div>
+              }
+            />
+            
+            <Route
+              path="/contacts"
+              element={
+                <div className="space-y-6">
+                  <ContactsOne />
+                  <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                    <ContactTwo />
+                    <ContactsThree />
+                  </div>
+                  <Messages />
+                </div>
+              }
+            />
+            
+            <Route
+              path="/lists"
+              element={
+                <div className="space-y-6">
+                  <ListsOne />
+                  <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                    <ListsTwo />
+                    <ListsThree />
+                  </div>
+                  <Messages />
+                </div>
+              }
+            />
+            
+            <Route
+              path="/companies"
+              element={
+                <div className="space-y-6">
+                  <CompaniesOne />
+                  <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                    <CompaniesTwo />
+                    <CompaniesThree />
+                  </div>
+                  <Messages />
+                </div>
+              }
+            />
+            
+            <Route
+              path="/enrich"
+              element={
+                <div className="space-y-6">
+                  <EnrichOne />
+                  <Messages />
+                </div>
+              }
+            />
+            
+            <Route
+              path="/verify"
+              element={
+                <div className="space-y-6">
+                  <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+                    <VerifyOne />
+                    <VerifyTwo />
+                    <VerifyThree />
+                  </div>
+                  <Messages />
+                </div>
+              }
+            />
+            
+            <Route
+              path="/notifications"
+              element={
+                <div className="space-y-6">
+                  <Notifications />
+                  <Messages />
+                </div>
+              }
+            />
+            
+            <Route
+              path="/settings"
+              element={
+                <div className="space-y-6">
+                  <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                    <SettingsOne />
+                    <SettingsTwo />
+                  </div>
+                  <Messages />
+                </div>
+              }
+            />
+          </Routes>
+        </main>
+      </div>
     </Router>
   );
 }

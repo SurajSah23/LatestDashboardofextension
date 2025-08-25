@@ -21,6 +21,9 @@ function DashboardFour() {
     chart: {
       type: 'column',
       height: 400,
+      style: {
+        fontFamily: 'Inter, sans-serif',
+      },
     },
     title: {
       text: '',
@@ -66,12 +69,24 @@ function DashboardFour() {
         color: '#6366F1',
       },
     ],
+    responsive: {
+      rules: [{
+        condition: {
+          maxWidth: 500
+        },
+        chartOptions: {
+          chart: {
+            height: 300
+          }
+        }
+      }]
+    }
   };
 
   return (
-    <div className="-translate-x-2 shadow-xl border border-gray-200 sm:w-[590px] md:w-[768px] lg:w-[967px] rounded-lg ml-4 sm:ml-6 sm:mt-8 md:mt-12 lg:relative lg:bottom-96 lg:-translate-y-96  lg:shadow-lg lg:-mt-32">
-      <div className="max-w-full mx-auto bg-white rounded-lg p-4 sm:p-6 md:p-8">
-        <h2 className="mb-4 sm:mb-6 md:mb-8 ml-2 sm:ml-4 md:ml-5 text-base sm:text-lg md:text-xl font-medium text-gray-900 mt-3 sm:mt-5 md:mt-7">Usage</h2>
+    <div className="w-full bg-white border border-gray-200 shadow-lg rounded-2xl p-6">
+      <h2 className="mb-6 text-xl font-semibold text-gray-900">Usage</h2>
+      <div className="w-full">
         <HighchartsReact highcharts={Highcharts} options={options} />
       </div>
     </div>
